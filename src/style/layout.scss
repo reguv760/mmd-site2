@@ -4,22 +4,27 @@ style.css entry point for container + pages; */
 //font:::
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+
+//gatsby reset:::
+@import './base/_layoutReset';
+
 //variables:::
 @import './base/_variables';
 
-//variables gatsby reset:::
-@import './base/_layoutReset';
-
+//baseCSS:::
+@import './base/_base';
+@import './pages';
 @import './base/mixins';
 
-//baseCSS:::
-@import url('./base/_base.scss');
-
-
+/* Header */
 @import './Header';
+
+/* Navigation + MobileMenu */
 @import './Navigation';
 @import './mobileMenu';
-@import './pages';
+
+/* used by lightbox */
+@import './gallery';
 @import './Footer';
 
 @import './base/_mediaquery'

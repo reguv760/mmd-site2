@@ -23,7 +23,7 @@ const Index = () => (
       <div className="pageContainer right">
         <div className="homeText">
           <b>Wet Paint</b> (n.)<br/>
-          <span class="gray">A state of freshness and vigor that categorizes the art of Melany Dierks.</span>
+          <span className="gray">A state of freshness and vigor that categorizes the art of Melany Dierks.</span>
         </div>
       </div>
       <div className="blackBorder"/>

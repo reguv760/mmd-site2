@@ -12,7 +12,7 @@ body
   font-family: 'Open Sans', sans-serif;
   background-color:#eee;
   font-size:1.2rem;
-  width:85%;
+  width:100%; /* use 100% for mobileMenu clearance */
   overflow-x:hidden;
 }
 
@@ -26,10 +26,10 @@ img
 a
 {
   text-decoration:none;
-  color:#030303;
+  color:$black;
 }
 
 a:hover
 {
-  color:#d4740d;
+  color:$orange;
 }

@@ -1,10 +1,11 @@
 import React from 'react';
-//import PropTypes from 'prop-types';
+///import PropTypes from 'prop-types';
 import Dropdown, { DropdownTrigger, DropdownContent } from 'react-simple-dropdown';
 import { Link } from 'gatsby'
 
 import CoverPDF from './../downloads/melanydierks-CV.pdf';
 import ResumePDF from './../downloads/melanydierks-resume2018.pdf';
+
 
 
 class Navigation extends React.Component
@@ -17,12 +18,12 @@ class Navigation extends React.Component
 
   handleLinkClick()
   {
-    this.refs.dropdown.hide();
+    this.refs.dropdown.show();
     //this.refs.dropdown.isActive();
   }
 
-  render() {
-
+  render() 
+  {
     return (
       <nav>
         <ul className="menu">
@@ -116,5 +117,4 @@ class Navigation extends React.Component
   }
 }
 
-
-export default Navigation;
+export default Navigation

@@ -3,9 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-//FavIcon import
-import FavIcon from './../images/favicon.ico'
-
 //component import
 import Header from './Header'
 import Footer from './Footer'
@@ -37,7 +34,6 @@ const Layout = ({ children }) => (
               { name: 'author', content: 'Reginald Galang @TDG' },
             ]}
           >
-          <link rel="Shortcut icon" href={FavIcon} />
           <html lang="en" />
         </Helmet>
 

@@ -3,90 +3,91 @@ nav
   z-index:1000;
   position:relative;
   height:4rem;
-}
 
-ul.menu
-{
-  margin-top:2rem;
-  margin-right:2rem;
-  min-height:3.5rem;
+  & ul.menu
+  {
+    margin-top:2rem;
+    margin-right:2rem;
+    min-height:3.5rem;
 
-  list-style-type:none;
-  font-size:1.8rem;
-  text-transform:lowercase;
-  letter-spacing:0.05em;
-  text-align:center;
+    list-style-type:none;
+    font-size:1.8rem;
+    text-transform:lowercase;
+    letter-spacing:0.05em;
+    text-align:center;
 
-  display:flex;
-  flex-flow:row nowrap;
-  justify-content:flex-end;
-  align-content:flex-start;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-end;
+    align-content:flex-start;
 
-  & li
+    & li
+    {
+      display:inline-block;
+      padding:0;
+      margin:0 1rem;
+      z-index:1000;
+    }
+  }
+
+  /* drop down menu */
+  /* for react component */
+  & .dropdown
   {
     display:inline-block;
-    padding:0;
-    margin:0 1rem;
-    z-index:1000;
+
+    & ul.subMenu
+    {
+      padding:0;
+      margin:1rem 0 0 0;
+      list-style-type:none;
+      display:flex;
+      flex-flow:column nowrap;
+    }
   }
-}
 
-
-/* drop down menu */
-/* for react component */
-.dropdown
-{
-  display:inline-block;
-
-  & ul.subMenu
+  & .dropdown__content
   {
-    padding:0;
-    margin:1rem 0 0 0;
-    list-style-type:none;
-    display:flex;
-    flex-flow:column nowrap;
-  }
-}
+    display: none;
+    position:absolute;
+    background-color:$off-whiteAlpha;
+    margin-top:1rem;
+    border-radius:0.2rem;
 
-.dropdown__content
-{
-  display: none;
-  position:absolute;
-  background-color:$off-whiteAlpha;
-  margin-top:1rem;
-  border-radius:0.2rem;
-/* drop down menu item */
-  & ul.subMenu li
+  /* drop down menu item */
+    & ul.subMenu li
+    {
+      font-size:1.8rem;
+      color:$black;
+      letter-spacing:0;
+      text-align:left;
+      margin:0;
+      padding:1rem 0 2rem 0;
+    }
+
+    & ul.subMenu li a
+    {
+      margin: 0.25rem;
+      padding:0.5rem;
+      color:$charcoal;
+    }
+
+    & ul.subMenu li a:hover
+    {
+      color:$orange;
+    }
+  }
+
+  & .dropdown--active .dropdown__content
   {
-    font-size:1.8rem;
-    color:#000;
-    letter-spacing:0;
-    text-align:left;
-    margin:0;
-    padding:1rem 0 2rem 0;
+    display: block;
   }
 
-  & ul.subMenu li a
+  /* my nav */
+
+  & .dropdown-link
   {
-    margin: 0.25rem;
-    padding:0.5rem;
-    color:$charcoal;
+    cursor:pointer;
   }
 
-  & ul.subMenu li a:hover
-  {
-    color:$orange;
-  }
-}
-
-.dropdown--active .dropdown__content
-{
-  display: block;
-}
-
-/* my nav */
-
-.dropdown-link
-{
-  cursor:pointer;
 }

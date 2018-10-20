@@ -21,8 +21,8 @@ class MobileMenu extends React.Component {
           <li><a className="menu-item" href="/graphic">Design: <span className="thin">Graphic Design</span></a></li>
           <li><a className="menu-item" href="/storyboards">Design: <span className="thin">Storyboards</span></a></li>
           <li><a className="menu-item" href="/bio">About Me: <span className="thin">Biography</span></a></li>
-          <li><a className="menu-item" href={CoverPDF} rel="noopener">About Me: <span className="thin">CV</span></a></li>
-          <li><a className="menu-item" href={ResumePDF} rel="noopener">About Me: <span className="thin">Resume</span></a></li>
+          <li><a className="menu-item" href={CoverPDF} target="_blank" rel="noopener noreferrer">About Me: <span className="thin">CV</span></a></li>
+          <li><a className="menu-item" href={ResumePDF} target="_blank" rel="noopener noreferrer">About Me: <span className="thin">Resume</span></a></li>
         </ul>
       </Menu>
     );
