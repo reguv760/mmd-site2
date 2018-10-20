@@ -1,0 +1,25 @@
+/* main module used by layout :::
+style.css entry point for container + pages; */
+
+//font:::
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+//variables:::
+@import './base/_variables';
+
+//variables gatsby reset:::
+@import './base/_layoutReset';
+
+@import './base/mixins';
+
+//baseCSS:::
+@import url('./base/_base.scss');
+
+
+@import './Header';
+@import './Navigation';
+@import './mobileMenu';
+@import './pages';
+@import './Footer';
+
+@import './base/_mediaquery'

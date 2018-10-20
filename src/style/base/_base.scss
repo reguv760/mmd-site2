@@ -1,0 +1,35 @@
+html
+{
+  font-size:62.5%;
+  display:flex;
+  justify-content:center;
+  margin:0;
+  padding:0;
+}
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  background-color:#eee;
+  font-size:1.2rem;
+  width:85%;
+  overflow-x:hidden;
+}
+
+img
+{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+a
+{
+  text-decoration:none;
+  color:#030303;
+}
+
+a:hover
+{
+  color:#d4740d;
+}

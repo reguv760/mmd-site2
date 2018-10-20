@@ -1,0 +1,56 @@
+footer
+{
+  display:block;
+  margin:2rem auto;
+  padding:0;
+  width:100%;
+  font-size:1rem;
+  font-weight:bold;
+
+  & ul
+  {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-content:center;
+    width:100%;
+    height:auto;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+  }
+
+  & ul li
+  {
+    margin:0 1rem;
+    width:4rem;
+    min-height:1rem;
+
+    & img:hover
+    {
+      cursor:hand;
+      opacity:0.75;
+    }
+  }
+
+  & ul li.year
+  {
+    margin:1rem 0 0.25rem 0;
+    width:100%;
+    text-align:center;
+  }
+
+  & ul li.webdev
+  {
+    margin:0;
+    width:100%;
+    text-align:center;
+  }
+
+  & ul li.footer-links
+  {
+    margin:0.5rem 0;
+    text-align:center;
+    width:100%;
+  }
+}
