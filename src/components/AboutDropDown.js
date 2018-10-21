@@ -31,8 +31,8 @@ class ArtistDropDown extends React.Component
         <DropdownContent>
           <ul className="subMenu">
             <li><Link to="/bio" activeStyle={{ color: '#d4740d' }}>biography</Link></li>
-            <li><Link to={CoverPDF} target="_blank" rel="noopener">cv</Link></li>
-            <li><Link to={ResumePDF} target="_blank" rel="noopener">resume</Link></li>
+            <li><a href={CoverPDF} target="_blank" rel="noopener noreferrer">cv</a></li>
+            <li><a href={ResumePDF} target="_blank" rel="noopener noreferrer">resume</a></li>
           </ul>
         </DropdownContent>
       </Dropdown>
