@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {    
     title: 'Wet Paint Studio : Melany Dierks website',
+    titleTemplate: "%s",
+    description:"Test Description",
+    url:"http://mywetpaintstudio.com"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
