@@ -36,7 +36,12 @@ nav
   {
     display:inline-block;
 
-    & ul.subMenu
+    &__link
+    {
+
+    }
+
+    &__Menu
     {
       padding:0;
       margin:1rem 0 0 0;
@@ -49,12 +54,19 @@ nav
   & .dropdown__content
   {
     display: none;
-    position:absolute;
+    position: absolute;
     background-color:$off-whiteAlpha;
-    margin-top:1rem;
+    margin:1rem 0 0 0;
     border-radius:0.2rem;
-
+    padding-right:1rem;
   /* drop down menu item */
+
+    & ul.subMenu
+    {
+      display:flex;
+      flex-flow: column nowrap;
+    }
+
     & ul.subMenu li
     {
       font-size:1.8rem;
@@ -67,8 +79,6 @@ nav
 
     & ul.subMenu li a
     {
-      margin: 0.25rem;
-      padding:0.5rem;
       color:$charcoal;
     }
 
