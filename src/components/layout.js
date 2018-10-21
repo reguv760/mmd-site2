@@ -6,6 +6,8 @@ import { StaticQuery, graphql } from 'gatsby'
 //component import
 import Header from './Header'
 import Footer from './Footer'
+
+//import SEO from './SEO';
 import './../style/layout.scss'
 
 

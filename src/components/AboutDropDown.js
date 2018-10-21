@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 import CoverPDF from './../downloads/melanydierks-CV.pdf';
 import ResumePDF from './../downloads/melanydierks-resume2018.pdf';
 
-class ArtistDropDown extends React.Component
+class AboutDropDown extends React.Component
 {
   constructor(props) {
     super(props);
@@ -40,4 +40,4 @@ class ArtistDropDown extends React.Component
   }
 }
 
-export default ArtistDropDown;
+export default AboutDropDown;
