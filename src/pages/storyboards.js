@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Helmet from 'react-helmet';
+import Helmet from 'react-helmet'
 
 //import Img from "gatsby-image";
 import StoryboardImg from './../images/sb-hero.jpg'
@@ -29,97 +29,93 @@ import vreadfull02 from './../images/storyboards/viread-illustrations-2.jpg'
 import vreadfull03 from './../images/storyboards/viread-illustrations-3.jpg'
 import vreadfull04 from './../images/storyboards/viread-illustrations-4.jpg'
 
-
 const PEPSI_IMAGES = [
-    { id: '1', src: pepsifull01, thumbnail: pepsithumb01 },
-    { id: '2', src: pepsifull02, thumbnail: pepsithumb02 },
-    { id: '3', src: pepsifull03, thumbnail: pepsithumb03 },
-    { id: '4', src: pepsifull04, thumbnail: pepsithumb04 }
-];
+  { id: '1', src: pepsifull01, thumbnail: pepsithumb01 },
+  { id: '2', src: pepsifull02, thumbnail: pepsithumb02 },
+  { id: '3', src: pepsifull03, thumbnail: pepsithumb03 },
+  { id: '4', src: pepsifull04, thumbnail: pepsithumb04 },
+]
 
 const VREAD_IMAGES = [
-    { id: '1', src: vreadfull01, thumbnail: vreadthumb01 },
-    { id: '2', src: vreadfull02, thumbnail: vreadthumb02 },
-    { id: '3', src: vreadfull03, thumbnail: vreadthumb03 },
-    { id: '4', src: vreadfull04, thumbnail: vreadthumb04 }
-];
+  { id: '1', src: vreadfull01, thumbnail: vreadthumb01 },
+  { id: '2', src: vreadfull02, thumbnail: vreadthumb02 },
+  { id: '3', src: vreadfull03, thumbnail: vreadthumb03 },
+  { id: '4', src: vreadfull04, thumbnail: vreadthumb04 },
+]
 
+export default class StoryboardPage extends React.Component {
+  constructor() {
+    super()
 
-export default class StoryboardPage extends React.Component 
-{
-  constructor()
-  {
-      super();
+    this.state = {
+      lightboxIsOpen: false,
+      currentImage: 0,
+    }
 
-      this.state = {
-          lightboxIsOpen: false,
-          currentImage: 0,
-      };
-
-      this.closeLightbox = this.closeLightbox.bind(this);
-      this.gotoNext = this.gotoNext.bind(this);
-      this.gotoPrevious = this.gotoPrevious.bind(this);
-      this.openLightbox = this.openLightbox.bind(this);
-      this.handleClickImage = this.handleClickImage.bind(this);
+    this.closeLightbox = this.closeLightbox.bind(this)
+    this.gotoNext = this.gotoNext.bind(this)
+    this.gotoPrevious = this.gotoPrevious.bind(this)
+    this.openLightbox = this.openLightbox.bind(this)
+    this.handleClickImage = this.handleClickImage.bind(this)
   }
 
-  openLightbox (index, event) {
-      event.preventDefault();
-      this.setState({
-          currentImage: index,
-          lightboxIsOpen: true,
-      });
+  openLightbox(index, event) {
+    event.preventDefault()
+    this.setState({
+      currentImage: index,
+      lightboxIsOpen: true,
+    })
   }
-  closeLightbox () {
-      this.setState({
-          currentImage: 0,
-          lightboxIsOpen: false,
-      });
+  closeLightbox() {
+    this.setState({
+      currentImage: 0,
+      lightboxIsOpen: false,
+    })
   }
-  gotoPrevious () {
-      this.setState({
-          currentImage: this.state.currentImage - 1,
-      });
+  gotoPrevious() {
+    this.setState({
+      currentImage: this.state.currentImage - 1,
+    })
   }
-  gotoNext () {
-      this.setState({
-          currentImage: this.state.currentImage + 1,
-      });
+  gotoNext() {
+    this.setState({
+      currentImage: this.state.currentImage + 1,
+    })
   }
-  handleClickImage () {
-      if (this.state.currentImage === this.props.images.length - 1) return;
+  handleClickImage() {
+    if (this.state.currentImage === this.props.images.length - 1) return
 
-      this.gotoNext();
+    this.gotoNext()
   }
 
-
-  render() 
-  {
-    const { title } = this.props.data.site.siteMetadata;
+  render() {
+    const { title } = this.props.data.site.siteMetadata
     return (
       <Layout>
-
         <Helmet title={`Storyboards | ` + title} />
 
         <div className="pageContainer storyboardPage">
-          <div className="blackBorder"/>
+          <div className="blackBorder" />
           <div className="pageContainer left">
-           <img src={StoryboardImg} alt="Storyboard" />
+            <img src={StoryboardImg} alt="Storyboard" />
           </div>
 
           <div className="pageContainer right">
-            <Gallery images={PEPSI_IMAGES.map(({ id, src, thumbnail }) => ({
-                              src,
-                              thumbnail
-              }))} />
+            <Gallery
+              images={PEPSI_IMAGES.map(({ id, src, thumbnail }) => ({
+                src,
+                thumbnail,
+              }))}
+            />
 
-            <Gallery images={VREAD_IMAGES.map(({ id, src, thumbnail }) => ({
-                              src,
-                              thumbnail
-              }))} />
-
+            <Gallery
+              images={VREAD_IMAGES.map(({ id, src, thumbnail }) => ({
+                src,
+                thumbnail,
+              }))}
+            />
           </div>
-          <div className="blackBorder"/>
+          <div className="blackBorder" />
         </div>
       </Layout>
     )
@@ -127,14 +123,11 @@ export default class StoryboardPage extends React.Component
 }
 
 export const storyboardQuery = graphql`
-  query storyboardPageQuery 
-  {
+  query storyboardPageQuery {
     site {
-      siteMetadata
-      {
+      siteMetadata {
         title
       }
     }
   }
-
 `

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Helmet from 'react-helmet';
+import Helmet from 'react-helmet'
 
 //import Img from "gatsby-image";
 import GraphicImg from './../images/graphic-hero.jpg'
@@ -48,122 +48,121 @@ import logofull03 from './../images/graphic/logo3.jpg'
 import logofull04 from './../images/graphic/logo4.jpg'
 import logofull05 from './../images/graphic/logo5.jpg'
 
-
 import ocfull01 from './../images/graphic/drinkTicket.jpg'
 import ocfull02 from './../images/graphic/e-blast1.jpg'
 import ocfull03 from './../images/graphic/e-blast2.jpg'
 import ocfull04 from './../images/graphic/invitation.jpg'
 import ocfull05 from './../images/graphic/mailer.jpg'
 
-
 const rcSTORY_IMAGES = [
-    { id: '1', src: rcfull01, thumbnail: rcthumb01 },
-    { id: '2', src: rcfull02, thumbnail: rcthumb02 },
-    { id: '3', src: rcfull03, thumbnail: rcthumb03 },
-    { id: '4', src: rcfull04, thumbnail: rcthumb04 },
-    { id: '5', src: rcfull05, thumbnail: rcthumb05 },
-    { id: '6', src: rcfull06, thumbnail: rcthumb06 },
-    { id: '7', src: rcfull07, thumbnail: rcthumb07 },
-    { id: '8', src: rcfull08, thumbnail: rcthumb08 },
-    { id: '9', src: rcfull09, thumbnail: rcthumb09 }
-];
+  { id: '1', src: rcfull01, thumbnail: rcthumb01 },
+  { id: '2', src: rcfull02, thumbnail: rcthumb02 },
+  { id: '3', src: rcfull03, thumbnail: rcthumb03 },
+  { id: '4', src: rcfull04, thumbnail: rcthumb04 },
+  { id: '5', src: rcfull05, thumbnail: rcthumb05 },
+  { id: '6', src: rcfull06, thumbnail: rcthumb06 },
+  { id: '7', src: rcfull07, thumbnail: rcthumb07 },
+  { id: '8', src: rcfull08, thumbnail: rcthumb08 },
+  { id: '9', src: rcfull09, thumbnail: rcthumb09 },
+]
 
 const LOGO_IMAGES = [
-    { id: '1', src: logofull01, thumbnail: logothumb01 },
-    { id: '2', src: logofull02, thumbnail: logothumb02 },
-    { id: '3', src: logofull03, thumbnail: logothumb03 },
-    { id: '4', src: logofull04, thumbnail: logothumb04 },
-    { id: '5', src: logofull05, thumbnail: logothumb05 }
-];
+  { id: '1', src: logofull01, thumbnail: logothumb01 },
+  { id: '2', src: logofull02, thumbnail: logothumb02 },
+  { id: '3', src: logofull03, thumbnail: logothumb03 },
+  { id: '4', src: logofull04, thumbnail: logothumb04 },
+  { id: '5', src: logofull05, thumbnail: logothumb05 },
+]
 
 const OC_IMAGES = [
-    { id: '1', src: ocfull01, thumbnail: octhumb01 },
-    { id: '2', src: ocfull02, thumbnail: octhumb02 },
-    { id: '3', src: ocfull03, thumbnail: octhumb03 },
-    { id: '4', src: ocfull04, thumbnail: octhumb04 },
-    { id: '5', src: ocfull05, thumbnail: octhumb05 }
-];
+  { id: '1', src: ocfull01, thumbnail: octhumb01 },
+  { id: '2', src: ocfull02, thumbnail: octhumb02 },
+  { id: '3', src: ocfull03, thumbnail: octhumb03 },
+  { id: '4', src: ocfull04, thumbnail: octhumb04 },
+  { id: '5', src: ocfull05, thumbnail: octhumb05 },
+]
 
+export default class GraphicPage extends React.Component {
+  constructor() {
+    super()
 
-export default class GraphicPage extends React.Component 
-{
-  constructor()
-  {
-      super();
+    this.state = {
+      lightboxIsOpen: false,
+      currentImage: 0,
+    }
 
-      this.state = {
-          lightboxIsOpen: false,
-          currentImage: 0,
-      };
-
-      this.closeLightbox = this.closeLightbox.bind(this);
-      this.gotoNext = this.gotoNext.bind(this);
-      this.gotoPrevious = this.gotoPrevious.bind(this);
-      this.openLightbox = this.openLightbox.bind(this);
-      this.handleClickImage = this.handleClickImage.bind(this);
+    this.closeLightbox = this.closeLightbox.bind(this)
+    this.gotoNext = this.gotoNext.bind(this)
+    this.gotoPrevious = this.gotoPrevious.bind(this)
+    this.openLightbox = this.openLightbox.bind(this)
+    this.handleClickImage = this.handleClickImage.bind(this)
   }
 
-  openLightbox (index, event) {
-      event.preventDefault();
-      this.setState({
-          currentImage: index,
-          lightboxIsOpen: true,
-      });
+  openLightbox(index, event) {
+    event.preventDefault()
+    this.setState({
+      currentImage: index,
+      lightboxIsOpen: true,
+    })
   }
-  closeLightbox () {
-      this.setState({
-          currentImage: 0,
-          lightboxIsOpen: false,
-      });
+  closeLightbox() {
+    this.setState({
+      currentImage: 0,
+      lightboxIsOpen: false,
+    })
   }
-  gotoPrevious () {
-      this.setState({
-          currentImage: this.state.currentImage - 1,
-      });
+  gotoPrevious() {
+    this.setState({
+      currentImage: this.state.currentImage - 1,
+    })
   }
-  gotoNext () {
-      this.setState({
-          currentImage: this.state.currentImage + 1,
-      });
+  gotoNext() {
+    this.setState({
+      currentImage: this.state.currentImage + 1,
+    })
   }
-  handleClickImage () {
-      if (this.state.currentImage === this.props.images.length - 1) return;
+  handleClickImage() {
+    if (this.state.currentImage === this.props.images.length - 1) return
 
-      this.gotoNext();
+    this.gotoNext()
   }
 
-
-  render() 
-  {
-    const { title } = this.props.data.site.siteMetadata;
+  render() {
+    const { title } = this.props.data.site.siteMetadata
 
     return (
       <Layout>
         <Helmet title={`Graphic | ` + title} />
 
         <div className="pageContainer graphicPage">
-          <div className="blackBorder"/>
+          <div className="blackBorder" />
           <div className="pageContainer left">
-           <img src={GraphicImg} alt="Graphic Design" />
+            <img src={GraphicImg} alt="Graphic Design" />
           </div>
 
           <div className="pageContainer right">
-            <Gallery images={rcSTORY_IMAGES.map(({ id, src, thumbnail }) => ({
-                              src,
-                              thumbnail
-              }))} />
+            <Gallery
+              images={rcSTORY_IMAGES.map(({ id, src, thumbnail }) => ({
+                src,
+                thumbnail,
+              }))}
+            />
 
-            <Gallery images={LOGO_IMAGES.map(({ id, src, thumbnail }) => ({
-                            src,
-                            thumbnail
-            }))} />
+            <Gallery
+              images={LOGO_IMAGES.map(({ id, src, thumbnail }) => ({
+                src,
+                thumbnail,
+              }))}
+            />
 
-            <Gallery images={OC_IMAGES.map(({ id, src, thumbnail }) => ({
-                            src,
-                            thumbnail
-            }))} />
+            <Gallery
+              images={OC_IMAGES.map(({ id, src, thumbnail }) => ({
+                src,
+                thumbnail,
+              }))}
+            />
           </div>
-          <div className="blackBorder"/>
+          <div className="blackBorder" />
         </div>
       </Layout>
     )
@@ -171,14 +170,11 @@ export default class GraphicPage extends React.Component
 }
 
 export const graphicQuery = graphql`
-  query graphicPageQuery 
-  {
+  query graphicPageQuery {
     site {
-      siteMetadata
-      {
+      siteMetadata {
         title
       }
     }
   }
-
 `

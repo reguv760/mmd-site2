@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Helmet from 'react-helmet';
+import Helmet from 'react-helmet'
 
 //import Img from "gatsby-image";
 import TattooImg from './../images/tattoos-hero.jpg'
@@ -71,101 +71,98 @@ import full39 from './../images/tattoos/tat_3.jpg'
 import full40 from './../images/tattoos/tat_5.jpg'
 
 const TATTOO_IMAGES = [
-    { id: '1', src: full01, thumbnail: thumb01 },
-    { id: '5', src: full05, thumbnail: thumb05 },
-    { id: '6', src: full06, thumbnail: thumb06 },
-    { id: '8', src: full08, thumbnail: thumb08 },
-    { id: '10', src: full10, thumbnail: thumb10 },
-    { id: '11', src: full11, thumbnail: thumb11 },
-    { id: '15', src: full15, thumbnail: thumb15 },
-    { id: '17', src: full17, thumbnail: thumb17 },
-    { id: '20', src: full20, thumbnail: thumb20 },
-    { id: '23', src: full23, thumbnail: thumb23 },
-    { id: '24', src: full24, thumbnail: thumb24 },
-    { id: '27', src: full27, thumbnail: thumb27 },
-    { id: '28', src: full28, thumbnail: thumb28 },
-    { id: '29', src: full29, thumbnail: thumb29 },
-    { id: '30', src: full30, thumbnail: thumb30 },
-    { id: '32', src: full32, thumbnail: thumb32 },
-    { id: '33', src: full33, thumbnail: thumb33 },
-    { id: '34', src: full34, thumbnail: thumb34 },
-    { id: '36', src: full36, thumbnail: thumb36 },
-    { id: '38', src: full38, thumbnail: thumb38 },
-    { id: '39', src: full39, thumbnail: thumb39 },
-    { id: '40', src: full40, thumbnail: thumb40 }
-];
+  { id: '1', src: full01, thumbnail: thumb01 },
+  { id: '5', src: full05, thumbnail: thumb05 },
+  { id: '6', src: full06, thumbnail: thumb06 },
+  { id: '8', src: full08, thumbnail: thumb08 },
+  { id: '10', src: full10, thumbnail: thumb10 },
+  { id: '11', src: full11, thumbnail: thumb11 },
+  { id: '15', src: full15, thumbnail: thumb15 },
+  { id: '17', src: full17, thumbnail: thumb17 },
+  { id: '20', src: full20, thumbnail: thumb20 },
+  { id: '23', src: full23, thumbnail: thumb23 },
+  { id: '24', src: full24, thumbnail: thumb24 },
+  { id: '27', src: full27, thumbnail: thumb27 },
+  { id: '28', src: full28, thumbnail: thumb28 },
+  { id: '29', src: full29, thumbnail: thumb29 },
+  { id: '30', src: full30, thumbnail: thumb30 },
+  { id: '32', src: full32, thumbnail: thumb32 },
+  { id: '33', src: full33, thumbnail: thumb33 },
+  { id: '34', src: full34, thumbnail: thumb34 },
+  { id: '36', src: full36, thumbnail: thumb36 },
+  { id: '38', src: full38, thumbnail: thumb38 },
+  { id: '39', src: full39, thumbnail: thumb39 },
+  { id: '40', src: full40, thumbnail: thumb40 },
+]
 
+export default class TattooPage extends React.Component {
+  constructor() {
+    super()
 
-export default class TattooPage extends React.Component 
-{
-  constructor()
-  {
-      super();
+    this.state = {
+      lightboxIsOpen: false,
+      currentImage: 0,
+    }
 
-      this.state = {
-          lightboxIsOpen: false,
-          currentImage: 0,
-      };
-
-      this.closeLightbox = this.closeLightbox.bind(this);
-      this.gotoNext = this.gotoNext.bind(this);
-      this.gotoPrevious = this.gotoPrevious.bind(this);
-      this.openLightbox = this.openLightbox.bind(this);
-      this.handleClickImage = this.handleClickImage.bind(this);
+    this.closeLightbox = this.closeLightbox.bind(this)
+    this.gotoNext = this.gotoNext.bind(this)
+    this.gotoPrevious = this.gotoPrevious.bind(this)
+    this.openLightbox = this.openLightbox.bind(this)
+    this.handleClickImage = this.handleClickImage.bind(this)
   }
 
-  openLightbox (index, event) {
-      event.preventDefault();
-      this.setState({
-          currentImage: index,
-          lightboxIsOpen: true,
-      });
+  openLightbox(index, event) {
+    event.preventDefault()
+    this.setState({
+      currentImage: index,
+      lightboxIsOpen: true,
+    })
   }
-  closeLightbox () {
-      this.setState({
-          currentImage: 0,
-          lightboxIsOpen: false,
-      });
+  closeLightbox() {
+    this.setState({
+      currentImage: 0,
+      lightboxIsOpen: false,
+    })
   }
-  gotoPrevious () {
-      this.setState({
-          currentImage: this.state.currentImage - 1,
-      });
+  gotoPrevious() {
+    this.setState({
+      currentImage: this.state.currentImage - 1,
+    })
   }
-  gotoNext () {
-      this.setState({
-          currentImage: this.state.currentImage + 1,
-      });
+  gotoNext() {
+    this.setState({
+      currentImage: this.state.currentImage + 1,
+    })
   }
-  handleClickImage () {
-      if (this.state.currentImage === this.props.images.length - 1) return;
+  handleClickImage() {
+    if (this.state.currentImage === this.props.images.length - 1) return
 
-      this.gotoNext();
+    this.gotoNext()
   }
 
-
-  render() 
-  {
-    const { title } = this.props.data.site.siteMetadata;
+  render() {
+    const { title } = this.props.data.site.siteMetadata
 
     return (
       <Layout>
-        <Helmet title={`Tattoos | ` + title} /> 
+        <Helmet title={`Tattoos | ` + title} />
 
         <div className="pageContainer tattooPage">
-          <div className="blackBorder"/>
+          <div className="blackBorder" />
           <div className="pageContainer left">
             <img src={TattooImg} alt="Tattoo" />
-          {/*<Img resolutions={data.file.imageSharp.sizes} />*/}
+            {/*<Img resolutions={data.file.imageSharp.sizes} />*/}
           </div>
 
           <div className="pageContainer right">
-            <Gallery images={TATTOO_IMAGES.map(({ id, src, thumbnail, caption }) => ({
-                              src,
-                              thumbnail
-              }))} />
+            <Gallery
+              images={TATTOO_IMAGES.map(({ id, src, thumbnail, caption }) => ({
+                src,
+                thumbnail,
+              }))}
+            />
           </div>
-          <div className="blackBorder"/>
+          <div className="blackBorder" />
         </div>
       </Layout>
     )
@@ -173,14 +170,11 @@ export default class TattooPage extends React.Component
 }
 
 export const tattooQuery = graphql`
-  query tattooPageQuery 
-  {
+  query tattooPageQuery {
     site {
-      siteMetadata
-      {
+      siteMetadata {
         title
       }
     }
   }
-
 `
