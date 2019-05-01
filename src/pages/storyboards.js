@@ -1,5 +1,6 @@
 import React from 'react'
-//import Helmet from 'react-helmet';
+import { graphql } from 'gatsby'
+import Helmet from 'react-helmet';
 
 //import Img from "gatsby-image";
 import StoryboardImg from './../images/sb-hero.jpg'
@@ -94,16 +95,11 @@ export default class StoryboardPage extends React.Component
 
   render() 
   {
+    const { title } = this.props.data.site.siteMetadata;
     return (
       <Layout>
-        { /* <Helmet title={`Tattoos | ` + data.site.siteMetadata.title}
-                meta={[
-                  { name: 'description', content: 'Wet Paint(n.) A state of freshness and vigor that categorizes the art of Melany Meza-Dierks.' },
-                  { name: 'keywords', content: 'Fine Artist, West Los Angeles California, Little Rock Arkansas, Tattoos, Advertising, Graphic Design, Art Director, Teacher' },
-                  { name: 'author', content: 'Reginald Galang @TDG' },
-                ]}
-              >
-        </Helmet> */ }
+
+        <Helmet title={`Storyboards | ` + title} />
 
         <div className="pageContainer storyboardPage">
           <div className="blackBorder"/>
@@ -129,3 +125,16 @@ export default class StoryboardPage extends React.Component
     )
   }
 }
+
+export const storyboardQuery = graphql`
+  query storyboardPageQuery 
+  {
+    site {
+      siteMetadata
+      {
+        title
+      }
+    }
+  }
+
+`

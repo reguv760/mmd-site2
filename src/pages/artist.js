@@ -1,5 +1,6 @@
 import React from 'react'
-//import Helmet from 'react-helmet';
+import { graphql } from 'gatsby'
+import Helmet from 'react-helmet';
 
 //import Img from "gatsby-image";
 import ArtistImg from './../images/artist-hero.jpg';
@@ -195,8 +196,12 @@ export default class ArtistPage extends React.Component
 
   render() 
   {
+    const { title } = this.props.data.site.siteMetadata;
+
     return (
       <Layout>
+
+        <Helmet title={`Artist | ` + title} />
 
         <div className="pageContainer artPage">
           <div className="blackBorder"/>
@@ -217,3 +222,16 @@ export default class ArtistPage extends React.Component
     )
   }
 }
+
+export const artistQuery = graphql`
+  query artistPageQuery 
+  {
+    site {
+      siteMetadata
+      {
+        title
+      }
+    }
+  }
+
+`

@@ -19,7 +19,7 @@ class Navigation extends React.Component
           <li>
             <Link to="/" activeStyle={{
                         color: '#d4740d'
-                      }} exact>home</Link>
+                      }} exact="true">home</Link>
           </li>
 
           <li>

@@ -4,6 +4,8 @@ style.css entry point for container + pages; */
 //font:::
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+//Social media icons powered by Font Awesome:::
+@import './../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 //gatsby reset:::
 @import './base/_layoutReset';
@@ -16,15 +18,15 @@ style.css entry point for container + pages; */
 @import './pages';
 @import './base/mixins';
 
-/* Header */
+// Header
 @import './Header';
 
-/* Navigation + MobileMenu */
+// Navigation + MobileMenu
 @import './Navigation';
 @import './mobileMenu';
 
-/* used by lightbox */
+// used by lightbox
 @import './gallery';
 @import './Footer';
 
-@import './base/_mediaquery'
+@import './base/_mediaquery';
