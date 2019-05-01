@@ -1,0 +1,53 @@
+.header
+{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  margin:0;
+  padding:0;
+  width:100%;
+
+  & .left
+  {
+    display:flex;
+    justify-content:center;
+    width:33%;
+    min-height:2rem;
+
+    & a
+    {
+      text-decoration:none;
+    }
+
+    & a:hover
+    {
+      opacity:0.8;
+      text-decoration:none;
+    }
+
+    & a img
+    {
+      padding:1rem;
+      object-fit: contain;
+      margin:0;
+    }
+  }
+
+  & .right
+  {
+    display:block;
+    margin:0;
+    padding:0;
+    min-height:2rem;
+    width:67%;
+    visibility:visible;
+    z-index:100;
+  }
+
+  & .mobileMenuContainer
+  {
+    display:none; /* default state for desktop */
+    height:6rem;
+    position:relative;
+  }
+}

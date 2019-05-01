@@ -1,0 +1,32 @@
+/* main module used by layout :::
+style.css entry point for container + pages; */
+
+//font:::
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+//Social media icons powered by Font Awesome:::
+@import './../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+//gatsby reset:::
+@import './base/_layoutReset';
+
+//variables:::
+@import './base/_variables';
+
+//baseCSS:::
+@import './base/_base';
+@import './pages';
+@import './base/mixins';
+
+// Header
+@import './Header';
+
+// Navigation + MobileMenu
+@import './Navigation';
+@import './mobileMenu';
+
+// used by lightbox
+@import './gallery';
+@import './Footer';
+
+@import './base/_mediaquery';
