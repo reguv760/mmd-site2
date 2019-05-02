@@ -10,8 +10,6 @@ import Footer from './Footer'
 //import SEO from './SEO';
 import './../style/layout.scss'
 
-
-
 /* this is the parent index file that 
 renders main "app" page */
 
@@ -31,22 +29,27 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-              { name: 'description', content: 'Wet Paint(n.) A state of freshness and vigor that categorizes the art of Melany Meza-Dierks.' },
-              { name: 'keywords', content: 'Fine Artist, West Los Angeles California, Little Rock Arkansas, Tattoos, Advertising, Graphic Design, Art Director, Teacher' },
-              { name: 'author', content: 'Reginald Galang @TDG' },
-            ]}
-          >
+            {
+              name: 'description',
+              content:
+                'Wet Paint(n.) A state of freshness and vigor that categorizes the art of Melany Meza-Dierks.',
+            },
+            {
+              name: 'keywords',
+              content:
+                'Fine Artist, West Los Angeles California, Little Rock Arkansas, Tattoos, Advertising, Graphic Design, Art Director, Teacher',
+            },
+            { name: 'author', content: 'Reginald Galang' },
+          ]}
+        >
           <html lang="en" />
         </Helmet>
 
         <Header siteTitle={data.site.siteMetadata.title} />
-        
-        <div className="container">
-          {children}
-        </div>
 
+        <div className="container">{children}</div>
 
-      <Footer />
+        <Footer />
       </>
     )}
   />
