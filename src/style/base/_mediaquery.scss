@@ -1,123 +1,110 @@
 /* trigger when it's below max-width:: */
-@media only screen and (max-width: $maxDesktopScreenWidth)
-{
-  .header .left
-  {
-    width:100%;
+@media only screen and (max-width: $maxDesktopScreenWidth) {
+  .header .left {
+    width: 100%;
   }
 
-  .header .right
-  {
-    width:100%;
+  .header .right {
+    width: 100%;
   }
 
-  .header .mobileMenuContainer
-  {
-    display:none;
-    visibility:hidden;
+  .header .mobileMenuContainer {
+    display: none;
+    visibility: hidden;
   }
 
-  .pageContainer .left
-  {
-    width:100%;
+  .pageContainer .left {
+    width: 100%;
 
-    & img
-    {
-      margin:0;
+    & img {
+      margin: 0;
     }
   }
 
-  .pageContainer .right
-  {
-    width:100%;
-    justify-content:center;
-    align-content:center;
+  .pageContainer .right {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
   }
 
-  .pageContainer.homePage
-  {
-    & .right
-    {}
+  .pageContainer.homePage {
+    & .right {
+    }
   }
 
-  .pageContainer.bioPage
-  {
-    & .right
-    {
-      & .bioText
-      {
-        height:100%;
+  .pageContainer.bioPage {
+    & .right {
+      & .bioText {
+        height: 100%;
       }
     }
   }
 
-  ul.menu
-  {
-    margin-right:0;
-    bottom:0;
-    justify-content:center;
+  ul.menu {
+    margin-right: 0;
+    bottom: 0;
+    justify-content: center;
   }
 }
 
-@media only screen and (max-width: $maxTabletScreenWidth)
-{
-  body
-  {
-    width:100%;
+@media only screen and (max-width: $maxTabletScreenWidth) {
+  body {
+    width: 100%;
   }
 
-  .header
-  {
-    & .right
-    {
-      height:0;
-      min-height:0; /* to remove gap when ul.menu is hidden */
+  .header {
+    & .right {
+      height: 0;
+      min-height: 0; /* to remove gap when ul.menu is hidden */
     }
 
-    & .mobileMenuContainer
-    {
+    & .mobileMenuContainer {
       /* desktop menu disappears */
-      display:block;
-      visibility:visible;
+      display: block;
+      visibility: visible;
     }
   }
 
-  ul.menu
-  {
-    display:none;
-    visibility:hidden;
+  ul.menu {
+    display: none;
+    visibility: hidden;
   }
 
-  .pageContainer .left
-  {
-    & img
-    {
-      margin:0 1rem;
+  .pageContainer .left {
+    & img {
+      margin: 0 1rem;
     }
   }
 }
 
-@media only screen and (max-width: $maxMobileScreenWidth)
-{
-  body
-  {
-    width:100%;
+@media only screen and (max-width: $maxMobileScreenWidth) {
+  body {
+    width: 100%;
   }
 
-  .header .right
-  {
-    height:0;
-    min-height:0; /* to remove gap when ul.menu is hidden */
+  .header .right {
+    height: 0;
+    min-height: 0; /* to remove gap when ul.menu is hidden */
   }
 
-  ul.menu
-  {
-    display:none;
-    visibility:hidden;
+  ul.menu {
+    display: none;
+    visibility: hidden;
   }
 
-  .pageContainer .left
-  {
-    min-height:48rem;
+  .pageContainer .left {
+    min-height: 48rem;
+  }
+
+  footer {
+    & ul li {
+      & div {
+        & a {
+          & i {
+            font-size: 2.5em;
+          }
+        }
+      }
+    }
   }
 }

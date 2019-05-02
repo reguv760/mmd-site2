@@ -1,187 +1,163 @@
 /* main container used by main index.js */
-.container
-{
-  margin:0 auto;
-  padding:0 0 4rem 0;
+.container {
+  margin: 0 auto;
+  padding: 0 0 4rem 0;
 }
 
 /* all page structure all belong to us */
-.pageContainer
-{
-  display:flex;
-  flex-flow:row wrap;
-  width:90%;
-  margin:0 auto;
+.pageContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: 0 auto;
 
-  & .blackBorder
-  {
-    border:0.1rem solid $charcoal;
-    width:98%;
-    margin:0 auto;
+  & .blackBorder {
+    border: 0.1rem solid $charcoal;
+    width: 98%;
+    margin: 0 auto;
   }
 
-  & .left
-  {
-    width:50%;
-    min-height:60rem;
-    margin:2rem 0;
+  & .left {
+    width: 50%;
+    min-height: 60rem;
+    margin: 2rem 0;
 
-    & img
-    {
+    & img {
       object-fit: cover;
-      margin:0;
+      margin: 0;
     }
   }
 
-  & .right
-  {
-    width:50%;
-    min-height:12rem;
-    margin:2rem 0;
+  & .right {
+    width: 50%;
+    min-height: 12rem;
+    margin: 2rem 0;
   }
 
-  &.homePage
-  {
-    & .left {}
-    & .right
-    {
+  &.homePage {
+    & .left {
+    }
+    & .right {
       /* index page */
-      display:flex;
-      justify-content:center;
-      align-content:center;
+      display: flex;
+      justify-content: center;
+      align-content: center;
       position: relative;
 
-      & .homeText
-      {
-        width:80%;
-        font-size:1.6rem;
-        line-height:1.4em;
+      & .homeText {
+        width: 80%;
+        font-size: 1.6rem;
+        line-height: 1.4em;
       }
 
-      & .home_glyph
-      {
-        position:absolute;
+      & .home_glyph {
+        position: absolute;
         margin: auto;
-        width:55%;
-        height:90%;
+        width: 55%;
+        height: 90%;
         opacity: 0.15;
-        background:url('./../images/melany-md_glyph.svg');
-        background-repeat:no-repeat;
+        background: url('./../images/melany-md_glyph.svg');
+        background-repeat: no-repeat;
       }
     }
   }
 
   /* artist page */
-  &.artPage
-  {
-    & .left {}
+  &.artPage {
+    & .left {
+    }
 
-    & .right {}
+    & .right {
+    }
   }
 
   /* advertising page */
-  &.advertPage
-  {
-    & .right
-    {
-      display:flex;
-      flex-flow:column nowrap;
+  &.advertPage {
+    & .right {
+      display: flex;
+      flex-flow: column nowrap;
     }
   }
 
   /* bio page */
-  &.bioPage
-  {
-    & .right
-    {
+  &.bioPage {
+    & .right {
       /* index page */
-      display:flex;
-      justify-content:center;
-      overflow-y:auto; /* auto enable scrollbar = better for responsive */
-      position:relative;
+      display: flex;
+      justify-content: center;
+      overflow-y: auto; /* auto enable scrollbar = better for responsive */
+      position: relative;
 
-      & .bioText
-      {
-        font-size:1.6rem;
-        line-height:1.4em;
-        height:45rem;
+      & .bioText {
+        font-size: 1.6rem;
+        line-height: 1.4em;
+        height: 45rem;
 
-        & p
-        {
-          margin:1rem;
+        & p {
+          margin: 1rem;
         }
 
-        & p.indent
-        {
-          text-indent:2rem;
+        & p.indent {
+          text-indent: 2rem;
         }
       }
     }
   }
 
   /* Graphic page */
-  &.graphicPage
-  {
-    & .right
-    {
-      display:flex;
-      flex-flow:column nowrap;
+  &.graphicPage {
+    & .right {
+      display: flex;
+      flex-flow: column nowrap;
     }
   }
 
   /* Storyboard page */
-  &.storyboardPage
-  {
-    & .right
-    {
-      display:flex;
-      flex-flow:column nowrap;
+  &.storyboardPage {
+    & .right {
+      display: flex;
+      flex-flow: column nowrap;
     }
   }
 
   /* Tattoo page */
-  &.tattooPage { }
+  &.tattooPage {
+  }
 
   /* Teacher page */
-  &.teacherPage
-  {
-    & .left {}
+  &.teacherPage {
+    & .left {
+    }
 
-    & .right
-    {
+    & .right {
       /* index page */
-      display:flex;
-      justify-content:center;
-      align-content:center;
+      display: flex;
+      justify-content: center;
+      align-content: center;
 
-      & .homeText
-      {
-        width:85%;
-        font-size:1.6rem;
-        line-height:1.4em;
+      & .homeText {
+        width: 85%;
+        font-size: 1.6rem;
+        line-height: 1.4em;
 
-        & p
-        {
-          margin-bottom:4rem;
+        & p {
+          margin-bottom: 4rem;
         }
 
-        & b
-        {
-          font-weight:700;
+        & b {
+          font-weight: 700;
         }
 
-        & a
-        { }
-
-        & a.pdf
-        {
-          color:$black;
-          text-decoration:underline;
+        & a {
         }
 
-        & a.pdf:hover
-        {
-          color:$orange;
+        & a.pdf {
+          color: $black;
+          text-decoration: underline;
+        }
+
+        & a.pdf:hover {
+          color: $orange;
         }
       }
     }
