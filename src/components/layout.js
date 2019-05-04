@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import posed, { PoseGroup } from 'react-pose'
+import PageTransition from 'gatsby-plugin-page-transitions'
 
 //component import
 import Header from './Header'
@@ -11,25 +11,10 @@ import Footer from './Footer'
 //import SEO from './SEO';
 import './../style/layout.scss'
 
-/* this is used to animate between pages */
-
-const transitionDuration = 300
-const transitionDelay = 350
-
-const Transition = posed.div({
-  enter: {
-    opacity: 1,
-    transition: { duration: transitionDuration },
-    delay: transitionDelay,
-    beforeChildren: true,
-  },
-  exit: { opacity: 0, transition: { duration: transitionDuration } },
-})
-
 /* this is the parent index file that 
 renders main "app" page */
 
-const Layout = ({ children, ...props }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -64,11 +49,7 @@ const Layout = ({ children, ...props }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
 
         <div className="container">
-          {/*  <PoseGroup>
-                     <Transition key={props.location.pathname}>{children}</Transition>
-                   </PoseGroup> */}
-          {console.log(data)}
-          {children}
+          <PageTransition>{children}</PageTransition>
         </div>
 
         <Footer />
