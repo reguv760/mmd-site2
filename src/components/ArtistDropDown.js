@@ -1,41 +1,58 @@
-import React from 'react';
+import React from 'react'
 ///import PropTypes from 'prop-types';
-import Dropdown, { DropdownTrigger, DropdownContent } from 'react-simple-dropdown';
+import Dropdown, {
+  DropdownTrigger,
+  DropdownContent,
+} from 'react-simple-dropdown'
 import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-
-class ArtistDropDown extends React.Component
-{
+class ArtistDropDown extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.handleLinkClick = this.handleLinkClick.bind(this);
+    this.handleLinkClick = this.handleLinkClick.bind(this)
   }
 
-  handleLinkClick = () =>
-  {
+  handleLinkClick = () => {
     //console.log(this.state.name);
-    this.refs.dropdown.show();
+    this.refs.dropdown.show()
     //this.refs.dropdown.isActive();
   }
-  render() 
-  {
+  render() {
     return (
       <Dropdown ref="dropdown">
         <DropdownTrigger>
-          <span className="dropdown-link" onClick={this.handleLinkClick}>{this.props.name}</span>
+          <span className="dropdown-link" onClick={this.handleLinkClick}>
+            {this.props.name}
+          </span>
         </DropdownTrigger>
         <DropdownContent>
           <ul className="subMenu">
-            <li><Link to="/artist"
-                  activeStyle={{
-                    color: '#d4740d'
-                  }}>artist</Link>
+            <li>
+              <AniLink
+                fade
+                to="/artist/"
+                activeStyle={{
+                  color: '#d4740d',
+                }}
+                duration={0.5}
+              >
+                artist
+              </AniLink>
             </li>
 
-            <li><Link to="/teacher" activeStyle={{
-                    color: '#d4740d'
-                  }}>teacher</Link>
+            <li>
+              <AniLink
+                fade
+                to="/teacher/"
+                activeStyle={{
+                  color: '#d4740d',
+                }}
+                duration={0.5}
+              >
+                teacher
+              </AniLink>
             </li>
           </ul>
         </DropdownContent>
@@ -44,4 +61,4 @@ class ArtistDropDown extends React.Component
   }
 }
 
-export default ArtistDropDown;
+export default ArtistDropDown
