@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import PageTransition from 'gatsby-plugin-page-transitions'
 
 //component import
 import Header from './Header'
@@ -47,7 +48,9 @@ const Layout = ({ children }) => (
 
         <Header siteTitle={data.site.siteMetadata.title} />
 
-        <div className="container">{children}</div>
+        <div className="container">
+          <PageTransition>{children}</PageTransition>
+        </div>
 
         <Footer />
       </>
