@@ -5,6 +5,7 @@ import Dropdown, {
   DropdownContent,
 } from 'react-simple-dropdown'
 import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 class DesignDropDown extends React.Component {
   constructor(props) {
@@ -14,9 +15,7 @@ class DesignDropDown extends React.Component {
   }
 
   handleLinkClick = () => {
-    //console.log(this.state.name);
     this.refs.dropdown.show()
-    //this.refs.dropdown.isActive();
   }
   render() {
     return (
@@ -30,36 +29,42 @@ class DesignDropDown extends React.Component {
         <DropdownContent>
           <ul className="subMenu">
             <li>
-              <Link
-                to="/advertising"
+              <AniLink
+                fade
+                to="/advertising/"
                 activeStyle={{
                   color: '#d4740d',
                 }}
+                duration={0.5}
               >
                 advertising
-              </Link>
+              </AniLink>
             </li>
 
             <li>
-              <Link
-                to="/graphic"
+              <AniLink
+                fade
+                to="/graphic/"
                 activeStyle={{
                   color: '#d4740d',
                 }}
+                duration={0.5}
               >
                 graphic
-              </Link>
+              </AniLink>
             </li>
 
             <li>
-              <Link
-                to="/storyboards"
+              <AniLink
+                fade
+                to="/storyboards/"
                 activeStyle={{
                   color: '#d4740d',
                 }}
+                duration={0.5}
               >
                 storyboards
-              </Link>
+              </AniLink>
             </li>
           </ul>
         </DropdownContent>

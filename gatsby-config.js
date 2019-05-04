@@ -20,7 +20,7 @@ module.exports = {
         icon: 'src/images/melany-md_glyph.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-page-transitions',
+    `gatsby-plugin-transition-link`,
     'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
