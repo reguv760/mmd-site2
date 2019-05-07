@@ -20,6 +20,9 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            description
+            keywords
+            siteAuthor
           }
         }
       }
@@ -31,19 +34,16 @@ const Layout = ({ children }) => (
           meta={[
             {
               name: 'description',
-              content:
-                'Wet Paint(n.) A state of freshness and vigor that categorizes the art of Melany Meza-Dierks.',
+              content: `${data.site.siteMetadata.description}`,
             },
             {
               name: 'keywords',
-              content:
-                'Fine Artist, West Los Angeles California, Little Rock Arkansas, Tattoos, Advertising, Graphic Design, Art Director, Teacher',
+              content: `${data.site.siteMetadata.keywords}`,
             },
-            { name: 'author', content: 'Reginald Galang' },
+            { name: 'author', content: `${data.site.siteMetadata.siteAuthor}` },
           ]}
-        >
-          <html lang="en" />
-        </Helmet>
+          htmlAttributes={{ lang: 'en' }}
+        />
 
         <Header siteTitle={data.site.siteMetadata.title} />
 
