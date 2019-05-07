@@ -41,6 +41,17 @@ class Navigation extends React.Component {
             </AniLink>
           </li>
 
+          {/* <li>
+            <AniLink
+              fade
+              to="/publicart/"
+              activeStyle={{ color: '#d4740d' }}
+              duration={0.5}
+            >
+              Public Art
+            </AniLink>
+          </li> */}
+
           <li>
             <DesignDropDown name="design" />
           </li>
