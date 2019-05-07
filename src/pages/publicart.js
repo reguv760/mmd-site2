@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
 //import Img from "gatsby-image";
-import GraphicImg from './../images/graphic-hero.jpg'
+import PublicArtImage from './../images/publicArt-hero.jpg'
 import Layout from './../components/layout.js'
 
 //Lightbox needs the following:::
@@ -74,12 +74,12 @@ export default class PublicArtPage extends React.Component {
 
     return (
       <Layout>
-        <Helmet title={`Graphic | ` + title} />
+        <Helmet title={`Public Art | ` + title} />
 
         <div className="pageContainer graphicPage">
           <div className="blackBorder" />
           <div className="pageContainer left">
-            <img src={GraphicImg} alt="Graphic Design" />
+            <img src={PublicArtImage} alt="Graphic Design" />
           </div>
 
           <div className="pageContainer right">
