@@ -10,14 +10,18 @@ import Layout from './../components/layout.js'
 import Gallery from './../components/Gallery'
 
 /* import thumbnails + images */
-import thumb01 from './../images/tattoos/thumbs/newtat-4.jpg'
+import thumb01 from './../images/tattoos/thumbs/2019-tattoo1-thumb.jpg'
+import thumb02 from './../images/tattoos/thumbs/2019-tattoo2-thumb.jpg'
+import thumb03 from './../images/tattoos/thumbs/2019-tattoo3-thumb.jpg'
+import thumb04 from './../images/tattoos/thumbs/2019-tattoo4-thumb.jpg'
+import thumb05 from './../images/tattoos/thumbs/2019-tattoo5-thumb.jpg'
 
-import thumb05 from './../images/tattoos/thumbs/nick-tat-thumb.jpg'
-import thumb06 from './../images/tattoos/thumbs/tat-script1.jpg'
-
-import thumb08 from './../images/tattoos/thumbs/newtat-2.jpg'
-
+import thumb06 from './../images/tattoos/thumbs/newtat-4.jpg'
+import thumb07 from './../images/tattoos/thumbs/nick-tat-thumb.jpg'
+import thumb08 from './../images/tattoos/thumbs/tat-script1.jpg'
+import thumb09 from './../images/tattoos/thumbs/newtat-2.jpg'
 import thumb10 from './../images/tattoos/thumbs/reg-thumb1.jpg'
+
 import thumb11 from './../images/tattoos/thumbs/reg-thumb2.jpg'
 
 import thumb15 from './../images/tattoos/thumbs/reg-thumb7.jpg'
@@ -43,12 +47,20 @@ import thumb38 from './../images/tattoos/thumbs/tat_2.jpg'
 import thumb39 from './../images/tattoos/thumbs/tat_3.jpg'
 import thumb40 from './../images/tattoos/thumbs/tat_5.jpg'
 
-import full01 from './../images/tattoos/newtat-4.jpg'
+//full images:::
 
-import full05 from './../images/tattoos/nick-tat.jpg'
-import full06 from './../images/tattoos/tat-script1.jpg'
-import full08 from './../images/tattoos/newtat-2.jpg'
+import full01 from './../images/tattoos/2019-tattoo-1.jpg'
+import full02 from './../images/tattoos/2019-tattoo-2.jpg'
+import full03 from './../images/tattoos/2019-tattoo-3.jpg'
+import full04 from './../images/tattoos/2019-tattoo-4.jpg'
+import full05 from './../images/tattoos/2019-tattoo-5.jpg'
+
+import full06 from './../images/tattoos/newtat-4.jpg'
+import full07 from './../images/tattoos/nick-tat.jpg'
+import full08 from './../images/tattoos/tat-script1.jpg'
+import full09 from './../images/tattoos/newtat-2.jpg'
 import full10 from './../images/tattoos/reg-large1.jpg'
+
 import full11 from './../images/tattoos/reg-large2.jpg'
 import full15 from './../images/tattoos/reg-large7.jpg'
 import full17 from './../images/tattoos/reg-large9.jpg'
@@ -72,9 +84,15 @@ import full40 from './../images/tattoos/tat_5.jpg'
 
 const TATTOO_IMAGES = [
   { id: '1', src: full01, thumbnail: thumb01 },
+  { id: '2', src: full02, thumbnail: thumb02 },
+  { id: '3', src: full03, thumbnail: thumb03 },
+  { id: '4', src: full04, thumbnail: thumb04 },
   { id: '5', src: full05, thumbnail: thumb05 },
+
   { id: '6', src: full06, thumbnail: thumb06 },
+  { id: '7', src: full07, thumbnail: thumb07 },
   { id: '8', src: full08, thumbnail: thumb08 },
+  { id: '9', src: full09, thumbnail: thumb09 },
   { id: '10', src: full10, thumbnail: thumb10 },
   { id: '11', src: full11, thumbnail: thumb11 },
   { id: '15', src: full15, thumbnail: thumb15 },
