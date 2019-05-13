@@ -19,9 +19,9 @@ import paFull02 from './../images/publicart/2019-publicArt-2.jpg'
 import paFull03 from './../images/publicart/2019-publicArt-3.jpg'
 
 const PUBLICART_IMAGES = [
-  { id: '1', src: paFull01, thumbnail: paThumb01 },
+  { id: '1', src: paFull03, thumbnail: paThumb03 },
   { id: '2', src: paFull02, thumbnail: paThumb02 },
-  { id: '3', src: paFull03, thumbnail: paThumb03 },
+  { id: '3', src: paFull01, thumbnail: paThumb01 },
 ]
 
 export default class PublicArtPage extends React.Component {
