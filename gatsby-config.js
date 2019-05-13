@@ -2,7 +2,11 @@ module.exports = {
   siteMetadata: {
     title: 'Wet Paint Studio : Melany Dierks website',
     titleTemplate: '%s',
-    description: 'Test Description',
+    description:
+      'Wet Paint(n.) A state of freshness and vigor that categorizes the art of Melany Meza-Dierks.',
+    keywords:
+      'Fine Artist, West Los Angeles California, Little Rock Arkansas, Tattoos, Advertising, Graphic Design, Art Director, Teacher',
+    siteAuthor: 'Reginald Galang',
     url: 'http://mywetpaintstudio.com',
   },
   plugins: [
@@ -37,12 +41,6 @@ module.exports = {
         trackingId: 'UA-6371690-5',
         // Puts tracking script in the head instead of the body
         head: true,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ['/preview/**', '/do-not-track/me/too/'],
       },
     },
   ],
