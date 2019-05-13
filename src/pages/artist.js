@@ -111,10 +111,30 @@ import full47 from './../images/artist/fa7.jpg'
 //Youtube :::: Coding with Jesse:::
 
 const ARTIST_IMAGES = [
-  { id: '1', src: full01, thumbnail: thumb01, caption: '' },
-  { id: '2', src: full02, thumbnail: thumb02, caption: '' },
-  { id: '3', src: full03, thumbnail: thumb03, caption: '' },
-  { id: '4', src: full04, thumbnail: thumb04, caption: '' },
+  {
+    id: '1',
+    src: full01,
+    thumbnail: thumb01,
+    caption: ' iCloud | 24x18 in | acrylic and oil',
+  },
+  {
+    id: '2',
+    src: full02,
+    thumbnail: thumb02,
+    caption: 'Star Goat | 15 in diameter | acrylic and oil',
+  },
+  {
+    id: '3',
+    src: full03,
+    thumbnail: thumb03,
+    caption: 'Hungry Like the Wolf | 35x24 in | acrylic and oil',
+  },
+  {
+    id: '4',
+    src: full04,
+    thumbnail: thumb04,
+    caption: 'Vampire | 18x24 in | acrylic and oil',
+  },
   { id: '5', src: full05, thumbnail: thumb05, caption: '' },
   {
     id: '6',
