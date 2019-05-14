@@ -1,19 +1,19 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
-import TeacherImg from './../images/teacher-hero.jpg'
+import React from 'react';
+import { graphql } from 'gatsby';
+import Helmet from 'react-helmet';
+import TeacherImg from './../images/teacher-hero.jpg';
 
-import Layout from './../components/layout.js'
+import Layout from './../components/layout.js';
 
 //PDF
-import PleinAir from './../downloads/Plein Air Instruction.pdf'
-import PrivateLesson from './../downloads/Private Lessons.pdf'
+import PleinAir from './../downloads/Plein Air Instruction.pdf';
+import PrivateLesson from './../downloads/Private Lessons.pdf';
 
 const TeacherPage = props => {
-  const { title } = props.data.site.siteMetadata
+  const { title } = props.data.site.siteMetadata;
   return (
     <Layout>
-      <Helmet title={`Teacher | ` + title} />
+      <Helmet title={`Teacher | ${title}`} />
 
       <div className="pageContainer teacherPage">
         <div className="blackBorder" />
@@ -53,10 +53,10 @@ const TeacherPage = props => {
         <div className="blackBorder" />
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default TeacherPage
+export default TeacherPage;
 
 export const teacherQuery = graphql`
   query teacherPageQuery {
@@ -66,4 +66,4 @@ export const teacherQuery = graphql`
       }
     }
   }
-`
+`;
