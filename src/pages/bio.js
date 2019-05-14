@@ -1,16 +1,16 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import React from 'react';
+import { graphql } from 'gatsby';
+import Helmet from 'react-helmet';
 
-import BioImg from './../images/bio-hero.jpg'
+import BioImg from './../images/bio-hero.jpg';
 
-import Layout from './../components/layout.js'
+import Layout from './../components/layout.js';
 
 const BioPage = props => {
-  const { title } = props.data.site.siteMetadata
+  const { title } = props.data.site.siteMetadata;
   return (
     <Layout>
-      <Helmet title={`Biography | ` + title} />
+      <Helmet title={`Biography | ${title}`} />
 
       <div className="pageContainer bioPage">
         <div className="blackBorder" />
@@ -61,10 +61,10 @@ const BioPage = props => {
         <div className="blackBorder" />
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default BioPage
+export default BioPage;
 
 export const bioQuery = graphql`
   query bioPageQuery {
@@ -74,4 +74,4 @@ export const bioQuery = graphql`
       }
     }
   }
-`
+`;

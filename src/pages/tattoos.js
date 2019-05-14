@@ -1,86 +1,86 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import React from 'react';
+import { graphql } from 'gatsby';
+import Helmet from 'react-helmet';
 
 //import Img from "gatsby-image";
-import TattooImg from './../images/tattoos-hero.jpg'
-import Layout from './../components/layout.js'
+import TattooImg from './../images/tattoos-hero.jpg';
+import Layout from './../components/layout.js';
 
 //Lightbox needs the following:::
-import Gallery from './../components/Gallery'
+import Gallery from './../components/Gallery';
 
 /* import thumbnails + images */
-import thumb01 from './../images/tattoos/thumbs/2019-tattoo1-thumb.jpg'
-import thumb02 from './../images/tattoos/thumbs/2019-tattoo2-thumb.jpg'
-import thumb03 from './../images/tattoos/thumbs/2019-tattoo3-thumb.jpg'
-import thumb04 from './../images/tattoos/thumbs/2019-tattoo4-thumb.jpg'
-import thumb05 from './../images/tattoos/thumbs/2019-tattoo5-thumb.jpg'
+import thumb01 from './../images/tattoos/thumbs/2019-tattoo1-thumb.jpg';
+import thumb02 from './../images/tattoos/thumbs/2019-tattoo2-thumb.jpg';
+import thumb03 from './../images/tattoos/thumbs/2019-tattoo3-thumb.jpg';
+import thumb04 from './../images/tattoos/thumbs/2019-tattoo4-thumb.jpg';
+import thumb05 from './../images/tattoos/thumbs/2019-tattoo5-thumb.jpg';
 
-import thumb06 from './../images/tattoos/thumbs/newtat-4.jpg'
-import thumb07 from './../images/tattoos/thumbs/nick-tat-thumb.jpg'
-import thumb08 from './../images/tattoos/thumbs/tat-script1.jpg'
-import thumb09 from './../images/tattoos/thumbs/newtat-2.jpg'
-import thumb10 from './../images/tattoos/thumbs/reg-thumb1.jpg'
+import thumb06 from './../images/tattoos/thumbs/newtat-4.jpg';
+import thumb07 from './../images/tattoos/thumbs/nick-tat-thumb.jpg';
+import thumb08 from './../images/tattoos/thumbs/tat-script1.jpg';
+import thumb09 from './../images/tattoos/thumbs/newtat-2.jpg';
+import thumb10 from './../images/tattoos/thumbs/reg-thumb1.jpg';
 
-import thumb11 from './../images/tattoos/thumbs/reg-thumb2.jpg'
+import thumb11 from './../images/tattoos/thumbs/reg-thumb2.jpg';
 
-import thumb15 from './../images/tattoos/thumbs/reg-thumb7.jpg'
+import thumb15 from './../images/tattoos/thumbs/reg-thumb7.jpg';
 
-import thumb17 from './../images/tattoos/thumbs/reg-thumb9.jpg'
+import thumb17 from './../images/tattoos/thumbs/reg-thumb9.jpg';
 
-import thumb20 from './../images/tattoos/thumbs/reg-thumb12.jpg'
+import thumb20 from './../images/tattoos/thumbs/reg-thumb12.jpg';
 
-import thumb23 from './../images/tattoos/thumbs/reg-thumb16.jpg'
-import thumb24 from './../images/tattoos/thumbs/reg-thumb17.jpg'
+import thumb23 from './../images/tattoos/thumbs/reg-thumb16.jpg';
+import thumb24 from './../images/tattoos/thumbs/reg-thumb17.jpg';
 
-import thumb27 from './../images/tattoos/thumbs/tat2.jpg'
-import thumb28 from './../images/tattoos/thumbs/tat3.jpg'
-import thumb29 from './../images/tattoos/thumbs/tat5.jpg'
-import thumb30 from './../images/tattoos/thumbs/tat6.jpg'
+import thumb27 from './../images/tattoos/thumbs/tat2.jpg';
+import thumb28 from './../images/tattoos/thumbs/tat3.jpg';
+import thumb29 from './../images/tattoos/thumbs/tat5.jpg';
+import thumb30 from './../images/tattoos/thumbs/tat6.jpg';
 
-import thumb32 from './../images/tattoos/thumbs/tat8.jpg'
-import thumb33 from './../images/tattoos/thumbs/tat9.jpg'
-import thumb34 from './../images/tattoos/thumbs/tat11.jpg'
-import thumb36 from './../images/tattoos/thumbs/tat14.jpg'
+import thumb32 from './../images/tattoos/thumbs/tat8.jpg';
+import thumb33 from './../images/tattoos/thumbs/tat9.jpg';
+import thumb34 from './../images/tattoos/thumbs/tat11.jpg';
+import thumb36 from './../images/tattoos/thumbs/tat14.jpg';
 
-import thumb38 from './../images/tattoos/thumbs/tat_2.jpg'
-import thumb39 from './../images/tattoos/thumbs/tat_3.jpg'
-import thumb40 from './../images/tattoos/thumbs/tat_5.jpg'
+import thumb38 from './../images/tattoos/thumbs/tat_2.jpg';
+import thumb39 from './../images/tattoos/thumbs/tat_3.jpg';
+import thumb40 from './../images/tattoos/thumbs/tat_5.jpg';
 
 //full images:::
 
-import full01 from './../images/tattoos/2019-tattoo-1.jpg'
-import full02 from './../images/tattoos/2019-tattoo-2.jpg'
-import full03 from './../images/tattoos/2019-tattoo-3.jpg'
-import full04 from './../images/tattoos/2019-tattoo-4.jpg'
-import full05 from './../images/tattoos/2019-tattoo-5.jpg'
+import full01 from './../images/tattoos/2019-tattoo-1.jpg';
+import full02 from './../images/tattoos/2019-tattoo-2.jpg';
+import full03 from './../images/tattoos/2019-tattoo-3.jpg';
+import full04 from './../images/tattoos/2019-tattoo-4.jpg';
+import full05 from './../images/tattoos/2019-tattoo-5.jpg';
 
-import full06 from './../images/tattoos/newtat-4.jpg'
-import full07 from './../images/tattoos/nick-tat.jpg'
-import full08 from './../images/tattoos/tat-script1.jpg'
-import full09 from './../images/tattoos/newtat-2.jpg'
-import full10 from './../images/tattoos/reg-large1.jpg'
+import full06 from './../images/tattoos/newtat-4.jpg';
+import full07 from './../images/tattoos/nick-tat.jpg';
+import full08 from './../images/tattoos/tat-script1.jpg';
+import full09 from './../images/tattoos/newtat-2.jpg';
+import full10 from './../images/tattoos/reg-large1.jpg';
 
-import full11 from './../images/tattoos/reg-large2.jpg'
-import full15 from './../images/tattoos/reg-large7.jpg'
-import full17 from './../images/tattoos/reg-large9.jpg'
-import full20 from './../images/tattoos/reg-large12.jpg'
-import full23 from './../images/tattoos/reg-large16.jpg'
-import full24 from './../images/tattoos/reg-large17.jpg'
+import full11 from './../images/tattoos/reg-large2.jpg';
+import full15 from './../images/tattoos/reg-large7.jpg';
+import full17 from './../images/tattoos/reg-large9.jpg';
+import full20 from './../images/tattoos/reg-large12.jpg';
+import full23 from './../images/tattoos/reg-large16.jpg';
+import full24 from './../images/tattoos/reg-large17.jpg';
 
-import full27 from './../images/tattoos/tat2.jpg'
-import full28 from './../images/tattoos/tat3.jpg'
-import full29 from './../images/tattoos/tat5.jpg'
-import full30 from './../images/tattoos/tat6.jpg'
+import full27 from './../images/tattoos/tat2.jpg';
+import full28 from './../images/tattoos/tat3.jpg';
+import full29 from './../images/tattoos/tat5.jpg';
+import full30 from './../images/tattoos/tat6.jpg';
 
-import full32 from './../images/tattoos/tat8.jpg'
-import full33 from './../images/tattoos/tat9.jpg'
-import full34 from './../images/tattoos/tat11.jpg'
-import full36 from './../images/tattoos/tat14.jpg'
+import full32 from './../images/tattoos/tat8.jpg';
+import full33 from './../images/tattoos/tat9.jpg';
+import full34 from './../images/tattoos/tat11.jpg';
+import full36 from './../images/tattoos/tat14.jpg';
 
-import full38 from './../images/tattoos/tat_2.jpg'
-import full39 from './../images/tattoos/tat_3.jpg'
-import full40 from './../images/tattoos/tat_5.jpg'
+import full38 from './../images/tattoos/tat_2.jpg';
+import full39 from './../images/tattoos/tat_3.jpg';
+import full40 from './../images/tattoos/tat_5.jpg';
 
 const TATTOO_IMAGES = [
   { id: '1', src: full01, thumbnail: thumb01 },
@@ -110,60 +110,60 @@ const TATTOO_IMAGES = [
   { id: '36', src: full36, thumbnail: thumb36 },
   { id: '38', src: full38, thumbnail: thumb38 },
   { id: '39', src: full39, thumbnail: thumb39 },
-  { id: '40', src: full40, thumbnail: thumb40 },
-]
+  { id: '40', src: full40, thumbnail: thumb40 }
+];
 
 export default class TattooPage extends React.Component {
   constructor() {
-    super()
+    super();
 
     this.state = {
       lightboxIsOpen: false,
-      currentImage: 0,
-    }
+      currentImage: 0
+    };
 
-    this.closeLightbox = this.closeLightbox.bind(this)
-    this.gotoNext = this.gotoNext.bind(this)
-    this.gotoPrevious = this.gotoPrevious.bind(this)
-    this.openLightbox = this.openLightbox.bind(this)
-    this.handleClickImage = this.handleClickImage.bind(this)
+    this.closeLightbox = this.closeLightbox.bind(this);
+    this.gotoNext = this.gotoNext.bind(this);
+    this.gotoPrevious = this.gotoPrevious.bind(this);
+    this.openLightbox = this.openLightbox.bind(this);
+    this.handleClickImage = this.handleClickImage.bind(this);
   }
 
   openLightbox(index, event) {
-    event.preventDefault()
+    event.preventDefault();
     this.setState({
       currentImage: index,
-      lightboxIsOpen: true,
-    })
+      lightboxIsOpen: true
+    });
   }
   closeLightbox() {
     this.setState({
       currentImage: 0,
-      lightboxIsOpen: false,
-    })
+      lightboxIsOpen: false
+    });
   }
   gotoPrevious() {
     this.setState({
-      currentImage: this.state.currentImage - 1,
-    })
+      currentImage: this.state.currentImage - 1
+    });
   }
   gotoNext() {
     this.setState({
-      currentImage: this.state.currentImage + 1,
-    })
+      currentImage: this.state.currentImage + 1
+    });
   }
   handleClickImage() {
-    if (this.state.currentImage === this.props.images.length - 1) return
+    if (this.state.currentImage === this.props.images.length - 1) return;
 
-    this.gotoNext()
+    this.gotoNext();
   }
 
   render() {
-    const { title } = this.props.data.site.siteMetadata
+    const { title } = this.props.data.site.siteMetadata;
 
     return (
       <Layout>
-        <Helmet title={`Tattoos | ` + title} />
+        <Helmet title={`Tattoos | ${title}`} />
 
         <div className="pageContainer tattooPage">
           <div className="blackBorder" />
@@ -176,14 +176,14 @@ export default class TattooPage extends React.Component {
             <Gallery
               images={TATTOO_IMAGES.map(({ id, src, thumbnail, caption }) => ({
                 src,
-                thumbnail,
+                thumbnail
               }))}
             />
           </div>
           <div className="blackBorder" />
         </div>
       </Layout>
-    )
+    );
   }
 }
 
@@ -195,4 +195,4 @@ export const tattooQuery = graphql`
       }
     }
   }
-`
+`;

@@ -1,37 +1,50 @@
-import React from 'react'
+import React from 'react';
 
-//import Header from './../components/Header'
+// import Header from './../components/Header'
 
-import HomeImg from './../images/home-hero2.jpg'
-import FoxImg from './../images/foxPortal.jpg'
-import MermaidImg from './../images/mermaid.jpg'
+import HomeImg from './../images/home-hero2.jpg';
+import FoxImg from './../images/foxPortal.jpg';
+import MermaidImg from './../images/mermaid.jpg';
 
-import Layout from './../components/layout.js'
+import Layout from './../components/layout.js';
 
-const RandomImageArray = [HomeImg, FoxImg, MermaidImg]
-const RandomNum = Math.floor(Math.random() * RandomImageArray.length)
+const RandomImageArray = [HomeImg, FoxImg, MermaidImg];
+let RandomNum;
 
-const Index = () => (
-  <Layout>
-    <div className="pageContainer homePage">
-      <div className="blackBorder" />
-      <div className="pageContainer left">
-        <img src={RandomImageArray[RandomNum]} alt="Home" />
-      </div>
+class Index extends React.Component {
+  state = {
+    currentImage: ''
+  };
 
-      <div className="pageContainer right">
-        <div className="homeText">
-          <b>Wet Paint</b> (n.)
-          <br />
-          <span className="gray">
-            A state of freshness and vigor that categorizes the art of Melany
-            Dierks.
-          </span>
+  componentDidMount() {
+    RandomNum = Math.floor(Math.random() * RandomImageArray.length);
+    this.state.currentImage = RandomImageArray[RandomNum];
+  }
+
+  render() {
+    return (
+      <Layout>
+        <div className="pageContainer homePage">
+          <div className="blackBorder" />
+          <div className="pageContainer left">
+            <img src={this.state.currentImage} alt="Home" />
+          </div>
+
+          <div className="pageContainer right">
+            <div className="homeText">
+              <b>Wet Paint</b> (n.)
+              <br />
+              <span className="gray">
+                A state of freshness and vigor that categorizes the art of
+                Melany Dierks.
+              </span>
+            </div>
+          </div>
+          <div className="blackBorder" />
         </div>
-      </div>
-      <div className="blackBorder" />
-    </div>
-  </Layout>
-)
+      </Layout>
+    );
+  }
+}
 
-export default Index
+export default Index;
