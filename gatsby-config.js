@@ -8,6 +8,7 @@ module.exports = {
       'Fine Artist, West Los Angeles California, Little Rock Arkansas, Tattoos, Advertising, Graphic Design, Art Director, Teacher',
     siteAuthor: 'Reginald Galang',
     url: 'http://mywetpaintstudio.com',
+    siteUrl: 'http://mywetpaintstudio.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -21,8 +22,8 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/melany-md_glyph.png', // This path is relative to the root of the site.
-      },
+        icon: 'src/images/melany-md_glyph.png' // This path is relative to the root of the site.
+      }
     },
     `gatsby-plugin-transition-link`,
     'gatsby-plugin-offline',
@@ -30,18 +31,19 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `img`,
-        path: `${__dirname}/src/images/`,
-      },
+        path: `${__dirname}/src/images/`
+      }
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-6371690-5',
         // Puts tracking script in the head instead of the body
-        head: true,
-      },
-    },
-  ],
-}
+        head: true
+      }
+    }
+  ]
+};
