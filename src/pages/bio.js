@@ -49,6 +49,8 @@ const BioPage = props => {
               received her MFA from Otis in 2016, focusing on painting.
             </p>
 
+            <p className="indent">Currently, she works as a tattoo artist and balances painting, mural work and storytelling as a part of her practice.</p>
+
             <p className="indent">
               The work reflects on her desire to question normality and
               challenge expectations, contributing to new points of view. She
