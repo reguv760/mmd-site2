@@ -28,7 +28,8 @@
     "react-images": "^0.5.19",
     "react-pose": "^4.0.8",
     "react-simple-dropdown": "^3.2.3",
-    "react-social-media-icons": "^1.1.0"
+    "react-social-media-icons": "^1.1.0",
+    "webpack-dev-server": "^3.7.2"
   },
   "keywords": [
     "gatsby"
