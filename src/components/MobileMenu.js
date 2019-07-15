@@ -130,17 +130,14 @@ class MobileMenu extends React.Component {
             </Link>
           </li>
           <li>
-            <Link
+            <a
               className="menu-item"
-              activeStyle={{
-                color: '#d4740d'
-              }}
-              to={ResumePDF}
+              href={ResumePDF}
               target="_blank"
               rel="noopener noreferrer"
             >
               About Me: <span className="thin">Resume</span>
-            </Link>
+            </a>
           </li>
         </ul>
       </Menu>
