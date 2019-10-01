@@ -25,6 +25,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
       return (
         <>
           <Helmet title={seo.title} titleTemplate={titleTemplate}>
+            <meta name="msvalidate.01" content="53209890CBAEF8B0E67BA4C362E444E5" />
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             {seo.url && <meta property="og:url" content={seo.url} />}

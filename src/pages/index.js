@@ -2,11 +2,11 @@ import React from 'react';
 
 // import Header from './../components/Header'
 
-import HomeImg from './../images/home-hero2.jpg';
-import FoxImg from './../images/foxPortal.jpg';
-import MermaidImg from './../images/mermaid.jpg';
+import HomeImg from '../images/home-hero2.jpg';
+import FoxImg from '../images/foxPortal.jpg';
+import MermaidImg from '../images/mermaid.jpg';
 
-import Layout from './../components/layout.js';
+import Layout from '../components/layout';
 
 const RandomImageArray = [HomeImg, FoxImg, MermaidImg];
 let RandomNum;
