@@ -2,8 +2,8 @@ import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'gatsby';
 
-import CoverPDF from './../downloads/melanydierks-CV.pdf';
-import ResumePDF from './../downloads/melanydierks-resume2018.pdf';
+import ResumePDF from '../downloads/melanydierks-resume2018.pdf';
+import CoverPDF from '../downloads/melanydierks-CV.pdf';
 
 class MobileMenu extends React.Component {
   showSettings(event) {
@@ -12,7 +12,7 @@ class MobileMenu extends React.Component {
 
   render() {
     return (
-      <Menu className={'mobileMenu'} width={'20rem'}>
+      <Menu className="mobileMenu" width="20rem">
         <ul>
           <li>
             <Link
@@ -117,17 +117,14 @@ class MobileMenu extends React.Component {
             </Link>
           </li>
           <li>
-            <Link
+            <a
               className="menu-item"
-              activeStyle={{
-                color: '#d4740d'
-              }}
-              to={CoverPDF}
+              href={CoverPDF}
               target="_blank"
               rel="noopener noreferrer"
             >
               About Me: <span className="thin">CV</span>
-            </Link>
+            </a>
           </li>
           <li>
             <a
