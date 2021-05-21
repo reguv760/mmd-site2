@@ -9,6 +9,23 @@
    - Must use `gatsby build` after all changes are made and pushed to master
    - once `src/public` folder built, copy contents of folder to 'public_html' in client's hosting
 
+
+## Packages used:
+
+1. gatsby-plugin-sass
+    - Provides drop-in support for Sass/SCSS stylesheets
+2. gatsby-plugin-sitemap
+    - Create a sitemap based on Gatsby site. Available on `gatsby build`.
+3. gatsby-plugin-transition-link
+    - GSAP-based page transitions [!https://transitionlink.tylerbarnes.ca/docs/anilink/](https://transitionlink.tylerbarnes.ca/docs/anilink/)
+4. gsap
+    - JS-based Animation library.
+5. node-sass
+    - Required library for gatsby-plugin-sass
+6. react-burger-menu
+    - Off-canvas sidebar React component with a collection of effects and styles using CSS transitions and SVG path animations.
+7. 
+
 ## 🚀 Quick start
 
 1.  **Install the Gatsby CLI.**
