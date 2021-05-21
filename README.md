@@ -24,7 +24,6 @@
     - Required library for gatsby-plugin-sass
 6. react-burger-menu
     - Off-canvas sidebar React component with a collection of effects and styles using CSS transitions and SVG path animations.
-7. 
 
 ## 🚀 Quick start
 
