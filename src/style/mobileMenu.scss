@@ -50,34 +50,41 @@
 
 
 /* mobile menu items */
-.mobileMenu ul
+.mobileMenu 
 {
-  display:block;
-  list-style-type:none;
-  font-size:1.3rem;
-  font-weight:bold;
-  margin:0;
-  padding:0;
+  position: absolute;
+  top: 0;
+  height: 100%;
 
-  & li
-  {
-    margin:1.25rem 0;
-    width:70%;
-  }
-
-  & li a
-  {
-    color:$charcoal;
-    line-height:1.3em;
-  }
-
-  & li a .thin
-  {
-    font-weight:400;
-  }
-
-  & li a:hover
-  {
-    color:$orange;
+  & ul {
+    display:block;
+    list-style-type:none;
+    font-size:1.3rem;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+  
+    & li
+    {
+      margin:1.25rem 0;
+      width:70%;
+    }
+  
+    & li a
+    {
+      color:$charcoal;
+      line-height:1.3em;
+    }
+  
+    & li a .thin
+    {
+      font-weight:400;
+    }
+  
+    & li a:hover
+    {
+      color:$orange;
+    }
   }
 }
+
