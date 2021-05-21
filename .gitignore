@@ -5,4 +5,5 @@ yarn-error.log
 
 # Build directory
 /public
+/src/images/tattoos/2021
 .DS_Store
