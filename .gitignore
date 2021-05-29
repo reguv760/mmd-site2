@@ -7,3 +7,4 @@ yarn-error.log
 /public
 /src/images/tattoos/2021
 .DS_Store
+gh_token.txt
