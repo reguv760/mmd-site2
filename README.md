@@ -2,9 +2,13 @@
 
 1. Github Repo is linked to Netlify
 
-   - Used by dev for testing local and server deployment
+   - Used by dev for testing local and server deployment.
 
-2. Client has domain name and hosting outside of Netlify
+2. Testing: Netlify Deploy fails due to old Node version
+
+    - Add NODE_VERSION = 14.15.1 to Netlify's Environment variable.
+
+3. Client has domain name and hosting outside of Netlify
 
    - Must use `gatsby build` after all changes are made and pushed to master
    - once `src/public` folder built, copy contents of folder to 'public_html' in client's hosting
