@@ -7,7 +7,6 @@
 /* all page structure all belong to us */
 .pageContainer {
   display: flex;
-  display: -webkit-flex;
   flex-flow: row wrap;
   width: 90%;
   margin: 0 auto;
@@ -41,8 +40,7 @@
   }
 
   &.homePage {
-    & .left {
-    }
+    // & .left {    }
     & .right {
       /* index page */
       display: flex;
@@ -50,12 +48,9 @@
       align-content: center;
       position: relative;
       
-      display: -webkit-flex;
-      justify-content: -webkit-center;
-      align-content: -webkit-center;
-
       & .homeText {
         width: 80%;
+        height:auto;
         font-size: 1.6rem;
         line-height: 1.4em;
       }
@@ -73,13 +68,13 @@
   }
 
   /* artist page */
-  &.artPage {
-    & .left {
-    }
+  // &.artPage {
+  //   & .left {
+  //   }
 
-    & .right {
-    }
-  }
+  //   & .right {
+  //   }
+  // }
 
   /* advertising page */
   &.advertPage {
@@ -131,13 +126,11 @@
   }
 
   /* Tattoo page */
-  &.tattooPage {
-  }
+  // &.tattooPage {  }
 
   /* Teacher page */
   &.teacherPage {
-    & .left {
-    }
+    // & .left {  }
 
     & .right {
       /* index page */
@@ -145,12 +138,9 @@
       justify-content: center;
       align-content: center;
       
-      display: -webkit-flex;
-      justify-content: -webkit-center;
-      align-content: -webkit-center;
-
       & .homeText {
         width: 85%;
+        height: auto;
         font-size: 1.6rem;
         line-height: 1.4em;
 
@@ -162,8 +152,7 @@
           font-weight: 700;
         }
 
-        & a {
-        }
+        //& a { }
 
         & a.pdf {
           color: $black;
