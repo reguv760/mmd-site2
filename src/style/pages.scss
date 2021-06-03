@@ -46,11 +46,10 @@
       display: flex;
       justify-content: center;
       align-content: center;
-      position: relative;
+      align-items:center;
       
       & .homeText {
         width: 80%;
-        height:auto;
         font-size: 1.6rem;
         line-height: 1.4em;
       }
@@ -137,10 +136,10 @@
       display: flex;
       justify-content: center;
       align-content: center;
+      align-items:center;
       
       & .homeText {
         width: 85%;
-        height: auto;
         font-size: 1.6rem;
         line-height: 1.4em;
 
