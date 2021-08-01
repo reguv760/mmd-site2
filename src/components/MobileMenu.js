@@ -44,11 +44,11 @@ class MobileMenu extends React.Component {
               activeStyle={{
                 color: '#d4740d'
               }}
-              to="/publicart/"
+              to="/teacher/"
             >
-              Art: <span className="thin">Public Art</span>
+              Art: <span className="thin">Teacher</span>
             </Link>
-          </li>
+          </li>          
 
           <li>
             <Link
@@ -56,9 +56,9 @@ class MobileMenu extends React.Component {
               activeStyle={{
                 color: '#d4740d'
               }}
-              to="/teacher/"
+              to="/publicart/"
             >
-              Art: <span className="thin">Teacher</span>
+              Murals
             </Link>
           </li>
           <li>

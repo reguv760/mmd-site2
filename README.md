@@ -21,7 +21,7 @@
 2. gatsby-plugin-sitemap
     - Create a sitemap based on Gatsby site. Available on `gatsby build`.
 3. gatsby-plugin-transition-link
-    - GSAP-based page transitions [!https://transitionlink.tylerbarnes.ca/docs/anilink/](https://transitionlink.tylerbarnes.ca/docs/anilink/)
+    - GSAP-based page transitions [https://transitionlink.tylerbarnes.ca/docs/anilink/](https://transitionlink.tylerbarnes.ca/docs/anilink/)
 4. gsap
     - JS-based Animation library.
 5. node-sass

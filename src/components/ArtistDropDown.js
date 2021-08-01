@@ -42,7 +42,7 @@ class ArtistDropDown extends React.Component {
               </AniLink>
             </li>
 
-            <li>
+            {/* <li>
               <AniLink
                 fade
                 to="/publicart/"
@@ -51,7 +51,7 @@ class ArtistDropDown extends React.Component {
               >
                 Public Art
               </AniLink>
-            </li>
+            </li> */}
 
             <li>
               <AniLink
