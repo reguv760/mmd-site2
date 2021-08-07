@@ -34,7 +34,7 @@ class AboutDropDown extends React.Component {
 
         <DropdownContent>
           <ul className="subMenu">
-            <li>
+            {/* <li>
               <AniLink
                 fade
                 to="/bio/"
@@ -43,7 +43,7 @@ class AboutDropDown extends React.Component {
               >
                 biography
               </AniLink>
-            </li>
+            </li> */}
             <li>
               <a
                 href={CoverPDF}

@@ -105,7 +105,7 @@ class MobileMenu extends React.Component {
               Design: <span className="thin">Storyboards</span>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               className="menu-item"
               activeStyle={{
@@ -115,7 +115,7 @@ class MobileMenu extends React.Component {
             >
               About Me: <span className="thin">Biography</span>
             </Link>
-          </li>
+          </li> */}
           <li>
             <a
               className="menu-item"
