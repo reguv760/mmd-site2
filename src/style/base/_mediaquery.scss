@@ -100,3 +100,21 @@
     font-size: 2.5em;
   }
 }
+
+
+////desktop screen limiter
+@media only screen and (min-width: $maxDesktopHDWidth) {
+  .header {
+    width: $maxDesktopHDWidth;
+    margin:0 auto;
+
+    & .right 
+    {
+      justify-content:flex-end;
+    }
+  }
+  .container {
+    max-width:$maxDesktopHDWidth;
+    margin:0 auto;
+  }
+}

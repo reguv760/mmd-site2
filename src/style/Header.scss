@@ -7,6 +7,7 @@
   padding:0;
   width:100%;
 
+  //mmd logo
   & .left
   {
     display:flex;
@@ -27,16 +28,18 @@
 
     & a img
     {
-      padding:1rem;
+      padding:1.25rem;
       object-fit: contain;
       margin:0;
     }
   }
 
+  //desktop menu:::
   & .right
-  {
-    display:block;
-    margin:0;
+  {    
+    display:flex;
+    justify-content:center;
+    margin:1.25rem 0;
     padding:0;
     min-height:2rem;
     width:67%;
