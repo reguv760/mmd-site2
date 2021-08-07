@@ -7,6 +7,7 @@
 2. Testing: Netlify Deploy fails due to old Node version
 
     - Add NODE_VERSION = 14.15.1 to Netlify's Environment variable.
+    - push 'master' branch to git repo; repo is linked to Netlify build services.
 
 3. Client has domain name and hosting outside of Netlify
 
