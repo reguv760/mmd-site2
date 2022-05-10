@@ -35,7 +35,7 @@ class DesignDropDown extends React.Component {
                 activeStyle={{
                   color: '#d4740d',
                 }}
-                duration={0.5}
+                duration={0.6}
               >
                 advertising
               </AniLink>
@@ -48,7 +48,7 @@ class DesignDropDown extends React.Component {
                 activeStyle={{
                   color: '#d4740d',
                 }}
-                duration={0.5}
+                duration={0.6}
               >
                 graphic
               </AniLink>
@@ -61,7 +61,7 @@ class DesignDropDown extends React.Component {
                 activeStyle={{
                   color: '#d4740d',
                 }}
-                duration={0.5}
+                duration={0.6}
               >
                 storyboards
               </AniLink>

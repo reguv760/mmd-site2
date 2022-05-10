@@ -39,7 +39,7 @@ class AboutDropDown extends React.Component {
                 fade
                 to="/bio/"
                 activeStyle={{ color: '#d4740d' }}
-                duration={0.5}
+                duration={0.6}
               >
                 biography
               </AniLink>

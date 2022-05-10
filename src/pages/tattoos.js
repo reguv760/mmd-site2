@@ -24,6 +24,7 @@ import thumb30 from './../images/tattoos/2019/thumbs/tat6.jpg';
 import thumb34 from './../images/tattoos/2019/thumbs/tat11.jpg';
 import thumb38 from './../images/tattoos/2019/thumbs/tat_2.jpg';
 
+//2021:::
 import thumb21_1 from '../images/tattoos/2021-optimized/thumbs/tat1-thumb.jpg';
 import thumb21_2 from '../images/tattoos/2021-optimized/thumbs/tat2-thumb.jpg';
 import thumb21_3 from '../images/tattoos/2021-optimized/thumbs/tat3-thumb.jpg';
@@ -64,6 +65,23 @@ import thumb21_42 from '../images/tattoos/2021-optimized/thumbs/tat42-thumb.jpg'
 import thumb21_44 from '../images/tattoos/2021-optimized/thumbs/tat44-thumb.jpg';
 import thumb21_45 from '../images/tattoos/2021-optimized/thumbs/tat45-thumb.jpg';
 import thumb21_46 from '../images/tattoos/2021-optimized/thumbs/tat46-thumb.jpg';
+
+
+//2022:::
+import thumb22_1 from '../images/tattoos/2022_tats/thumbs/22_tat1-thumb.jpg';
+import thumb22_2 from '../images/tattoos/2022_tats/thumbs/22_tat2-thumb.jpg';
+import thumb22_3 from '../images/tattoos/2022_tats/thumbs/22_tat3-thumb.jpg';
+import thumb22_3_2 from '../images/tattoos/2022_tats/thumbs/22_tat3-2-thumb.jpg';
+import thumb22_4 from '../images/tattoos/2022_tats/thumbs/22_tat4-thumb.jpg';
+import thumb22_5 from '../images/tattoos/2022_tats/thumbs/22_tat5-thumb.jpg';
+import thumb22_6 from '../images/tattoos/2022_tats/thumbs/22_tat6-thumb.jpg';
+import thumb22_7 from '../images/tattoos/2022_tats/thumbs/22_tat7-thumb.jpg';
+import thumb22_8 from '../images/tattoos/2022_tats/thumbs/22_tat8-thumb.jpg';
+import thumb22_9 from '../images/tattoos/2022_tats/thumbs/22_tat9-thumb.jpg';
+import thumb22_10 from '../images/tattoos/2022_tats/thumbs/22_tat10-thumb.jpg';
+import thumb22_11 from '../images/tattoos/2022_tats/thumbs/22_tat11-thumb.jpg';
+import thumb22_12 from '../images/tattoos/2022_tats/thumbs/22_tat12-thumb.jpg';
+import thumb22_13 from '../images/tattoos/2022_tats/thumbs/22_tat13-thumb.jpg';
 
 
 //full images:::
@@ -123,7 +141,40 @@ import full21_44 from './../images/tattoos/2021-optimized/tat-44.jpg';
 import full21_45 from './../images/tattoos/2021-optimized/tat-45.jpg';
 import full21_46 from './../images/tattoos/2021-optimized/tat-46.jpg';
 
+
+//2022
+import full22_1 from './../images/tattoos/2022_tats/22_tat1.jpg';
+import full22_2 from './../images/tattoos/2022_tats/22_tat2.jpg';
+import full22_3 from './../images/tattoos/2022_tats/22_tat3.jpg';
+import full22_3_2 from './../images/tattoos/2022_tats/22_tat3-2.jpg';
+import full22_4 from './../images/tattoos/2022_tats/22_tat4.jpg';
+import full22_5 from './../images/tattoos/2022_tats/22_tat5.jpg';
+import full22_6 from './../images/tattoos/2022_tats/22_tat6.jpg';
+import full22_7 from './../images/tattoos/2022_tats/22_tat7.jpg';
+import full22_8 from './../images/tattoos/2022_tats/22_tat8.jpg';
+import full22_9 from './../images/tattoos/2022_tats/22_tat9.jpg';
+import full22_10 from './../images/tattoos/2022_tats/22_tat10.jpg';
+import full22_11 from './../images/tattoos/2022_tats/22_tat11.jpg';
+import full22_12 from './../images/tattoos/2022_tats/22_tat12.jpg';
+import full22_13 from './../images/tattoos/2022_tats/22_tat13.jpg';
+
+
 const TATTOO_IMAGES = [  
+  
+  { id: '22_1', src: full22_1, thumbnail: thumb22_1 },
+  { id: '22_2', src: full22_2, thumbnail: thumb22_2 },
+  { id: '22_3', src: full22_3, thumbnail: thumb22_3 },
+  { id: '22_3_2', src: full22_3_2, thumbnail: thumb22_3_2 },
+  { id: '22_4', src: full22_4, thumbnail: thumb22_4 },
+  { id: '22_5', src: full22_5, thumbnail: thumb22_5 },
+  { id: '22_6', src: full22_6, thumbnail: thumb22_6 },
+  { id: '22_7', src: full22_7, thumbnail: thumb22_7 },
+  { id: '22_8', src: full22_8, thumbnail: thumb22_8 },
+  { id: '22_9', src: full22_9, thumbnail: thumb22_9 },
+  { id: '22_10', src: full22_10, thumbnail: thumb22_10 },
+  { id: '22_11', src: full22_11, thumbnail: thumb22_11 },
+  { id: '22_12', src: full22_12, thumbnail: thumb22_12 },
+  { id: '22_13', src: full22_13, thumbnail: thumb22_13 },
   // { id: '21_1', src: full21_1, thumbnail: thumb21_1 },
   // { id: '21_2', src: full21_2, thumbnail: thumb21_2 },
   // { id: '21_3', src: full21_3, thumbnail: thumb21_3 },
@@ -180,49 +231,6 @@ const TATTOO_IMAGES = [
 ];
 
 export default class TattooPage extends React.Component {
-  // constructor() {
-  //   super();
-
-  //   this.state = {
-  //     lightboxIsOpen: false,
-  //     currentImage: 0
-  //   };
-
-  //   this.closeLightbox = this.closeLightbox.bind(this);
-  //   this.gotoNext = this.gotoNext.bind(this);
-  //   this.gotoPrevious = this.gotoPrevious.bind(this);
-  //   this.openLightbox = this.openLightbox.bind(this);
-  //   this.handleClickImage = this.handleClickImage.bind(this);
-  // }
-
-  // openLightbox(index, event) {
-  //   event.preventDefault();
-  //   this.setState({
-  //     currentImage: index,
-  //     lightboxIsOpen: true
-  //   });
-  // }
-  // closeLightbox() {
-  //   this.setState({
-  //     currentImage: 0,
-  //     lightboxIsOpen: false
-  //   });
-  // }
-  // gotoPrevious() {
-  //   this.setState({
-  //     currentImage: this.state.currentImage - 1
-  //   });
-  // }
-  // gotoNext() {
-  //   this.setState({
-  //     currentImage: this.state.currentImage + 1
-  //   });
-  // }
-  // handleClickImage() {
-  //   if (this.state.currentImage === this.props.images.length - 1) return;
-
-  //   this.gotoNext();
-  // }
 
   render() {
     const { title } = this.props.data.site.siteMetadata;
