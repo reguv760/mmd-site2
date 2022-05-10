@@ -124,17 +124,17 @@ import full21_45 from './../images/tattoos/2021-optimized/tat-45.jpg';
 import full21_46 from './../images/tattoos/2021-optimized/tat-46.jpg';
 
 const TATTOO_IMAGES = [  
-  { id: '21_1', src: full21_1, thumbnail: thumb21_1 },
-  { id: '21_2', src: full21_2, thumbnail: thumb21_2 },
-  { id: '21_3', src: full21_3, thumbnail: thumb21_3 },
+  // { id: '21_1', src: full21_1, thumbnail: thumb21_1 },
+  // { id: '21_2', src: full21_2, thumbnail: thumb21_2 },
+  // { id: '21_3', src: full21_3, thumbnail: thumb21_3 },
   { id: '21_4', src: full21_4, thumbnail: thumb21_4 },
-  { id: '21_5', src: full21_5, thumbnail: thumb21_5 },
+  // { id: '21_5', src: full21_5, thumbnail: thumb21_5 },
   { id: '21_6', src: full21_6, thumbnail: thumb21_6 },
-  { id: '21_7', src: full21_7, thumbnail: thumb21_7 },
+  // { id: '21_7', src: full21_7, thumbnail: thumb21_7 },
   { id: '21_8', src: full21_8, thumbnail: thumb21_8 },
   { id: '21_11', src: full21_11, thumbnail: thumb21_11 },
   { id: '21_15', src: full21_15, thumbnail: thumb21_15 },
-  { id: '21_16', src: full21_16, thumbnail: thumb21_16 },
+  // { id: '21_16', src: full21_16, thumbnail: thumb21_16 },
   { id: '21_17', src: full21_17, thumbnail: thumb21_17 },
   { id: '21_18', src: full21_18, thumbnail: thumb21_18},
   { id: '21_19', src: full21_19, thumbnail: thumb21_19 },
@@ -165,7 +165,7 @@ const TATTOO_IMAGES = [
   { id: '21_45', src: full21_45, thumbnail: thumb21_45 },
   { id: '21_46', src: full21_46, thumbnail: thumb21_46 },
 
-  { id: '1', src: full01, thumbnail: thumb01 },
+  // { id: '1', src: full01, thumbnail: thumb01 },
   { id: '4', src: full04, thumbnail: thumb04 },
   { id: '5', src: full05, thumbnail: thumb05 },
   { id: '7', src: full07, thumbnail: thumb07 },

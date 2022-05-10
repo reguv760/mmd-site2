@@ -22,42 +22,27 @@ const BioPage = props => {
         <div className="pageContainer right">
           <div className="bioText">
             <p>
-              Melany Meza-Dierks was born in Caracas, Venezuela January 22,
-              1983. Mother was a tyrant beauty queen sergeant, breaking away
-              from an abusive husband, a single mother who would find love to
-              another, creating a limitless environment that would allow Melany
-              to grow and bloom into the artist she has become today. It was in
-              Arkansas where she began developing her hand, having attended 14
-              different schools, consisting of mostly private and a couple
-              boarding schools in Switzerland and Massachusetts. Growing up in
-              constant transition, a child who grew up with a stutter, the
-              ability to draw became her saving grace with portrait requests
-              from all the new classmates fueling her artistic muscle.
+            Melany Dierks was born in Caracas, Venezuela January 22, 1983. Gaining maturity in her practice, a bad acid trip  and the desire to rebel, Melany moved 
+            to CA in 2004 and received her BFA in Communication Arts from Otis College of Art and Design in 2007 and established herself as a graphic designer and storyboard artist. 
+             Teaching basic elements of painting to children would be the next driving force to transition 
+             from graphic applications to more of a studio practice while picking up the techniques of 
+             being a tattoo artist. A few years after giving birth in 2013, she received her MFA from Otis
+             in 2016, with a focus on painting. She has embraced all the codes of realism and narrative while 
+             at the same time, allowing fantasy to permeate the paintings in a way that questions reality. 
+             She began painting murals after moving to Long Beach in late 2016. Art has been the driving force
+             of her life, with every aspect honored with gratitude. She currently lives in Long Beach
+             established as a working artist in the fields of paint and tattoo. 
+
             </p>
 
-            <p className="indent">
+            {/* <p className="indent">
               Gaining maturity in her practice, a bad acid trip and the desire
               to rebel, Melany moved to CA in 2004 and received her BFA in
               Communication Arts from Otis College of Art and Design and
               established herself as a graphic designer and storyboard artist.
-            </p>
+            </p> */}
 
-            <p className="indent">
-              Teaching basic elements of painting to children would be the next
-              driving force to transition from graphic applications to more of a
-              studio practice. A few years after giving birth in 2013, she
-              received her MFA from Otis in 2016, focusing on painting.
-            </p>
-
-            <p className="indent">Currently, she works as a tattoo artist and balances painting, mural work and storytelling as a part of her practice.</p>
-
-            <p className="indent">
-              The work reflects on her desire to question normality and
-              challenge expectations, contributing to new points of view. She
-              has embraced all the codes of realism and narrative while at the
-              same time, allowing fantasy to permeate the paintings in a way
-              that questions said realism.
-            </p>
+           
           </div>
         </div>
         <div className="blackBorder" />
