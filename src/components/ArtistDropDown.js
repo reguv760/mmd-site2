@@ -36,7 +36,7 @@ class ArtistDropDown extends React.Component {
                 activeStyle={{
                   color: '#d4740d',
                 }}
-                duration={0.5}
+                duration={0.6}
               >
                 artist
               </AniLink>
@@ -47,7 +47,7 @@ class ArtistDropDown extends React.Component {
                 fade
                 to="/publicart/"
                 activeStyle={{ color: '#d4740d' }}
-                duration={0.5}
+                duration={0.6}
               >
                 Public Art
               </AniLink>
@@ -60,7 +60,7 @@ class ArtistDropDown extends React.Component {
                 activeStyle={{
                   color: '#d4740d',
                 }}
-                duration={0.5}
+                duration={0.6}
               >
                 teacher
               </AniLink>
