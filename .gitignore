@@ -8,4 +8,4 @@ yarn-error.log
 /src/images/tattoos/2021
 .DS_Store
 gh_token.txt
-mmd-2021.zip
+*.zip
