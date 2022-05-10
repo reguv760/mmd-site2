@@ -5,7 +5,7 @@ yarn-error.log
 
 # Build directory
 /public
-/src/images/tattoos/2021
 .DS_Store
 gh_token.txt
-*.zip
+mmd-site2-080721.zip
+_tattoos-hero.jpg
