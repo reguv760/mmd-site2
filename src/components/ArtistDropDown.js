@@ -6,13 +6,17 @@ import Dropdown, {
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 class ArtistDropDown extends React.Component {
+
+  handleLinkClick = () => {    
+    this.refs.dropdown.show();
+  }
   
   render() {
     return (
       <Dropdown ref="dropdown">
-        <DropdownTrigger>
-          <span className="dropdown-link" onClick={this.handleLinkClick}>
-            {this.props.name}
+        <DropdownTrigger onClick={this.handleLinkClick}>
+          <span className="dropdown-link" >
+            art
           </span>
         </DropdownTrigger>
         <DropdownContent>
@@ -22,7 +26,7 @@ class ArtistDropDown extends React.Component {
                 fade
                 to="/artist/"
                 activeStyle={{
-                  color: '#d4740d',
+                  color: '#e46815',
                 }}
                 duration={0.6}
               >
@@ -34,7 +38,7 @@ class ArtistDropDown extends React.Component {
               <AniLink
                 fade
                 to="/publicart/"
-                activeStyle={{ color: '#d4740d' }}
+                activeStyle={{ color: '#e46815' }}
                 duration={0.6}
               >
                 Public Art
@@ -46,7 +50,7 @@ class ArtistDropDown extends React.Component {
                 fade
                 to="/teacher/"
                 activeStyle={{
-                  color: '#d4740d',
+                  color: '#e46815',
                 }}
                 duration={0.6}
               >
