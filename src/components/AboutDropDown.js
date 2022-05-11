@@ -10,11 +10,16 @@ import ResumePDF from '../downloads/melanydierks-resume2018.pdf';
 
 class AboutDropDown extends React.Component {
 
+  handleLinkClick = () => {    
+    this.refs.dropdown.show();
+    // this.refs.dropdown.isActive();
+  };
+ 
   render() {
     return (
       <Dropdown ref="dropdown">
-        <DropdownTrigger>
-          <span className="dropdown-link" onClick={this.handleLinkClick}>
+        <DropdownTrigger onClick={this.handleLinkClick}>
+          <span className="dropdown-link" >
             about me
           </span>
         </DropdownTrigger>
@@ -25,7 +30,7 @@ class AboutDropDown extends React.Component {
               <AniLink
                 fade
                 to="/bio/"
-                activeStyle={{ color: '#d4740d' }}
+                activeStyle={{ color: '#e46815' }}
                 duration={0.6}
               >
                 biography
