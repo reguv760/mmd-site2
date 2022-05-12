@@ -34,10 +34,8 @@ class Index extends React.Component {
             <div className="homeText">
               <b>Wet Paint</b> (n.)
               <br />
-              <span className="gray">
-                A state of freshness and vigor that categorizes the art of
-                Melany Dierks.
-              </span>
+              A state of freshness and vigor that categorizes the art of
+              Melany Dierks.
             </div>
           </div>
           <div className="blackBorder" />

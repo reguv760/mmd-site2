@@ -1,30 +1,22 @@
 import React from 'react'
-///import PropTypes from 'prop-types';
 import Dropdown, {
   DropdownTrigger,
   DropdownContent,
 } from 'react-simple-dropdown'
-import { Link } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 class ArtistDropDown extends React.Component {
-  constructor(props) {
-    super(props)
 
-    this.handleLinkClick = this.handleLinkClick.bind(this)
+  handleLinkClick = () => {    
+    this.refs.dropdown.show();
   }
-
-  handleLinkClick = () => {
-    //console.log(this.state.name);
-    this.refs.dropdown.show()
-    //this.refs.dropdown.isActive();
-  }
+  
   render() {
     return (
       <Dropdown ref="dropdown">
-        <DropdownTrigger>
-          <span className="dropdown-link" onClick={this.handleLinkClick}>
-            {this.props.name}
+        <DropdownTrigger onClick={this.handleLinkClick}>
+          <span className="dropdown-link" >
+            art
           </span>
         </DropdownTrigger>
         <DropdownContent>
@@ -34,9 +26,9 @@ class ArtistDropDown extends React.Component {
                 fade
                 to="/artist/"
                 activeStyle={{
-                  color: '#d4740d',
+                  color: '#e46815',
                 }}
-                duration={0.5}
+                duration={0.6}
               >
                 artist
               </AniLink>
@@ -46,8 +38,8 @@ class ArtistDropDown extends React.Component {
               <AniLink
                 fade
                 to="/publicart/"
-                activeStyle={{ color: '#d4740d' }}
-                duration={0.5}
+                activeStyle={{ color: '#e46815' }}
+                duration={0.6}
               >
                 Public Art
               </AniLink>
@@ -58,9 +50,9 @@ class ArtistDropDown extends React.Component {
                 fade
                 to="/teacher/"
                 activeStyle={{
-                  color: '#d4740d',
+                  color: '#e46815',
                 }}
-                duration={0.5}
+                duration={0.6}
               >
                 teacher
               </AniLink>

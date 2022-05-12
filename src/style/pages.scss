@@ -28,6 +28,7 @@
     & img {
       object-fit: cover;
       margin: 0;
+      border: 1px solid $fadedDarkGrey;
     }
   }
 
@@ -51,7 +52,7 @@
       & .homeText {
         width: 80%;
         font-size: 1.6rem;
-        line-height: 1.4em;
+        line-height: 1.5em;
       }
 
       & .home_glyph {
@@ -94,8 +95,9 @@
 
       & .bioText {
         font-size: 1.6rem;
-        line-height: 1.4em;
+        line-height: 1.5em;
         height: 45rem;
+        padding: 0 0.5em 0 0.5em;
 
         & p {
           margin: 1rem;
