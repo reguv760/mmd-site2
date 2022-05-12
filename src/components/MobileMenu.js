@@ -2,7 +2,7 @@ import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'gatsby';
 
-import ResumePDF from '../downloads/melanydierks-resume2018.pdf';
+import ResumePDF from '../downloads/melanydierks-resume2022.pdf';
 import CoverPDF from '../downloads/melanydierks-CV.pdf';
 
 class MobileMenu extends React.Component {
