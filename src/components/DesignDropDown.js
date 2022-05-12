@@ -1,27 +1,21 @@
 import React from 'react'
-///import PropTypes from 'prop-types';
 import Dropdown, {
   DropdownTrigger,
   DropdownContent,
 } from 'react-simple-dropdown'
-import { Link } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 class DesignDropDown extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.handleLinkClick = this.handleLinkClick.bind(this)
-  }
 
   handleLinkClick = () => {
-    this.refs.dropdown.show()
+    this.refs.dropdown.show();
   }
+  
   render() {
     return (
       <Dropdown ref="dropdown">
-        <DropdownTrigger>
-          <span className="dropdown-link" onClick={this.handleLinkClick}>
+        <DropdownTrigger onClick={this.handleLinkClick}>
+          <span className="dropdown-link">
             design
           </span>
         </DropdownTrigger>
@@ -33,9 +27,9 @@ class DesignDropDown extends React.Component {
                 fade
                 to="/advertising/"
                 activeStyle={{
-                  color: '#d4740d',
+                  color: '#e46815',
                 }}
-                duration={0.5}
+                duration={0.6}
               >
                 advertising
               </AniLink>
@@ -46,9 +40,9 @@ class DesignDropDown extends React.Component {
                 fade
                 to="/graphic/"
                 activeStyle={{
-                  color: '#d4740d',
+                  color: '#e46815',
                 }}
-                duration={0.5}
+                duration={0.6}
               >
                 graphic
               </AniLink>
@@ -59,9 +53,9 @@ class DesignDropDown extends React.Component {
                 fade
                 to="/storyboards/"
                 activeStyle={{
-                  color: '#d4740d',
+                  color: '#e46815',
                 }}
-                duration={0.5}
+                duration={0.6}
               >
                 storyboards
               </AniLink>

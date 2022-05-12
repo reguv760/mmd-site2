@@ -16,10 +16,10 @@ const Navigation = () => {
             fade
             to="/"
             activeStyle={{
-              color: '#d4740d'
+              color: '#e46815'
             }}
             exact="true"
-            duration={0.5}
+            duration={0.6}
           >
             home
           </AniLink>
@@ -33,8 +33,8 @@ const Navigation = () => {
           <AniLink
             fade
             to="/tattoos/"
-            activeStyle={{ color: '#d4740d' }}
-            duration={0.5}
+            activeStyle={{ color: '#e46815' }}
+            duration={0.6}
           >
             tattoos
           </AniLink>

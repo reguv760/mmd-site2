@@ -2,7 +2,7 @@ import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'gatsby';
 
-import ResumePDF from '../downloads/melanydierks-resume2018.pdf';
+import ResumePDF from '../downloads/melanydierks-resume2022.pdf';
 import CoverPDF from '../downloads/melanydierks-CV.pdf';
 
 class MobileMenu extends React.Component {
@@ -18,7 +18,7 @@ class MobileMenu extends React.Component {
             <Link
               className="menu-item"
               activeStyle={{
-                color: '#d4740d'
+                color: '#e46815'
               }}
               to="/"
             >
@@ -30,7 +30,7 @@ class MobileMenu extends React.Component {
             <Link
               className="menu-item"
               activeStyle={{
-                color: '#d4740d'
+                color: '#e46815'
               }}
               to="/artist/"
             >
@@ -42,7 +42,7 @@ class MobileMenu extends React.Component {
             <Link
               className="menu-item"
               activeStyle={{
-                color: '#d4740d'
+                color: '#e46815'
               }}
               to="/publicart/"
             >
@@ -54,7 +54,7 @@ class MobileMenu extends React.Component {
             <Link
               className="menu-item"
               activeStyle={{
-                color: '#d4740d'
+                color: '#e46815'
               }}
               to="/teacher/"
             >
@@ -65,7 +65,7 @@ class MobileMenu extends React.Component {
             <Link
               className="menu-item"
               activeStyle={{
-                color: '#d4740d'
+                color: '#e46815'
               }}
               to="/tattoos/"
             >
@@ -76,7 +76,7 @@ class MobileMenu extends React.Component {
             <Link
               className="menu-item"
               activeStyle={{
-                color: '#d4740d'
+                color: '#e46815'
               }}
               to="/advertising/"
             >
@@ -87,7 +87,7 @@ class MobileMenu extends React.Component {
             <Link
               className="menu-item"
               activeStyle={{
-                color: '#d4740d'
+                color: '#e46815'
               }}
               to="/graphic/"
             >
@@ -98,24 +98,24 @@ class MobileMenu extends React.Component {
             <Link
               className="menu-item"
               activeStyle={{
-                color: '#d4740d'
+                color: '#e46815'
               }}
               to="/storyboards/"
             >
               Design: <span className="thin">Storyboards</span>
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link
               className="menu-item"
               activeStyle={{
-                color: '#d4740d'
+                color: '#e46815'
               }}
               to="/bio/"
             >
               About Me: <span className="thin">Biography</span>
             </Link>
-          </li> */}
+          </li>
           <li>
             <a
               className="menu-item"

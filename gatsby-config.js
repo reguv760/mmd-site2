@@ -5,7 +5,7 @@ module.exports = {
     description:
       'Wet Paint(n.) A state of freshness and vigor that categorizes the art of Melany Meza-Dierks.',
     keywords:
-      'Fine Artist, West Los Angeles California, Little Rock Arkansas, Tattoos, Advertising, Graphic Design, Art Director, Teacher',
+      'Fine Artist, Los Angeles, Long Beach, California, Caracas, Venezuela, Tattoos, Advertising, Graphic Design, Art Director, Teacher, Mural Painter',
     siteAuthor: 'Reginald Galang',
     url: 'http://mywetpaintstudio.com',
     siteUrl: 'http://mywetpaintstudio.com'

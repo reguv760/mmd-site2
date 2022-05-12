@@ -1,49 +1,41 @@
 import React from 'react';
-// /import PropTypes from 'prop-types';
 import Dropdown, {
   DropdownTrigger,
   DropdownContent
 } from 'react-simple-dropdown';
-// import { Link } from 'gatsby';
 
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import CoverPDF from '../downloads/melanydierks-CV.pdf';
-import ResumePDF from '../downloads/melanydierks-resume2018.pdf';
+import ResumePDF from '../downloads/melanydierks-resume2022.pdf';
 
 class AboutDropDown extends React.Component {
-  constructor(props) {
-    super(props);
 
-    this.handleLinkClick = this.handleLinkClick.bind(this);
-  }
-
-  handleLinkClick = () => {
-    // console.log(this.state.name);
+  handleLinkClick = () => {    
     this.refs.dropdown.show();
     // this.refs.dropdown.isActive();
   };
-
+ 
   render() {
     return (
       <Dropdown ref="dropdown">
-        <DropdownTrigger>
-          <span className="dropdown-link" onClick={this.handleLinkClick}>
+        <DropdownTrigger onClick={this.handleLinkClick}>
+          <span className="dropdown-link" >
             about me
           </span>
         </DropdownTrigger>
 
         <DropdownContent>
           <ul className="subMenu">
-            {/* <li>
+            <li>
               <AniLink
                 fade
                 to="/bio/"
-                activeStyle={{ color: '#d4740d' }}
-                duration={0.5}
+                activeStyle={{ color: '#e46815' }}
+                duration={0.6}
               >
                 biography
               </AniLink>
-            </li> */}
+            </li> 
             <li>
               <a
                 href={CoverPDF}
