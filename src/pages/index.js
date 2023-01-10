@@ -1,14 +1,15 @@
 import React from 'react';
 
 // import Header from './../components/Header'
-
+import ConsumedImg from '../images/consumedHero.jpg';
+import ChainHero from '../images/theChain-hero.jpg';
 import HomeImg from '../images/home-hero2.jpg';
 import FoxImg from '../images/foxPortal.jpg';
 import MermaidImg from '../images/mermaid.jpg';
 
 import Layout from '../components/layout';
 
-const RandomImageArray = [HomeImg, FoxImg, MermaidImg];
+const RandomImageArray = [ConsumedImg, ChainHero, HomeImg, FoxImg, MermaidImg];
 let RandomNum;
 
 class Index extends React.Component {

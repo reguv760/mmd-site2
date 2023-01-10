@@ -10,7 +10,6 @@ import Layout from './../components/layout.js';
 import Gallery from './../components/Gallery';
 
 /* import thumbnails + images */
-
 import thumb01 from './../images/artist/thumbs/2019-fineArt1-thumb.jpg';
 import thumb02 from './../images/artist/thumbs/2019-fineArt2-thumb.jpg';
 import thumb03 from './../images/artist/thumbs/2019-fineArt3-thumb.jpg';
@@ -108,227 +107,367 @@ import full45 from './../images/artist/fa4.jpg';
 import full46 from './../images/artist/fa6.jpg';
 import full47 from './../images/artist/fa7.jpg';
 
+
+//2023
+import thumb23_1 from './../images/artist/2023/thumb/aquarius-thumb.jpg';
+import thumb23_2 from './../images/artist/2023/thumb/blotTest-thumb.jpg';
+import thumb23_3 from './../images/artist/2023/thumb/britneysWeight-thumb.jpg';
+import thumb23_4 from './../images/artist/2023/thumb/consumed-thumb.jpg';
+import thumb23_5 from './../images/artist/2023/thumb/enjoyTheSilence-thumb.jpg';
+import thumb23_6 from './../images/artist/2023/thumb/frida-thumb.jpg';
+import thumb23_7 from './../images/artist/2023/thumb/juicy-thumb.jpg';
+import thumb23_8 from './../images/artist/2023/thumb/kobeGigi-thumb.jpg';
+import thumb23_9 from './../images/artist/2023/thumb/makeLove-thumb.jpg';
+import thumb23_10 from './../images/artist/2023/thumb/risingStar-thumb.jpg';
+import thumb23_11 from './../images/artist/2023/thumb/ruthBader-thumb.jpg';
+import thumb23_12 from './../images/artist/2023/thumb/starWalker-thumb.jpg';
+import thumb23_13 from './../images/artist/2023/thumb/taurus-thumb.jpg';
+import thumb23_14 from './../images/artist/2023/thumb/theChain-thumb.jpg';
+import thumb23_15 from './../images/artist/2023/thumb/thunderC-thumb.jpg';
+import thumb23_16 from './../images/artist/2023/thumb/wreckYourself-thumb.jpg';
+
+
+
+//2023
+import full23_1 from './../images/artist/2023/aquarius.jpg';
+import full23_2 from './../images/artist/2023/blotTest.jpg';
+import full23_3 from './../images/artist/2023/britneysWeight.jpg';
+import full23_4 from './../images/artist/2023/consumed.jpg';
+import full23_5 from './../images/artist/2023/enjoyTheSilence.jpg';
+import full23_6 from './../images/artist/2023/frida.jpg';
+import full23_7 from './../images/artist/2023/juicy.jpg';
+import full23_8 from './../images/artist/2023/kobeGigi.jpg';
+import full23_9 from './../images/artist/2023/makeLove.jpg';
+import full23_10 from './../images/artist/2023/risingStar.jpg';
+import full23_11 from './../images/artist/2023/ruthBader.jpg';
+import full23_12 from './../images/artist/2023/starWalker.jpg';
+import full23_13 from './../images/artist/2023/taurus.jpg';
+import full23_14 from './../images/artist/2023/theChain.jpg';
+import full23_15 from './../images/artist/2023/thunderC.jpg';
+import full23_16 from './../images/artist/2023/wreckYourself.jpg';
+
+
+
 //Youtube :::: Coding with Jesse:::
 
 const ARTIST_IMAGES = [
   {
     id: '1',
+    src: full23_1,
+    thumbnail: thumb23_1,
+    caption: ' Aquarius | 24x24 in | acrylic, oil on canvas'
+  },
+  {
+    id: '2',
+    src: full23_2,
+    thumbnail: thumb23_2,
+    caption: 'Blot Test | 48x72 in | acrylic, oil on canvas'
+  },
+  {
+    id: '3',
+    src: full23_3,
+    thumbnail: thumb23_3,
+    caption: 'Britney’s Weight | 48x72 in | acrylic, oil on canvas'
+  },
+  {
+    id: '4',
+    src: full23_4,
+    thumbnail: thumb23_4,
+    caption: 'Consumed | 36x48 in'
+  },
+  {
+    id: '5',
+    src: full23_5,
+    thumbnail: thumb23_5,
+    caption: 'Enjoy the Silence | 24x18 in | acrylic, oil on canvas'
+  },
+  {
+    id: '6',
+    src: full23_6,
+    thumbnail: thumb23_6,
+    caption: 'Frida | 18x24 in | acrylic, oil on canvas '
+  },
+  {
+    id: '7',
+    src: full23_7,
+    thumbnail: thumb23_7,
+    caption: 'Juicy | 11x14 in | acrylic, oil on canvas '
+  },
+  {
+    id: '8',
+    src: full23_8,
+    thumbnail: thumb23_8,
+    caption: 'Kobe & Gigi memorial | 30x40 in | acrylic, oil on canvas '
+  },
+  {
+    id: '9',
+    src: full23_9,
+    thumbnail: thumb23_9,
+    caption: 'Make Love | 48x24 in | acrylic, oil on canvas '
+  },  
+  {
+    id: '10',
+    src: full23_10,
+    thumbnail: thumb23_10,
+    caption: 'Rising Star | 16x40 in | acrylic, oil on canvas '
+  },
+  {
+    id: '11',
+    src: full23_11,
+    thumbnail: thumb23_11,
+    caption: 'Ruth Bader Ginsburg | 16x20 in | acrylic, oil on canvas '
+  },
+  {
+    id: '12',
+    src: full23_12,
+    thumbnail: thumb23_12,
+    caption: 'Star Walker | 11x20 in | acrylic, oil on canvas '
+  },
+  {
+    id: '13',
+    src: full23_13,
+    thumbnail: thumb23_13,
+    caption: 'Taurus | 24x24 in | acrylic, oil on canvas '
+  },
+  {
+    id: '14',
+    src: full23_14,
+    thumbnail: thumb23_14,
+    caption: 'The Chain | 36x48 in | acrylic, oil on canvas '
+  },  
+  {
+    id: '15',
+    src: full23_15,
+    thumbnail: thumb23_15,
+    caption: 'ThunderC | 30x24 in | acrylic, oil on canvas '
+  },
+  
+  {
+    id: '16',
+    src: full23_16,
+    thumbnail: thumb23_16,
+    caption: 'Wreck Yourself | 18x24 in | acrylic, oil on canvas '
+  },
+
+  ////before 2023:::
+  {
+    id: '17',
     src: full01,
     thumbnail: thumb01,
     caption: ' iCloud | 24x18 in | acrylic and oil'
   },
   {
-    id: '2',
+    id: '18',
     src: full02,
     thumbnail: thumb02,
     caption: 'Star Goat | 15 in diameter | acrylic and oil'
   },
   {
-    id: '3',
+    id: '19',
     src: full03,
     thumbnail: thumb03,
     caption: 'Hungry Like the Wolf | 35x24 in | acrylic and oil'
   },
   {
-    id: '4',
+    id: '20',
     src: full04,
     thumbnail: thumb04,
     caption: 'Vampire | 18x24 in | acrylic and oil'
   },
-  { id: '5', src: full05, thumbnail: thumb05, caption: '' },
+  { id: '21', src: full05, thumbnail: thumb05, caption: '' },
   {
-    id: '6',
+    id: '22',
     src: full06,
     thumbnail: thumb06,
     caption:
-      'Deer Portal | 16 x 20 inches | Acrylic and oil on wood panel | 2018'
-  },
-  {
-    id: '7',
-    src: full07,
-    thumbnail: thumb07,
-    caption:
-      'Floor Work | 11 x 14 inches | Acrylic, oil, puff paint, glitter and resin on canvas | 2018'
-  },
-  {
-    id: '8',
-    src: full08,
-    thumbnail: thumb08,
-    caption:
-      'Fox Portal | 16 x 20 inches | Acrylic and oil on wood panel | 2018'
-  },
-  {
-    id: '9',
-    src: full09,
-    thumbnail: thumb09,
-    caption: 'Lady Justice | 11 x 14 inches | Acrylic and oil on canvas | 2018'
-  },
-  {
-    id: '10',
-    src: full10,
-    thumbnail: thumb10,
-    caption: 'In Peace | 24 x 36 inches | Puff paint and oil on canvas | 2018'
-  },
-  {
-    id: '11',
-    src: full11,
-    thumbnail: thumb11,
-    caption: 'Mermaid | 24 x 48 inches | Acrylic and oil on wood panel | 2018'
-  },
-  {
-    id: '12',
-    src: full12,
-    thumbnail: thumb12,
-    caption:
-      'She Had a Bite | 20 x 16 inches | Acrylic, paper collage, glitter and resin | 2018'
-  },
-  {
-    id: '13',
-    src: full13,
-    thumbnail: thumb13,
-    caption: 'Closer to the Moon | 24 x 30 inches | Oil on canvas | 2018'
-  },
-  {
-    id: '14',
-    src: full14,
-    thumbnail: thumb14,
-    caption: 'Logged In | 51 x 41in | acrylic and oil on wood panel'
-  },
-  {
-    id: '15',
-    src: full15,
-    thumbnail: thumb15,
-    caption: 'Logged Out | 36 x 18 inches | acrylic and Oil on Canvas | 2017'
-  },
-  {
-    id: '16',
-    src: full16,
-    thumbnail: thumb16,
-    caption: 'Chris Cornell | 18 x 24in | acrylic and oil on canvas | 2017'
-  },
-  {
-    id: '17',
-    src: full17,
-    thumbnail: thumb17,
-    caption: 'David Bowie | 24 x 18 inches | Oil on canvas | 2017'
-  },
-  {
-    id: '18',
-    src: full18,
-    thumbnail: thumb18,
-    caption:
-      'Not All Who Wander Are Lost | 60 x 36 inches | oil and puff paint on wood | 2017'
-  },
-  {
-    id: '19',
-    src: full19,
-    thumbnail: thumb19,
-    caption: 'Prince | 24 x 36 inches | Oil and puff paint on canvas | 2017'
-  },
-  {
-    id: '20',
-    src: full20,
-    thumbnail: thumb20,
-    caption: 'Robin Williams | 30 x 24 inches | Oil on canvas | 2017'
-  },
-  {
-    id: '21',
-    src: full21,
-    thumbnail: thumb21,
-    caption: 'Storm Portal | 24 x 30 inches | Oil on canvas | 2016'
-  },
-  {
-    id: '22',
-    src: full22,
-    thumbnail: thumb22,
-    caption: 'Selfie Sign | 24 x 18 inches | Oil on canvas | 2016'
+      'Deer Portal | 16 x 20 in | Acrylic and oil on wood panel | 2018'
   },
   {
     id: '23',
-    src: full23,
-    thumbnail: thumb23,
-    caption: 'Disconnected Dancer, | 48 x 24 inches | Oil on canvas | 2016'
+    src: full07,
+    thumbnail: thumb07,
+    caption:
+      'Floor Work | 11 x 14 in | Acrylic, oil, puff paint, glitter and resin on canvas | 2018'
   },
   {
     id: '24',
-    src: full24,
-    thumbnail: thumb24,
-    caption: 'Mother and Child v1 | 60 x 36 inches | Acrylic on wood panel'
+    src: full08,
+    thumbnail: thumb08,
+    caption:
+      'Fox Portal | 16 x 20 in | Acrylic and oil on wood panel | 2018'
   },
   {
     id: '25',
-    src: full25,
-    thumbnail: thumb25,
-    caption: 'Mother and Child v1 | 60 x 36 inches | Acrylic on wood panel'
+    src: full09,
+    thumbnail: thumb09,
+    caption: 'Lady Justice | 11 x 14 in | Acrylic and oil on canvas | 2018'
   },
   {
     id: '26',
-    src: full26,
-    thumbnail: thumb26,
-    caption: 'Venus Mother | 30 x 38 inches | Acrylic on wood panel'
+    src: full10,
+    thumbnail: thumb10,
+    caption: 'In Peace | 24 x 36 in | Puff paint and oil on canvas | 2018'
   },
   {
     id: '27',
+    src: full11,
+    thumbnail: thumb11,
+    caption: 'Mermaid | 24 x 48 in | Acrylic and oil on wood panel | 2018'
+  },
+  {
+    id: '28',
+    src: full12,
+    thumbnail: thumb12,
+    caption:
+      'She Had a Bite | 20 x 16 in | Acrylic, paper collage, glitter and resin | 2018'
+  },
+  {
+    id: '29',
+    src: full13,
+    thumbnail: thumb13,
+    caption: 'Closer to the Moon | 24 x 30 in | Oil on canvas | 2018'
+  },
+  {
+    id: '30',
+    src: full14,
+    thumbnail: thumb14,
+    caption: 'Logged In | 51 x 41 in | acrylic and oil on wood panel'
+  },
+  {
+    id: '31',
+    src: full15,
+    thumbnail: thumb15,
+    caption: 'Logged Out | 36 x 18 in | acrylic and Oil on Canvas | 2017'
+  },
+  {
+    id: '32',
+    src: full16,
+    thumbnail: thumb16,
+    caption: 'Chris Cornell | 18 x 24 in | acrylic and oil on canvas | 2017'
+  },
+  {
+    id: '33',
+    src: full17,
+    thumbnail: thumb17,
+    caption: 'David Bowie | 24 x 18 in | Oil on canvas | 2017'
+  },
+  {
+    id: '34',
+    src: full18,
+    thumbnail: thumb18,
+    caption:
+      'Not All Who Wander Are Lost | 60 x 36 in | oil and puff paint on wood | 2017'
+  },
+  {
+    id: '35',
+    src: full19,
+    thumbnail: thumb19,
+    caption: 'Prince | 24 x 36 in | Oil and puff paint on canvas | 2017'
+  },
+  {
+    id: '36',
+    src: full20,
+    thumbnail: thumb20,
+    caption: 'Robin Williams | 30 x 24 in | Oil on canvas | 2017'
+  },
+  {
+    id: '37',
+    src: full21,
+    thumbnail: thumb21,
+    caption: 'Storm Portal | 24 x 30 in | Oil on canvas | 2016'
+  },
+  {
+    id: '38',
+    src: full22,
+    thumbnail: thumb22,
+    caption: 'Selfie Sign | 24 x 18 in | Oil on canvas | 2016'
+  },
+  {
+    id: '39',
+    src: full23,
+    thumbnail: thumb23,
+    caption: 'Disconnected Dancer, | 48 x 24 in | Oil on canvas | 2016'
+  },
+  {
+    id: '40',
+    src: full24,
+    thumbnail: thumb24,
+    caption: 'Mother and Child v1 | 60 x 36 in | Acrylic on wood panel'
+  },
+  {
+    id: '41',
+    src: full25,
+    thumbnail: thumb25,
+    caption: 'Mother and Child v1 | 60 x 36 in | Acrylic on wood panel'
+  },
+  {
+    id: '42',
+    src: full26,
+    thumbnail: thumb26,
+    caption: 'Venus Mother | 30 x 38 in | Acrylic on wood panel'
+  },
+  {
+    id: '43',
     src: full27,
     thumbnail: thumb27,
     caption:
       'Wet Paint, Impulsive Indulgence | Acrylic, paper, resin and glitter on wood | 36 x 36 inches'
   },
   {
-    id: '28',
+    id: '44',
     src: full28,
     thumbnail: thumb28,
     caption:
       'Cecil’s Demise | Acrylic, 3-dimentional paint and resin on wood | 60 x 48 inches'
   },
   {
-    id: '29',
+    id: '45',
     src: full29,
     thumbnail: thumb29,
     caption:
       'Burning, Man | Acrylic, 3-dimensional glitter paint on canvas | 60 x 72 inches'
   },
   {
-    id: '30',
+    id: '46',
     src: full30,
     thumbnail: thumb30,
     caption: 'Cinderella’s Division | Acrylic on canvas | 48x36 inches'
   },
   {
-    id: '31',
+    id: '47',
     src: full31,
     thumbnail: thumb31,
     caption:
       'Do It Upside Down, The Mating Game | Acrylic, 3-dimensional paint on canvas | 60x40 inches'
   },
   {
-    id: '32',
+    id: '48',
     src: full32,
     thumbnail: thumb32,
     caption:
       'Eye, I, Captain | Acrylic, 3-dimensional glitter paint on canvas | 48 x 36 inches'
   },
   {
-    id: '33',
+    id: '49',
     src: full33,
     thumbnail: thumb33,
     caption:
       'I’m Coming | Acrylic, 3-dimensional paint and resin on canvas | 20 x 16 inches'
   },
-  { id: '34', src: full34, thumbnail: thumb34, caption: '' },
-  { id: '35', src: full35, thumbnail: thumb35, caption: '' },
-  { id: '36', src: full36, thumbnail: thumb36, caption: '' },
-  { id: '37', src: full37, thumbnail: thumb37, caption: '' },
-  { id: '38', src: full38, thumbnail: thumb38, caption: '' },
-  { id: '39', src: full39, thumbnail: thumb39, caption: '' },
-  { id: '40', src: full40, thumbnail: thumb40, caption: '' },
-  { id: '41', src: full41, thumbnail: thumb41, caption: '' },
-  { id: '42', src: full42, thumbnail: thumb42, caption: '' },
-  { id: '43', src: full43, thumbnail: thumb43, caption: '' },
-  { id: '44', src: full44, thumbnail: thumb44, caption: '' },
-  { id: '45', src: full45, thumbnail: thumb45, caption: '' },
-  { id: '46', src: full46, thumbnail: thumb46, caption: '' },
-  { id: '47', src: full47, thumbnail: thumb47, caption: '' }
+  { id: '50', src: full34, thumbnail: thumb34, caption: '' },
+  { id: '51', src: full35, thumbnail: thumb35, caption: '' },
+  { id: '52', src: full36, thumbnail: thumb36, caption: '' },
+  { id: '53', src: full37, thumbnail: thumb37, caption: '' },
+  { id: '54', src: full38, thumbnail: thumb38, caption: '' },
+  { id: '55', src: full39, thumbnail: thumb39, caption: '' },
+  { id: '56', src: full40, thumbnail: thumb40, caption: '' },
+  { id: '57', src: full41, thumbnail: thumb41, caption: '' },
+  { id: '58', src: full42, thumbnail: thumb42, caption: '' },
+  { id: '59', src: full43, thumbnail: thumb43, caption: '' },
+  { id: '60', src: full44, thumbnail: thumb44, caption: '' },
+  { id: '61', src: full45, thumbnail: thumb45, caption: '' },
+  { id: '62', src: full46, thumbnail: thumb46, caption: '' },
+  { id: '63', src: full47, thumbnail: thumb47, caption: '' }
 ];
 
 export default class ArtistPage extends React.Component {
