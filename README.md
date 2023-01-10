@@ -8,10 +8,10 @@
     - Add NODE_VERSION = 14.15.1 to Netlify's Environment variable.
 
     - NODE_OPTIONS = "--openssl-legacy-provider" due to breaking changes in NodeJS V17+
-      a. Add .env.development with "NODE_OPTIONS=--openssl-legacy-provider".  [https://dev.to/steeeeeph/how-to-implement-env-variables-in-gatsby-and-react-252d](Implement this variable into Gatsby's Environment when building.)
+      a. Add .env.development with "NODE_OPTIONS=--openssl-legacy-provider". [https://dev.to/steeeeeph/how-to-implement-env-variables-in-gatsby-and-react-252d](Implement this variable into Gatsby's Environment when building.)
            
       OR
-      
+
       b. run "set NODE_OPTIONS=--openssl-legacy-provider" in Terminal before running 'gatsby develop' or 'gatsby build' 
 
     - push 'master' branch to git repo; repo is linked to Netlify build services.
