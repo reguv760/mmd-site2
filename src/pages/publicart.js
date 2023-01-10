@@ -91,6 +91,19 @@ import euphorosFull1 from './../images/publicart/euphoros-1.jpg';
 import euphorosFull2 from './../images/publicart/euphoros-2.jpg';
 import euphorosFull3 from './../images/publicart/euphoros-3.jpg';
 
+//2023
+import Thumb1_23 from './../images/publicart/thumbs/23-mural1-thumb.jpg';
+import Thumb2_23 from './../images/publicart/thumbs/23-mural2-thumb.jpg';
+
+import Full1_23 from './../images/publicart/23-mural1.jpg';
+import Full2_23 from './../images/publicart/23-mural2.jpg';
+
+
+const PUBLICART_23 = [
+  { id: '0', src: Full1_23, thumbnail: Thumb1_23 },
+  { id: '1', src: Full2_23, thumbnail: Thumb2_23 },
+];
+
 
 const PUBLICART_IMAGES = [
   { id: '0', src: BBLegends, thumbnail: BBLegendsThumb },
@@ -158,6 +171,13 @@ export default class PublicArtPage extends React.Component {
           </div>
 
           <div className="pageContainer right">
+            <Gallery
+              images={PUBLICART_23.map(({ id, src, thumbnail }) => ({
+                src,
+                thumbnail
+              }))}
+            />
+
             <Gallery
               images={PUBLICART_IMAGES.map(({ id, src, thumbnail }) => ({
                 src,
