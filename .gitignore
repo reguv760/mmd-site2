@@ -5,7 +5,8 @@ yarn-error.log
 
 # Build directory
 /public
-.env
+.env.development
+.env.production
 .DS_Store
 gh_token.txt
 mmd-site2-051221.zip

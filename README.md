@@ -4,19 +4,22 @@
 
    - Used by dev for testing local and server deployment.
 
-2. Testing: Netlify Deploy fails due to old Node version 
-    - Add NODE_VERSION = 14.15.1 to Netlify's Environment variable.
+2. NodeJS v16+ issues
 
+    - node-sass 4.x.x is incompatible; revert to NodeJS v14+   
     - NODE_OPTIONS = "--openssl-legacy-provider" due to breaking changes in NodeJS V17+
-      a. Add .env.development with "NODE_OPTIONS=--openssl-legacy-provider". Implement this variable into Gatsby's Dev or Production Environment when building. Refer to: [https://dev.to/steeeeeph/how-to-implement-env-variables-in-gatsby-and-react-252d](https://dev.to/steeeeeph/how-to-implement-env-variables-in-gatsby-and-react-252d)
+      a. Add .env.development with "NODE_OPTIONS=--openssl-legacy-provider". Implement this variable into Gatsby's Dev or Production Environment when building. Refer to: [https://dev.to/steeeeeph/how-to-implement-env-variables-in-gatsby-and-react-252d](Implement dotenv)
            
       OR
 
       b. run "set NODE_OPTIONS=--openssl-legacy-provider" in Terminal before running 'gatsby develop' or 'gatsby build' 
 
+
+3. Testing: Netlify Deploy fails due to old Node version 
+    - Add NODE_VERSION = 14.15.1 to Netlify's Environment variable.
     - push 'master' branch to git repo; repo is linked to Netlify build services.
 
-3. Client has domain name and hosting outside of Netlify
+4. Client has domain name and hosting outside of Netlify
 
    - Must use `gatsby build` after all changes are made and pushed to master
    - once `src/public` folder built, copy contents of folder to 'public_html' in client's hosting
