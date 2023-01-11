@@ -173,7 +173,7 @@ const ARTIST_IMAGES = [
     id: '4',
     src: full23_4,
     thumbnail: thumb23_4,
-    caption: 'Consumed | 36x48 in'
+    caption: 'Consumed by Your Own Devices | 36x48 in'
   },
   {
     id: '5',
