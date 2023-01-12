@@ -1,12 +1,17 @@
 ## Notes for MMD site
+1. Must install Node v14+ and Gatsbyl-CLI to v4.x
+    - Site is outdated due to new changes in NodeJS V17+
+    - Site currently builds with
+        a. NodeJS 14.21.2
+        b. Gatsby-CLI 4.25
 
-1. Github Repo is linked to Netlify
+2. Github Repo is linked to Netlify
 
    - Used by dev for testing local and server deployment.
 
-2. NodeJS v16+ issues
+3. NodeJS v16+ issues
 
-    - node-sass 4.x.x is incompatible; revert to NodeJS v14+   
+    - node-sass 4.x.x is incompatible; revert to NodeJS v14+ 
     - NODE_OPTIONS = "--openssl-legacy-provider" due to breaking changes in NodeJS V17+
       a. Add .env.development with "NODE_OPTIONS=--openssl-legacy-provider". Implement this variable into Gatsby's Dev or Production Environment when building. Refer to: [https://dev.to/steeeeeph/how-to-implement-env-variables-in-gatsby-and-react-252d](Implement dotenv)
            
@@ -15,11 +20,11 @@
       b. run "set NODE_OPTIONS=--openssl-legacy-provider" in Terminal before running 'gatsby develop' or 'gatsby build' 
 
 
-3. Testing: Netlify Deploy fails due to old Node version 
+4. Testing: Netlify Deploy fails due to old Node version 
     - Add NODE_VERSION = 14.15.1 to Netlify's Environment variable.
     - push 'master' branch to git repo; repo is linked to Netlify build services.
 
-4. Client has domain name and hosting outside of Netlify
+5. Client has domain name and hosting outside of Netlify
 
    - Must use `gatsby build` after all changes are made and pushed to master
    - once `src/public` folder built, copy contents of folder to 'public_html' in client's hosting
