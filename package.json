@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "wet-paint-studio",
+  "description": "Melany Meza-Dierks website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Reginald Galang <reguv760@gmail.com>",
   "dependencies": {
     "acorn": "^5.7.4",
     "bl": "^1.2.3",
