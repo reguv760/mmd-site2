@@ -126,6 +126,7 @@ import thumb23_13 from './../images/artist/2023/thumb/taurus-thumb.jpg';
 import thumb23_14 from './../images/artist/2023/thumb/theChain-thumb.jpg';
 import thumb23_15 from './../images/artist/2023/thumb/thunderC-thumb.jpg';
 import thumb23_16 from './../images/artist/2023/thumb/wreckYourself-thumb.jpg';
+import thumb23_17 from './../images/artist/2023/thumb/madonnaChild-thumb.jpg';
 
 
 
@@ -147,6 +148,7 @@ import full23_13 from './../images/artist/2023/taurus.jpg';
 import full23_14 from './../images/artist/2023/theChain.jpg';
 import full23_15 from './../images/artist/2023/thunderC.jpg';
 import full23_16 from './../images/artist/2023/wreckYourself.jpg';
+import full23_17 from './../images/artist/2023/madonnaChild.jpg';
 
 
 
@@ -408,6 +410,13 @@ const ARTIST_IMAGES = [
     thumbnail: thumb25,
     caption: 'Mother and Child v1 | 60x36 in | Acrylic on wood panel'
   },
+  {
+    id: '23_17',
+    src: full23_17,
+    thumbnail: thumb23_17,
+    caption: 'Such a Madonna and Child | 24x36 in | Acrylic on canvas'
+  },
+  
   {
     id: '42',
     src: full26,
