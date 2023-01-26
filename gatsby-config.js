@@ -14,6 +14,7 @@ module.exports = {
     url: 'http://mywetpaintstudio.com',
     siteUrl: 'http://mywetpaintstudio.com'
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',

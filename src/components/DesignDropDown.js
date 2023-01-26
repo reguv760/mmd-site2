@@ -27,7 +27,7 @@ class DesignDropDown extends React.Component {
                 fade
                 to="/advertising/"
                 activeStyle={{
-                  color: '#e46815',
+                  color: '#851c7f',
                 }}
                 duration={0.6}
               >
@@ -40,7 +40,7 @@ class DesignDropDown extends React.Component {
                 fade
                 to="/graphic/"
                 activeStyle={{
-                  color: '#e46815',
+                  color: '#851c7f',
                 }}
                 duration={0.6}
               >
@@ -53,7 +53,7 @@ class DesignDropDown extends React.Component {
                 fade
                 to="/storyboards/"
                 activeStyle={{
-                  color: '#e46815',
+                  color: '#851c7f',
                 }}
                 duration={0.6}
               >
