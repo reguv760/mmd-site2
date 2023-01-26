@@ -28,6 +28,18 @@ nav
       margin:0 1rem;
       z-index:1000;
     }
+
+    //merchandise link:::
+    & li.merch a 
+    {
+      border:1px solid $charcoal;
+      color:$purple;
+      padding: 0.6rem;
+    }
+    & li.merch a:hover
+    {
+      color:$orange;
+    }
   }
 
   /* drop down menu */
@@ -84,7 +96,7 @@ nav
 
     & ul.subMenu li a:hover
     {
-      color:$orange;
+      color:$purple;
     }
   }
 
