@@ -5,11 +5,14 @@ yarn-error.log
 
 # Build directory
 /public
+/2022_update
 .env.development
 .env.production
 .DS_Store
 gh_token.txt
+mmd-site2-080523.zip
 mmd-site2-012723.zip
 mmd-site2-051222.zip
 mmd-site2-080721.zip
+melanydierks-ArtistBio.pdf
 _tattoos-hero.jpg

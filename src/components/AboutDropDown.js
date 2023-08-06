@@ -7,6 +7,7 @@ import Dropdown, {
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import CoverPDF from '../downloads/melanydierks-CV.pdf';
 import ResumePDF from '../downloads/melanydierks-resume2022.pdf';
+import StatementPDF from '../downloads/melanydierks-ArtistStatement.pdf';
 
 class AboutDropDown extends React.Component {
 
@@ -36,6 +37,17 @@ class AboutDropDown extends React.Component {
                 biography
               </AniLink>
             </li> 
+            
+            <li>
+              <a
+                href={StatementPDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Artist Statement PDF"
+              >
+                statement
+              </a>
+            </li>
             <li>
               <a
                 href={CoverPDF}
