@@ -90,7 +90,7 @@
       /* index page */
       display: flex;
       justify-content: center;
-      overflow-y: auto; /* auto enable scrollbar = better for responsive */
+      /* overflow-y: auto; auto enable scrollbar = better for responsive */
       position: relative;
 
       & .bioText {
@@ -100,7 +100,7 @@
         padding: 0 0.5em 0 0.5em;
 
         & p {
-          margin: 0 1rem 2rem 1rem;
+          margin: 1rem 1rem 2rem 1rem;
         }
 
         & p.indent {
