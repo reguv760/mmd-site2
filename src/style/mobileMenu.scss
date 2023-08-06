@@ -85,6 +85,16 @@
     {
       color:$purple;
     }
+
+    & li.merch a 
+    {
+      color:$purple;
+    }
+
+    & li.merch a:hover
+    {
+      color:$orange;
+    }
   }
 }
 

@@ -36,6 +36,7 @@ nav
       color:$purple;
       padding: 0.6rem;
     }
+    
     & li.merch a:hover
     {
       color:$orange;
@@ -48,10 +49,8 @@ nav
   {
     display:inline-block;
 
-    &__link
-    {
-
-    }
+    /*&__link
+    { } */
 
     &__Menu
     {
