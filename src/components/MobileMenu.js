@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 
 import ResumePDF from '../downloads/melanydierks-resume2022.pdf';
 import CoverPDF from '../downloads/melanydierks-CV.pdf';
+import StatementPDF from '../downloads/melanydierks-ArtistStatement.pdf';
 
 class MobileMenu extends React.Component {
   showSettings(event) {
@@ -115,6 +116,17 @@ class MobileMenu extends React.Component {
             >
               About Me: <span className="thin">Biography</span>
             </Link>
+          </li>
+          
+          <li>
+            <a
+              className="menu-item"
+              href={StatementPDF}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              About Me: <span className="thin">Statement</span>
+            </a>
           </li>
           <li>
             <a

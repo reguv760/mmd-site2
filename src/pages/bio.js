@@ -22,26 +22,23 @@ const BioPage = props => {
         <div className="pageContainer right">
           <div className="bioText">
             <p>
-            Melany Dierks was born in Caracas, Venezuela January 22, 1983. Gaining maturity in her practice, a bad acid trip  and the desire to rebel, Melany moved 
-            to CA in 2004 and received her BFA in Communication Arts from Otis College of Art and Design in 2007 and established herself as a graphic designer and storyboard artist. 
-             Teaching basic elements of painting to children would be the next driving force to transition 
-             from graphic applications to more of a studio practice while picking up the techniques of 
-             being a tattoo artist. A few years after giving birth in 2013, she received her MFA from Otis
-             in 2016, with a focus on painting. She has embraced all the codes of realism and narrative while 
-             at the same time, allowing fantasy to permeate the paintings in a way that questions reality. 
-             She began painting murals after moving to Long Beach in late 2016. Art has been the driving force
-             of her life, with every aspect honored with gratitude. She currently lives in Long Beach
-             established as a working artist in the fields of paint and tattoo. 
+            Melany Dierks was born in Caracas, Venezuela January 22, 1983. Growing up with a stutter from age 6-12 made it difficult to socialize in school, 
+            so drawing other students became the primary method of establishing relationships and recognition from others. Portraiture had been consistent and 
+            strong in her practice and lead to further explorations of the human form, the figurative and the conditions that apply to the narrative. She moved to CA 
+            in 2004 and received her BFA in Communication Arts from Otis College of Art and Design in 2007 and established herself as a graphic designer and storyboard artist 
+            but, would later find herself back in touch with her roots as art teacher, painter, street and tattoo artist. A few years after giving birth in 2013, 
+            she received her MFA from Otis in 2016, with a focus on painting. Her studio was also where she tattooed clients.
 
             </p>
+            <p className="indent">
+            Growing up American-Venezuelan pushed her to question perfection in the sense of what it is to be a woman surrounded by a system of patriarchy heavily 
+            influenced by the Church. Conflicted by her suroundings she was forced to constanly question the expectations in life, as a Venezuelan woman, an American woman, 
+            a daughter, a mother and an artist.
+            </p>
 
-            {/* <p className="indent">
-              Gaining maturity in her practice, a bad acid trip and the desire
-              to rebel, Melany moved to CA in 2004 and received her BFA in
-              Communication Arts from Otis College of Art and Design and
-              established herself as a graphic designer and storyboard artist.
-            </p> */}
-
+            <p className="indent">As a tattoo artist, I am inspired by the clients as much as I am the tattoo and capturing the tattooed human form with imagery has added to the 
+            challenging efforts of portraiture that I have fervently practiced. Street art has had its influence through modes of graphic design and advertising 
+            and has been a part of my practice, expanding the life of art from canvas to skin and the walls of the public eye.</p>
            
           </div>
         </div>
