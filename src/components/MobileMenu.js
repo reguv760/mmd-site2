@@ -148,7 +148,7 @@ class MobileMenu extends React.Component {
               About Me: <span className="thin">Resume</span>
             </a>
           </li>
-          <li>
+          <li className="merch">
             <a
               className="menu-item"
               href="http://Md-art-8101.myshopify.com"
