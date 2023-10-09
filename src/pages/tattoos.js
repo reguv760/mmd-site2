@@ -260,6 +260,7 @@ export default class TattooPage extends React.Component {
           <div className="pageContainer right">
             <Gallery
               images={TATTOO_IMAGES.map(({ id, src, thumbnail, caption }) => ({
+                id,
                 src,
                 thumbnail
               }))}
