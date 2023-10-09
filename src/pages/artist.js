@@ -264,7 +264,8 @@ const ARTIST_IMAGES = [
     id: '17',
     src: full01,
     thumbnail: thumb01,
-    caption: ' iCloud | 24x18 in | acrylic and oil'
+    caption: ' iCloud | 24x18 in | acrylic and oil | SOLD | SOLD',
+    sold: true
   },
   {
     id: '18',
@@ -366,7 +367,8 @@ const ARTIST_IMAGES = [
     src: full18,
     thumbnail: thumb18,
     caption:
-      'Not All Who Wander Are Lost | 60x36 in | oil and puff paint on wood | 2017'
+      'Not All Who Wander Are Lost | 60x36 in | oil and puff paint on wood | 2017',
+      sold: false
   },
   {
     id: '35',
@@ -503,10 +505,12 @@ export default class ArtistPage extends React.Component {
 
           <div className="pageContainer right">
             <Gallery
-              images={ARTIST_IMAGES.map(({ id, src, thumbnail, caption }) => ({
+              images={ARTIST_IMAGES.map(({ id, src, thumbnail, caption, sold }) => ({
+                id,
                 src,
                 thumbnail,
-                caption
+                caption,
+                sold
               }))}
             />
           </div>

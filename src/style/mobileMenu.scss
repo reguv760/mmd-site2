@@ -67,7 +67,7 @@
     & li
     {
       margin:1.25rem 0;
-      width:70%;
+      width:90%;
     }
   
     & li a
@@ -84,6 +84,16 @@
     & li a:hover
     {
       color:$purple;
+    }
+
+    & li.merch a 
+    {
+      color:$purple;
+    }
+
+    & li.merch a:hover
+    {
+      color:$orange;
     }
   }
 }

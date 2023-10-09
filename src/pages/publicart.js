@@ -173,6 +173,7 @@ export default class PublicArtPage extends React.Component {
           <div className="pageContainer right">
             <Gallery
               images={PUBLICART_23.map(({ id, src, thumbnail }) => ({
+                id,
                 src,
                 thumbnail
               }))}
@@ -180,6 +181,7 @@ export default class PublicArtPage extends React.Component {
 
             <Gallery
               images={PUBLICART_IMAGES.map(({ id, src, thumbnail }) => ({
+                id,
                 src,
                 thumbnail
               }))}
@@ -187,6 +189,7 @@ export default class PublicArtPage extends React.Component {
 
             <Gallery
               images={KOBENUT_IMAGES.map(({ id, src, thumbnail }) => ({
+                id,
                 src,
                 thumbnail
               }))}
@@ -194,6 +197,7 @@ export default class PublicArtPage extends React.Component {
 
             <Gallery
               images={LEGENDS_IMAGES.map(({ id, src, thumbnail }) => ({
+                id,
                 src,
                 thumbnail
               }))}
@@ -201,6 +205,7 @@ export default class PublicArtPage extends React.Component {
             
             <Gallery
               images={EUPHOROS_IMAGES.map(({ id, src, thumbnail }) => ({
+                id,
                 src,
                 thumbnail
               }))}
@@ -208,6 +213,7 @@ export default class PublicArtPage extends React.Component {
 
             <Gallery
               images={OCTOPUS_IMAGES.map(({ id, src, thumbnail }) => ({
+                id,
                 src,
                 thumbnail
               }))}
@@ -215,6 +221,7 @@ export default class PublicArtPage extends React.Component {
 
             <Gallery
               images={MERMAID_IMAGES.map(({ id, src, thumbnail }) => ({
+                id,
                 src,
                 thumbnail
               }))}
