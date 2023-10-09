@@ -124,6 +124,8 @@ class MobileMenu extends React.Component {
               href={StatementPDF}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Artist Statement PDF"
+              
             >
               About Me: <span className="thin">Statement</span>
             </a>
@@ -134,6 +136,7 @@ class MobileMenu extends React.Component {
               href={CoverPDF}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Cover Letter PDF"
             >
               About Me: <span className="thin">CV</span>
             </a>
@@ -144,16 +147,18 @@ class MobileMenu extends React.Component {
               href={ResumePDF}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Resume PDF"
             >
               About Me: <span className="thin">Resume</span>
             </a>
           </li>
-          <li>
+          <li className="merch">
             <a
               className="menu-item"
               href="http://Md-art-8101.myshopify.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="My Wet Paint Shopify Store"
             >
               Merch
             </a>
