@@ -60,6 +60,7 @@ export default class StoryboardPage extends React.Component {
           <div className="pageContainer right">
             <Gallery
               images={PEPSI_IMAGES.map(({ id, src, thumbnail }) => ({
+                id,
                 src,
                 thumbnail
               }))}
@@ -67,6 +68,7 @@ export default class StoryboardPage extends React.Component {
 
             <Gallery
               images={VREAD_IMAGES.map(({ id, src, thumbnail }) => ({
+                id,
                 src,
                 thumbnail
               }))}
