@@ -59,7 +59,12 @@ class Gallery extends React.Component {
     /* {  this is output of menu items  } */
     const gallery = images.map((obj, i) => {
       return (
-        <li className="gallery-thumbContainer" key={i}>
+        <li className="gallery-thumbContainer" key={i}>          
+
+          { //conditional render based on if artwork is sold
+            obj.sold && ( <span className="dot"/> ) 
+          }
+          
           <a
             className="gallery-thumb"
             href={obj.src}
