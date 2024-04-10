@@ -80,7 +80,7 @@ class Gallery extends React.Component {
     });
 
     /* {  this is the main output of Gallery.js!  } */
-    return <ul className="galleryContainer">{gallery}</ul>;
+    return <ul className="galleryContainer"> {gallery} </ul>;
   }
 
   //this is the output of this class:::
