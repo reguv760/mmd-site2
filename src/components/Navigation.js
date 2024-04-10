@@ -62,13 +62,13 @@ const Navigation = () => {
         
         <li className="merch">
           <a
-                href="http://Md-art-8101.myshopify.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="My Wet Paint Shopify Store"
-              >
-                Merch
-            </a>
+              href="http://Md-art-8101.myshopify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="My Wet Paint Shopify Store"
+            >
+            Merch
+          </a>
         </li>
       </ul>
     </nav>
