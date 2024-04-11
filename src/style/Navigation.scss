@@ -67,11 +67,17 @@ nav
     display: none;
     position: absolute;
     background-color:$off-whiteAlpha;
-    margin:1rem 0 0 0;
+    margin:2rem 0 0 0;
     border-radius:0.2rem;
-    padding-right:1rem;
-  /* drop down menu item */
+    padding-right:1rem;    
 
+    opacity: 1;
+    animation-name: dropDownfadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.25s;
+    
+    /* drop down menu item */
     & ul.subMenu
     {
       display:flex;
@@ -85,7 +91,7 @@ nav
       letter-spacing:0;
       text-align:left;
       margin:0;
-      padding:1rem 0 2rem 0;
+      padding: 1.5rem 0 1.5rem 0;
     }
 
     & ul.subMenu li a
@@ -111,4 +117,13 @@ nav
     cursor:pointer;
   }
 
+}
+
+@keyframes dropDownfadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
