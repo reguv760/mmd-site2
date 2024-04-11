@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
 import BioImg from './../images/bio-hero.jpg';
-
 import Layout from './../components/layout.js';
 
 const BioPage = props => {
