@@ -11,8 +11,8 @@ module.exports = {
     keywords:
       'Fine Artist, Los Angeles, Long Beach, California, Caracas, Venezuela, Tattoos, Advertising, Graphic Design, Art Gallery, Art Director, Teacher, Mural Painter',
     siteAuthor: 'Reginald Galang',
-    url: 'http://mywetpaintstudio.com',
-    siteUrl: 'http://mywetpaintstudio.com'
+    url: 'https://mywetpaintstudio.com',
+    siteUrl: 'https://mywetpaintstudio.com'
   },
   flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
