@@ -4,7 +4,7 @@
   padding: 0 0 4rem 0;
 }
 
-/* all page structure all belong to us */
+/* all page structure belong to us */
 .pageContainer {
   display: flex;
   flex-flow: row wrap;
@@ -27,7 +27,9 @@
     & img {
       object-fit: cover;
       margin: 0;
-      border: 1px solid $fadedDarkGrey;
+      border: 0.1rem solid $fadedDarkGrey;
+      background-clip: border-box;
+      border-radius: 0.5rem;
     }
   }
 

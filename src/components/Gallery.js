@@ -61,7 +61,7 @@ class Gallery extends React.Component {
       return (
         <li className="gallery-thumbContainer" key={i}>          
 
-          { //conditional render based on if artwork is sold
+          { //conditional render if artwork is sold
             obj.sold && ( <span className="dot"/> ) 
           }
           
@@ -73,8 +73,8 @@ class Gallery extends React.Component {
             <img src={obj.thumbnail} alt="thumbnail" />
           </a>
 
-          {/* <h3>{obj.caption}</h3>
-                    <p>{obj.description}</p> */}
+          { /* <h3>{obj.caption}</h3>
+          <p>{obj.description}</p> */ }
         </li>
       );
     });

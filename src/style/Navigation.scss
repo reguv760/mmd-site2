@@ -25,7 +25,7 @@ nav
     {
       display:inline-block;
       padding:0;
-      margin:0 1rem;
+      margin:0 1.25rem;
       z-index:1000;
     }
 
@@ -68,13 +68,14 @@ nav
     position: absolute;
     background-color:$off-whiteAlpha;
     margin:2rem 0 0 0;
-    border-radius:0.2rem;
-    padding-right:1rem;    
+    border-radius:0.25rem;
+    padding-right:1rem; 
+    border: 0.1rem solid $fadedDarkGrey;   
 
     opacity: 1;
     animation-name: dropDownfadeIn;
     animation-iteration-count: 1;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
     animation-duration: 0.25s;
     
     /* drop down menu item */
