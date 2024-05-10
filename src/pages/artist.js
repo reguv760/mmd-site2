@@ -152,10 +152,12 @@ import full23_17 from './../images/artist/2023/madonnaChild.jpg';
 import thumb24_1 from './../images/artist/2024/thumb/CareBearStare-thumb.jpg';
 import thumb24_2 from './../images/artist/2024/thumb/WelcomeToCare-thumb.jpg';
 import thumb24_3 from './../images/artist/2024/thumb/Mydusa-thumb.jpg';
+import thumb24_4 from './../images/artist/2024/thumb/TheRabbit-thumb.jpg';
 ////////////////////////////////////////////////////////////
 import full24_1 from './../images/artist/2024/CareBearStare.jpg';
 import full24_2 from './../images/artist/2024/WelcomeToCare.jpg';
 import full24_3 from './../images/artist/2024/Mydusa.jpg';
+import full24_4 from './../images/artist/2024/TheRabbit.jpg';
 
 
 
@@ -183,13 +185,13 @@ const ARTIST_IMAGES = [
     caption: 'Mydusa | 18x24 in | 2024',
     sold: false
   },
-  /*{
+  {
     id: '4',
-    src: full23_4,
-    thumbnail: thumb23_4,
-    caption: 'Consumed by Your Own Devices | 36x48 in',
+    src: full24_4,
+    thumbnail: thumb24_4,
+    caption: 'The Rabbit: In This Moment | 35x24 in | 2024',
     sold: false
-  }, */
+  },
 
   //2023 and before
   {
