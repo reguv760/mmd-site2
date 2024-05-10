@@ -31,6 +31,7 @@ ul.galleryContainer
       width: 0.8rem;
       background-color: $soldArt;
       border-radius: 50%;
+      z-index: 1; 
     }
 
     & a img
