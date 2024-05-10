@@ -39,12 +39,17 @@ ul.galleryContainer
       padding:0;
       background-clip: border-box;
       border-radius: 0.2rem;
-      box-shadow: 0 0.1rem 0.1rem $charcoal;
+      //box-shadow: 0 0.1rem 0.1rem $charcoal;
+      filter:drop-shadow(0.1rem 0.1rem 0.1rem $charcoal);  
+
+      will-change: filter;
+      transition: filter 0.3s ease-out;
     }
     
     & a img:hover
     {
-      opacity:0.75;
+      opacity:0.75;      
+      filter:drop-shadow(0.2rem 0.2rem 0.2rem $charcoal);  
     }
   }
 }

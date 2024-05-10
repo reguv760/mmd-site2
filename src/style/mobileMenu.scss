@@ -10,8 +10,7 @@
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: $charcoal;
-  //filter:drop-shadow(0.1rem 0.1rem 0.1rem $black);  
-  box-shadow: 0 0.1rem 0.1rem $black;
+  filter:drop-shadow(0.1rem 0.1rem 0.1rem $black);  
 }
 
 /* Position and sizing of clickable cross button */
