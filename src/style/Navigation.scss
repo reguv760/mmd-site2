@@ -71,12 +71,13 @@ nav
     border-radius:0.25rem;
     padding-right:1rem; 
     border: 0.1rem solid $fadedDarkGrey;   
+    //filter:drop-shadow(0.1rem 0.1rem 0.25rem $charcoal);  
 
     opacity: 1;
     animation-name: dropDownfadeIn;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.25s;
+    animation-duration: 0.3s;
     
     /* drop down menu item */
     & ul.subMenu
