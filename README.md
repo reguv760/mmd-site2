@@ -2,7 +2,7 @@
 1. Must install Node v14+ and Gatsbyl-CLI to v4.x
     - Site is outdated due to new changes in NodeJS V17+
     - Site currently builds with
-        a. NodeJS 14.21.2
+        a. NodeJS 14.21.3
         b. Gatsby-CLI 4.25
 
 2. Github Repo is linked to Netlify
