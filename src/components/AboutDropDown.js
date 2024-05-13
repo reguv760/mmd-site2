@@ -6,7 +6,7 @@ import Dropdown, {
 
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import CoverPDF from '../downloads/melanydierks-CV.pdf';
-import ResumePDF from '../downloads/melanydierks-resume2022.pdf';
+import ResumePDF from '../downloads/melanydierks-resume2024.pdf';
 import StatementPDF from '../downloads/melanydierks-ArtistStatement.pdf';
 
 class AboutDropDown extends React.Component {

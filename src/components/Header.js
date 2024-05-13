@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import Navigation from './Navigation';
 import MobileMenu from './MobileMenu';
-import Logo from './../images/md-logo2.png';
+import Logo from './../images/md-logo3.png';
 
 const Header = () => (
   <div className="header">
