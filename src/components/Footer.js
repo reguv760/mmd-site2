@@ -34,7 +34,7 @@ const Footer = () => (
         />
       </li>
 
-      <li className="year">&copy; {currentDate.getFullYear()} Melany Dierks</li>
+      <li className="year">&copy; {currentDate.getFullYear()} Melany MD</li>
       <li className="webdev">
         website by:{' '}
         <a
