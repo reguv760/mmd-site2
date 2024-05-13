@@ -4,7 +4,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Wet Paint Studio : Melany Dierks website',
+    title: 'Wet Paint Studio : Melany MD website',
     titleTemplate: '%s',
     description:
       'Wet Paint(n.) A state of freshness and vigor that categorizes the art of Melany Meza-Dierks.',
