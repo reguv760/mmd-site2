@@ -7,7 +7,7 @@ module.exports = {
     title: 'Wet Paint Studio : Melany MD website',
     titleTemplate: '%s',
     description:
-      'Wet Paint(n.) A state of freshness and vigor that categorizes the art of Melany Meza-Dierks.',
+      'Wet Paint(n.) A state of freshness and vigor that categorizes the art of Melany MD.',
     keywords:
       'Fine Artist, Los Angeles, Long Beach, California, Caracas, Venezuela, Tattoos, Advertising, Graphic Design, Art Gallery, Art Director, Teacher, Mural Painter',
     siteAuthor: 'Reginald Galang',
