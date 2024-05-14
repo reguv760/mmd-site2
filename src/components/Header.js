@@ -13,7 +13,7 @@ const Header = () => (
 
     <div className="left">
       <Link to="/" exact="true">
-        <img src={Logo} alt="Melany Dierks logo glyph" />
+        <img src={Logo} alt="Melany MD logo glyph" />
       </Link>
     </div>
 

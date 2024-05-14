@@ -37,7 +37,7 @@ class Index extends React.Component {
               <b>Wet Paint</b> (n.)
               <br />
               A state of freshness and vigor that categorizes the art of
-              Melany Dierks.
+              Melany MD.
             </div>
           </div>
           <div className="blackBorder" />
