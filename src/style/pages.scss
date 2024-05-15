@@ -104,6 +104,14 @@
           margin: 0 1rem 2rem 1rem;
         }
 
+        p:first-child:first-letter {
+          float: left;
+          font-size: 6rem;
+          line-height: 6rem;
+          padding-top: 2.4rem;
+          padding-right: 0.25rem;
+        }
+
         & p.indent {
           text-indent: 1rem;
         }

@@ -20,8 +20,7 @@ const BioPage = props => {
 
         <div className="pageContainer right">
           <div className="bioText">
-            <p>
-            Melany Meza-Dierks was born in Caracas, Venezuela January 22, 1983. Her family moved to the United States when she was still in diapers.
+            <p>M</p><p>elany Meza-Dierks was born in Caracas, Venezuela January 22, 1983. Her family moved to the United States when she was still in diapers.
             Growing up American-Venezuelan in a Latin family pushed her to question perfection, religion and traditional gender roles in society. Conflicted
             by her surroundings, she was forced to constantly question the expectations in life, as a Venezuelan woman, an American woman, a daughter, a mother and an artist.
             Developing a stutter from age 6-12 made it difficult to socialize in school, so drawing other students became the primary method of establishing relationships and recognition from others.
