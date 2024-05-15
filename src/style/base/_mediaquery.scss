@@ -71,6 +71,7 @@
   }
 
   .pageContainer .left {
+    
     & img {
       margin: 0 1rem;
     }
@@ -93,7 +94,11 @@
   }
 
   .pageContainer .left {
-    min-height: 48rem;
+    min-height: 4rem;
+  }
+
+  .pageContainer .right {
+    min-height: 4rem;
   }
 
   footer ul li div a i {
