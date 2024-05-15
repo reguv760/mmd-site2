@@ -100,19 +100,21 @@
         height: 45rem;
         padding: 0 0.5em 0 0.5em;
 
-        & p {
-          margin: 0 1rem 2rem 1rem;
-        }
-
-        p:first-child:first-letter {
+        & p:first-child:first-letter {
           float: left;
           font-size: 6rem;
+          font-weight:300;
           line-height: 6rem;
-          padding-top: 2.4rem;
-          padding-right: 0.25rem;
+          margin-left: -0.5rem;
+          padding-top: 0.4rem;
+        }
+        
+        & p {
+          margin: 0 1rem 0 1rem;
         }
 
         & p.indent {
+          margin: 0.5rem 1rem 0 1rem;
           text-indent: 1rem;
         }
       }
