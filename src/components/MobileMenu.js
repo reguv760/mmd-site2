@@ -68,6 +68,18 @@ class MobileMenu extends React.Component {
               activeStyle={{
                 color: '#e46815'
               }}
+              to="/books/"
+            >
+              Books
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className="menu-item"
+              activeStyle={{
+                color: '#e46815'
+              }}
               to="/tattoos/"
             >
               Tattoos

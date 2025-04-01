@@ -27,6 +27,17 @@ const Navigation = () => {
 
         <li>
           <ArtistDropDown name="art" />
+        </li>        
+
+        <li>
+          <AniLink
+            fade
+            to="/books/"
+            activeStyle={{ color: '#e46815' }}
+            duration={0.6}
+          >
+            books
+          </AniLink>
         </li>
 
         <li>
@@ -39,17 +50,6 @@ const Navigation = () => {
             tattoos
           </AniLink>
         </li>
-
-        {/* <li>
-            <AniLink
-              fade
-              to="/publicart/"
-              activeStyle={{ color: '#d4740d' }}
-              duration={0.5}
-            >
-              Public Art
-            </AniLink>
-          </li> */}
 
         <li>
           <DesignDropDown name="design" />
