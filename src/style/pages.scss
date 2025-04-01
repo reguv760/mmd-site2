@@ -146,6 +146,15 @@
         opacity: 0.2;
       }
     }
+
+    & .pageContainer.right {
+      & .textBox {    
+        font-size: 1.2rem;
+        line-height: 1.4em;
+        // height: 45rem;
+        padding: 0 0.5em 0 0.5em;
+      }
+    }
   }
 
   /* Tattoo page */
