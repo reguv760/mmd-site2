@@ -136,6 +136,17 @@
       flex-flow: column nowrap;
     }
   }
+  
+  /* Books page */
+  &.booksPage {  
+    & .pageContainer.left {
+
+      & img {        
+        background-color: $darkGrey;
+        opacity: 0.2;
+      }
+    }
+  }
 
   /* Tattoo page */
   // &.tattooPage {  }
