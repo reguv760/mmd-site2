@@ -16,11 +16,10 @@ import Gallery from './../components/Gallery';
 //full images:::
 //import full04 from './../images/tsattoos/2019/2019-tattoo-4.jpg';
 
-//give unique ID and ref src + thumbnail
-const SLFirechild_IMAGES = [  
-  // 2023
-  
-  //{ id: '23_1', src: full23_1, thumbnail: thumb23_1 },
+
+const SLFirechild_IMAGES = [    
+  //give unique ID and ref src + thumbnail
+  //{ id: 'uniqueID', src: full04, thumbnail: thumb04 },
 ];
 
 export default class BooksPage extends React.Component {
@@ -46,6 +45,22 @@ export default class BooksPage extends React.Component {
                 thumbnail
               }))}
             /> */}
+            <div className="textBox">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero eget dolor imperdiet euismod eget et velit.
+                In fringilla placerat justo, ut porta magna. Suspendisse ultricies, magna sed faucibus tristique, dui risus ultricies tortor, 
+                vitae hendrerit elit mauris id sem. Curabitur commodo semper odio eget rutrum. Nam sem massa, fringilla egestas sem vel, 
+                convallis venenatis sem. Aliquam metus leo, pulvinar imperdiet convallis eu, pellentesque vitae sapien. Ut porttitor 
+                dictum efficitur. Integer nec diam aliquet, tincidunt mauris nec, elementum ante. Fusce tristique augue et nisi accumsan, 
+                sit amet fermentum lectus mattis. Sed id tempor ante. Donec lobortis interdum magna quis volutpat. Curabitur imperdiet rhoncus
+                 mauris, et ultrices metus molestie sit amet.
+              </p>
+              <p>Suspendisse potenti. Fusce augue turpis, euismod non nulla ullamcorper, ornare malesuada arcu. Aliquam fringilla gravida elit,
+               nec lacinia elit varius nec. Nullam ut dolor ac purus condimentum viverra. Sed convallis lacus eget laoreet auctor. 
+               Vestibulum euismod mi eu urna sollicitudin mattis. Quisque semper, nisl a convallis pellentesque, tortor erat pharetra arcu,
+               quis iaculis lectus mauris at velit. Donec sagittis maximus elit, eu ultrices lorem finibus non. Sed ac dictum nisl, 
+               quis pulvinar massa. Pellentesque nec dapibus massa.  
+              </p>
+            </div>
           </div>
           <div className="blackBorder" />
         </div>
