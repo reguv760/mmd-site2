@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
 //import Img from "gatsby-image";
-import BooksImg from './../images/tattoos-hero.jpg';
+import BooksImg from './../images/books/spaceLove/spaceLove-hero.jpg';
 import Layout from './../components/layout.js';
 
 //Lightbox needs the following:::
@@ -103,19 +103,23 @@ export default class BooksPage extends React.Component {
               }))}
             />
             <div className="textBox">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed libero eget dolor imperdiet euismod eget et velit.
-                In fringilla placerat justo, ut porta magna. Suspendisse ultricies, magna sed faucibus tristique, dui risus ultricies tortor, 
-                vitae hendrerit elit mauris id sem. Curabitur commodo semper odio eget rutrum. Nam sem massa, fringilla egestas sem vel, 
-                convallis venenatis sem. Aliquam metus leo, pulvinar imperdiet convallis eu, pellentesque vitae sapien. Ut porttitor 
-                dictum efficitur. Integer nec diam aliquet, tincidunt mauris nec, elementum ante. Fusce tristique augue et nisi accumsan, 
-                sit amet fermentum lectus mattis. Sed id tempor ante. Donec lobortis interdum magna quis volutpat. Curabitur imperdiet rhoncus
-                 mauris, et ultrices metus molestie sit amet.
+              <p><b>Space Love Fire Child: United; Divided</b> is a project that consists of 20 paintings and a poem to create the content of this children’s book. 
+                It is a project of love dedicated to my son, Ryder, about co parenting, from a place of experience from my own childhood and as a single mother. 
+                The family experience has changed a lot from the 80s and the 90s to now, from the idea that the “perfect family” exists as a unit, disregarding toxicities, 
+                depression and abuse. As a result, children grow up in these toxic environments and not everyone evolves to be cycle breakers but perpetuators of abuse. 
+                Over time, the idea of “family” has shifted in many ways from the 80s and 90s from gender roles to family compositions and how we treat one another to the 
+                very idea of seeing a therapist.  
               </p>
-              <p>Suspendisse potenti. Fusce augue turpis, euismod non nulla ullamcorper, ornare malesuada arcu. Aliquam fringilla gravida elit,
-               nec lacinia elit varius nec. Nullam ut dolor ac purus condimentum viverra. Sed convallis lacus eget laoreet auctor. 
-               Vestibulum euismod mi eu urna sollicitudin mattis. Quisque semper, nisl a convallis pellentesque, tortor erat pharetra arcu,
-               quis iaculis lectus mauris at velit. Donec sagittis maximus elit, eu ultrices lorem finibus non. Sed ac dictum nisl, 
-               quis pulvinar massa. Pellentesque nec dapibus massa.  
+              <p className="indent">As a cycle breaker, the goal has been to provide a peaceful and nurturing environment especially finding myself playing the role of a single parent, 
+                where challenges and their stresses are exponentially higher. Regardless, it is important to maintain a sense of stability and control along with empathy 
+                for optimal development. Bedtime has always been a sacred time for us to relax and settle in nightly routines, which has always included a bedtime story. 
+                This particular time can be used to literally sit and talk with your child in ways where we use stories to help explain more complex situations. This story 
+                personifies celestial bodies, where the parents exist as two separate worlds, presented with their challenges but taking these difficult times and turning 
+                them into things that can benefit us, in return, providing more confidence for the future, allowing the mind to rest. Each painting takes up the space of 
+                each page allowing for a more immersive experience. The composition for each piece is square as a symbol representing the grid, consistency and unity but 
+                also the idea of separation with each spread. Co parenting, personally, has been one of the most challenging situations but through my own growth this story 
+                has been created to inspire positivity during times when more families find peace in separation with the challenge of helping children cope. This same concept 
+                can be applied to all of us, when we exist in a divided society with the helpful reminder that we are all still united.  
               </p>
             </div>
           </div>
