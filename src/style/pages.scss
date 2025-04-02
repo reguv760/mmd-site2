@@ -51,9 +51,9 @@
       align-items:center;
       
       & .homeText {
-        width: 80%;
-        font-size: 1.6rem;
-        line-height: 1.6em;
+        width: 80%;        
+        font-size: 1.5rem;
+        line-height: 1.5em;
       }
 
       & .home_glyph {
@@ -95,8 +95,8 @@
       position: relative;
 
       & .bioText {
-        font-size: 1.6rem;
-        line-height: 1.6em;
+        font-size: 1.5rem;
+        line-height: 1.5em;
         height: 45rem;
         padding: 0 0.5em 0 0.5em;
 
@@ -139,20 +139,34 @@
   
   /* Books page */
   &.booksPage {  
-    & .pageContainer.left {
-
-      & img {        
-        background-color: $darkGrey;
-        opacity: 0.2;
-      }
-    }
+    //& .pageContainer.left {
+    //  & img { }
+    //}
 
     & .pageContainer.right {
       & .textBox {    
-        font-size: 1.4rem;
-        line-height: 1.6em;
-        // height: 45rem;
+        font-size: 1.5rem;
+        line-height: 1.5em;
         padding: 0 0.5em 0 1.5em;
+
+        & p b
+        {
+          font-weight: bold;
+        }
+
+        & p:first-child:first-letter {
+          float: left;
+          font-size: 6rem;
+          font-weight:300;
+          line-height: 6rem;
+          margin-left: -0.5rem;
+          padding-top: 0.4rem;
+        }
+
+        & p.indent {
+          margin: 1.5rem 1rem 0 0;
+          text-indent: 1rem;
+        }
       }
     }
   }
@@ -172,9 +186,9 @@
       align-items:center;
       
       & .homeText {
-        width: 85%;
-        font-size: 1.6rem;
-        line-height: 1.6em;
+        width: 85%;        
+        font-size: 1.5rem;
+        line-height: 1.5em;
 
         & p {
           margin-bottom: 4rem;
