@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
 //import Img from "gatsby-image";
-import ArtistImg from './../images/artist-hero.jpg';
+import ArtistImg from './../images/artist-hero25.jpg';
 import Layout from './../components/layout.js';
 
 //Lightbox needs the following:::
