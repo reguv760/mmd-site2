@@ -9,6 +9,7 @@ import CoverPDF from '../downloads/melanydierks-CV.pdf';
 import ResumePDF from '../downloads/melanydierks-resume2024.pdf';
 import StatementPDF from '../downloads/melanydierks-ArtistStatement.pdf';
 
+
 class AboutDropDown extends React.Component {
 
   handleLinkClick = () => {    
@@ -36,6 +37,30 @@ class AboutDropDown extends React.Component {
               >
                 biography
               </AniLink>
+            </li> 
+            { /* //external links to articles:::*/ }
+            
+            <li>              
+              <a
+                href="https://boldjourney.com/news/meet-melany-dierks/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Bold Journey"
+              >
+                <b>Bold Journey</b>
+              </a>
+            </li> 
+
+            
+            <li>              
+              <a
+                href="https://voyagela.com/interview/daily-inspiration-meet-melany-dierks/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="VoyageLA"
+              >
+                <b>VoyageLA</b>
+              </a>
             </li> 
             
             <li>
