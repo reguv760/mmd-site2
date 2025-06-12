@@ -129,6 +129,32 @@ class MobileMenu extends React.Component {
               About Me: <span className="thin">Biography</span>
             </Link>
           </li>
+
+          { /* external article links */ }
+
+          <li>
+            <a
+              className="menu-item"
+              href="https://boldjourney.com/news/meet-melany-dierks/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="About Me: Bold Journey"
+            >
+              About Me: <span className="thin">Bold Journey</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="menu-item"
+              href="https://boldjourney.com/news/meet-melany-dierks/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="About Me: VoyageLA"
+            >
+              About Me: <span className="thin">VoyageLA</span>
+            </a>
+          </li>
           
           <li>
             <a
