@@ -98,6 +98,19 @@ import Thumb2_23 from './../images/publicart/thumbs/23-mural2-thumb.jpg';
 import Full1_23 from './../images/publicart/23-mural1.jpg';
 import Full2_23 from './../images/publicart/23-mural2.jpg';
 
+//2025
+
+import MURALS25_thumb1 from './../images/publicart/thumbs/publicArt-25_thumb1.jpg';
+import MURALS25_thumb2 from './../images/publicart/thumbs/publicArt-25_thumb2.jpg';
+import MURALS25_thumb3 from './../images/publicart/thumbs/publicArt-25_thumb3.jpg';
+import MURALS25_thumb4 from './../images/publicart/thumbs/publicArt-25_thumb4.jpg';
+
+
+import MURALS2025_1 from './../images/publicart/publicArt-25_1.jpg';
+import MURALS2025_2 from './../images/publicart/publicArt-25_2.jpg';
+import MURALS2025_3 from './../images/publicart/publicArt-25_3.jpg';
+import MURALS2025_4 from './../images/publicart/publicArt-25_4.jpg';
+
 
 const PUBLICART_23 = [
   { id: '0', src: Full1_23, thumbnail: Thumb1_23 },
@@ -155,6 +168,13 @@ const EUPHOROS_IMAGES = [
   { id: '2', src: euphorosFull3, thumbnail: euphorosThumb3 },
 ];
 
+const MURALS_25 = [
+  { id: '0', src: MURALS2025_1, thumbnail: MURALS25_thumb1 },
+  { id: '1', src: MURALS2025_2, thumbnail: MURALS25_thumb2 },
+  { id: '2', src: MURALS2025_3, thumbnail: MURALS25_thumb3 },
+  { id: '3', src: MURALS2025_4, thumbnail: MURALS25_thumb4 },
+];
+
 export default class PublicArtPage extends React.Component {
 
   render() {
@@ -167,10 +187,20 @@ export default class PublicArtPage extends React.Component {
         <div className="pageContainer graphicPage">
           <div className="blackBorder" />
           <div className="pageContainer left">
-            <img src={PublicArtImage} alt="Graphic Design" />
+            <img src={PublicArtImage} alt="Public Art" />
           </div>
 
-          <div className="pageContainer right">
+          <div className="pageContainer right">           
+
+            <Gallery
+              images={MURALS_25.map(({ id, src, thumbnail }) => ({
+                id,
+                src,
+                thumbnail
+              }))}
+            />
+            
+
             <Gallery
               images={PUBLICART_23.map(({ id, src, thumbnail }) => ({
                 id,
