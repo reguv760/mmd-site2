@@ -69,7 +69,7 @@ nav
     background-color:$off-whiteAlpha;
     margin:2rem 0 0 0;
     border-radius:0.25rem;
-    padding-right:1rem; 
+    padding-right:1.5rem; 
     border: 0.1rem solid $fadedDarkGrey;   
     //filter:drop-shadow(0.1rem 0.1rem 0.25rem $charcoal);  
 
@@ -97,9 +97,9 @@ nav
       padding: 1.25rem 0 1.25rem 0;
     }
 
-    & ul.subMenu li b 
+    & ul.subMenu li i 
     {
-      font-weight: bold;
+      font-style: italic;
       text-transform:none;
     }
 
