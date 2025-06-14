@@ -47,7 +47,7 @@ class AboutDropDown extends React.Component {
                 rel="noopener noreferrer"
                 aria-label="Bold Journey"
               >
-                <b>Bold Journey</b>
+                <i>Bold Journey</i>
               </a>
             </li> 
 
@@ -59,7 +59,7 @@ class AboutDropDown extends React.Component {
                 rel="noopener noreferrer"
                 aria-label="VoyageLA"
               >
-                <b>VoyageLA</b>
+                <i>VoyageLA</i>
               </a>
             </li> 
             
