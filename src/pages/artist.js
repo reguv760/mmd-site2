@@ -130,8 +130,8 @@ import thumb23_14 from './../images/artist/2023/thumb/theChain-thumb.jpg';
 import thumb23_15 from './../images/artist/2023/thumb/thunderC-thumb.jpg';
 
 // removed::: import thumb23_16 from './../images/artist/2023/thumb/wreckYourself-thumb.jpg';
-
 import thumb23_17 from './../images/artist/2023/thumb/madonnaChild-thumb.jpg';
+
 ////////////////////////////////////////////////////////////
 import full23_1 from './../images/artist/2023/aquarius.jpg';
 import full23_2 from './../images/artist/2023/blotTest.jpg';
@@ -149,8 +149,8 @@ import full23_12 from './../images/artist/2023/starWalker.jpg';
 import full23_13 from './../images/artist/2023/taurus.jpg';
 import full23_14 from './../images/artist/2023/theChain.jpg';
 import full23_15 from './../images/artist/2023/thunderC.jpg';
-// removed::: import full23_16 from './../images/artist/2023/wreckYourself.jpg';
 
+// removed::: import full23_16 from './../images/artist/2023/wreckYourself.jpg';
 import full23_17 from './../images/artist/2023/madonnaChild.jpg';
 
 
@@ -164,8 +164,6 @@ import full24_1 from './../images/artist/2024/CareBearStare.jpg';
 import full24_2 from './../images/artist/2024/WelcomeToCare.jpg';
 import full24_3 from './../images/artist/2024/Mydusa.jpg';
 import full24_4 from './../images/artist/2024/TheRabbit.jpg';
-
-
 
 //Youtube :::: Coding with Jesse:::
 
@@ -222,14 +220,14 @@ const ARTIST_IMAGES = [
     sold: false
   },
   {
-    id: '4',
+    id: '4a',
     src: full23_4,
     thumbnail: thumb23_4,
     caption: 'Consumed by Your Own Devices | 36x48 in',
     sold: false
   },
   {
-    id: '4a',
+    id: '4b',
     src: full23_4a,
     thumbnail: thumb23_4a,
     caption: 'The Dark Age | 15x30 in | 2021',
@@ -313,14 +311,6 @@ const ARTIST_IMAGES = [
     sold: false
   },
   
-  // {
-  //   id: '16',
-  //   src: full23_16,
-  //   thumbnail: thumb23_16,
-  //   caption: 'Wreck Yourself | 18x24 in | acrylic, oil on canvas | 2021',
-  //   sold: false
-  // },
-
   ////before 2023:::
   {
     id: '17',
@@ -496,14 +486,14 @@ const ARTIST_IMAGES = [
     sold: false
   },
   {
-    id: '41',
+    id: '41a',
     src: full25,
     thumbnail: thumb25,
     caption: 'Mother and Child v1 | 60x36 in | Acrylic on wood panel',
     sold: false
   },
   {
-    id: '23_17',
+    id: '41b',
     src: full23_17,
     thumbnail: thumb23_17,
     caption: 'Such a Madonna and Child | 24x36 in | Acrylic on canvas',
@@ -537,8 +527,7 @@ const ARTIST_IMAGES = [
     id: '45',
     src: full29,
     thumbnail: thumb29,
-    caption:
-      'Burning, Man | 60x72 in| Acrylic, 3-dimensional glitter paint on canvas',
+    caption: 'Burning, Man | 60x72 in| Acrylic, 3-dimensional glitter paint on canvas',
     sold: false
   },
   {
@@ -552,39 +541,35 @@ const ARTIST_IMAGES = [
     id: '47',
     src: full31,
     thumbnail: thumb31,
-    caption:
-      'Do It Upside Down, The Mating Game | 60x40 in | Acrylic, 3-dimensional paint on canvas',
+    caption: 'Do It Upside Down, The Mating Game | 60x40 in | Acrylic, 3-dimensional paint on canvas',
     sold: false
   },
   {
     id: '48',
     src: full32,
     thumbnail: thumb32,
-    caption:
-      'Eye, I, Captain | 48 x 36 inches | Acrylic, 3-dimensional glitter paint on canvas',
+    caption: 'Eye, I, Captain | 48 x 36 inches | Acrylic, 3-dimensional glitter paint on canvas',
     sold: false
   },
   {
     id: '49',
     src: full33,
     thumbnail: thumb33,
-    caption:
-      'I’m Coming | 20 x 16 in | Acrylic, 3-dimensional paint and resin on canvas',
+    caption: 'I’m Coming | 20 x 16 in | Acrylic, 3-dimensional paint and resin on canvas',
     sold: false
   },
   { id: '50', src: full34, thumbnail: thumb34, caption: '', sold: false },
   { id: '51', src: full36, thumbnail: thumb36, caption: '', sold: false },
-  //{ id: '52', src: full37, thumbnail: thumb37, caption: '', sold: false },
-  { id: '53', src: full38, thumbnail: thumb38, caption: '', sold: false },
-  { id: '54', src: full39, thumbnail: thumb39, caption: '', sold: false },
-  { id: '55', src: full40, thumbnail: thumb40, caption: '', sold: false },
-  { id: '56', src: full41, thumbnail: thumb41, caption: '', sold: false },
-  { id: '57', src: full42, thumbnail: thumb42, caption: '', sold: false },
-  { id: '58', src: full43, thumbnail: thumb43, caption: '', sold: false },
-  { id: '59', src: full44, thumbnail: thumb44, caption: '', sold: false },
-  { id: '60', src: full45, thumbnail: thumb45, caption: '', sold: false },
-  { id: '61', src: full46, thumbnail: thumb46, caption: '', sold: false },
-  { id: '62', src: full47, thumbnail: thumb47, caption: '', sold: false }
+  { id: '52', src: full38, thumbnail: thumb38, caption: '', sold: false },
+  { id: '53', src: full39, thumbnail: thumb39, caption: '', sold: false },
+  { id: '54', src: full40, thumbnail: thumb40, caption: '', sold: false },
+  { id: '55', src: full41, thumbnail: thumb41, caption: '', sold: false },
+  { id: '56', src: full42, thumbnail: thumb42, caption: '', sold: false },
+  { id: '57', src: full43, thumbnail: thumb43, caption: '', sold: false },
+  { id: '58', src: full44, thumbnail: thumb44, caption: '', sold: false },
+  { id: '59', src: full45, thumbnail: thumb45, caption: '', sold: false },
+  { id: '60', src: full46, thumbnail: thumb46, caption: '', sold: false },
+  { id: '61', src: full47, thumbnail: thumb47, caption: '', sold: false }
 ];
 
 export default class ArtistPage extends React.Component {
