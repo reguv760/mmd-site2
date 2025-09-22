@@ -46,7 +46,8 @@ import thumb33 from './../images/artist/barracuda/thumbPainting-9.jpg';
 import thumb34 from './../images/artist/thumbs/2015-faThumb1.jpg';
 //import thumb35 from './../images/artist/thumbs/2015-faThumb2.jpg';
 import thumb36 from './../images/artist/thumbs/GOYM-thumb.jpg';
-import thumb37 from './../images/artist/thumbs/newart1-thumb.jpg';
+//removed::: import thumb37 from './../images/artist/thumbs/newart1-thumb.jpg';
+
 import thumb38 from './../images/artist/thumbs/newart2-thumb.jpg';
 import thumb39 from './../images/artist/thumbs/newart3-thumb.jpg';
 import thumb40 from './../images/artist/thumbs/newart4-thumb.jpg';
@@ -94,8 +95,10 @@ import full32 from './../images/artist/barracuda/web-painting-8.jpg';
 import full33 from './../images/artist/barracuda/web-painting-9.jpg';
 import full34 from './../images/artist/2015-fineArt1.jpg';
 //import full35 from './../images/artist/2015-fineArt2.jpg';
+
 import full36 from './../images/artist/GOYM.jpg';
-import full37 from './../images/artist/newart1.jpg';
+//removed::: import full37 from './../images/artist/newart1.jpg';
+
 import full38 from './../images/artist/newart2.jpg';
 import full39 from './../images/artist/newart3.jpg';
 import full40 from './../images/artist/newart4.jpg';
@@ -125,7 +128,9 @@ import thumb23_12 from './../images/artist/2023/thumb/starWalker-thumb.jpg';
 import thumb23_13 from './../images/artist/2023/thumb/taurus-thumb.jpg';
 import thumb23_14 from './../images/artist/2023/thumb/theChain-thumb.jpg';
 import thumb23_15 from './../images/artist/2023/thumb/thunderC-thumb.jpg';
-import thumb23_16 from './../images/artist/2023/thumb/wreckYourself-thumb.jpg';
+
+// removed::: import thumb23_16 from './../images/artist/2023/thumb/wreckYourself-thumb.jpg';
+
 import thumb23_17 from './../images/artist/2023/thumb/madonnaChild-thumb.jpg';
 ////////////////////////////////////////////////////////////
 import full23_1 from './../images/artist/2023/aquarius.jpg';
@@ -144,7 +149,8 @@ import full23_12 from './../images/artist/2023/starWalker.jpg';
 import full23_13 from './../images/artist/2023/taurus.jpg';
 import full23_14 from './../images/artist/2023/theChain.jpg';
 import full23_15 from './../images/artist/2023/thunderC.jpg';
-import full23_16 from './../images/artist/2023/wreckYourself.jpg';
+// removed::: import full23_16 from './../images/artist/2023/wreckYourself.jpg';
+
 import full23_17 from './../images/artist/2023/madonnaChild.jpg';
 
 
@@ -307,13 +313,13 @@ const ARTIST_IMAGES = [
     sold: false
   },
   
-  {
-    id: '16',
-    src: full23_16,
-    thumbnail: thumb23_16,
-    caption: 'Wreck Yourself | 18x24 in | acrylic, oil on canvas | 2021',
-    sold: false
-  },
+  // {
+  //   id: '16',
+  //   src: full23_16,
+  //   thumbnail: thumb23_16,
+  //   caption: 'Wreck Yourself | 18x24 in | acrylic, oil on canvas | 2021',
+  //   sold: false
+  // },
 
   ////before 2023:::
   {
@@ -349,7 +355,8 @@ const ARTIST_IMAGES = [
     src: full05, 
     thumbnail: thumb05, 
     caption: '',
-    sold: false },
+    sold: false 
+  },
   {
     id: '22',
     src: full06,
@@ -567,7 +574,7 @@ const ARTIST_IMAGES = [
   },
   { id: '50', src: full34, thumbnail: thumb34, caption: '', sold: false },
   { id: '51', src: full36, thumbnail: thumb36, caption: '', sold: false },
-  { id: '52', src: full37, thumbnail: thumb37, caption: '', sold: false },
+  //{ id: '52', src: full37, thumbnail: thumb37, caption: '', sold: false },
   { id: '53', src: full38, thumbnail: thumb38, caption: '', sold: false },
   { id: '54', src: full39, thumbnail: thumb39, caption: '', sold: false },
   { id: '55', src: full40, thumbnail: thumb40, caption: '', sold: false },
