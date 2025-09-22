@@ -14,7 +14,7 @@ const socialMediaIcons = [
     className: 'fas fa-envelope-square'
   },
   {
-    url: 'https://www.instagram.com/melanydierks/',
+    url: 'https://www.instagram.com/melany_meza_dierks',
     className: 'fab fa-instagram'
   },
   {
