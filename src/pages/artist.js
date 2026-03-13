@@ -165,14 +165,58 @@ import full24_2 from './../images/artist/2024/WelcomeToCare.jpg';
 import full24_3 from './../images/artist/2024/Mydusa.jpg';
 import full24_4 from './../images/artist/2024/TheRabbit.jpg';
 
+//2026
+import thumb26_1 from './../images/artist/2026/thumbs/AmericanTraditional-thumb.jpg';
+import thumb26_2 from './../images/artist/2026/thumbs/TiltBanana-thumb.jpg';
+import thumb26_3 from './../images/artist/2026/thumbs/TyrannyRebellion-thumb.jpg';
+import thumb26_4 from './../images/artist/2026/thumbs/YoureFired-thumb.jpg';
+////////////////////////////////////////////////////////////
+import full26_1 from './../images/artist/2026/AmericanTraditional.jpg';
+import full26_2 from './../images/artist/2026/TiltBanana.jpg';
+import full26_3 from './../images/artist/2026/TyrannyRebellion.jpg';
+import full26_4 from './../images/artist/2026/YoureFired.jpg';
+
 //Youtube :::: Coding with Jesse:::
 
 const ARTIST_IMAGES = [
+  //2026
+    {
+    id: '26_1',
+    src: full26_1,
+    thumbnail: thumb26_1,
+    caption: 'American Traditional | 18x24 in | acrylic, oil, glitter, resin, canvas | 2026',
+    sold: false
+  },
+  {
+    id: '26_2',
+    src: full26_2,
+    thumbnail: thumb26_2,
+    caption: `I'm just Titling Bananas | 20x20 in | acrylic, oil, glitter, resin, on canvas | 2026`, 
+    //backticks used to properly read apostrophe within js text
+    sold: false
+  },
+  {
+    id: '26_3',
+    src: full26_3,
+    thumbnail: thumb26_3,
+    caption: 'Tyranny and Rebellion | 12x12 in | acrylic, glitter, oil, resin | 2026',
+    sold: false
+  },
+  {
+    id: '26_4',
+    src: full26_4,
+    thumbnail: thumb26_4,
+    caption: `You're Fired | 12x12 in | acrylic, oil, resin, glitter, canvas | 2026`,
+    //backticks used to properly read apostrophe within js text
+    sold: false
+  },
+
+  //2024
   {
     id: '24_1',
     src: full24_1,
     thumbnail: thumb24_1,
-    caption: ' Care Bear Stare | 24x24 in | 2024',
+    caption: 'Care Bear Stare | 24x24 in | 2024',
     sold: false
   },
   {
@@ -190,7 +234,7 @@ const ARTIST_IMAGES = [
     sold: false
   },
   {
-    id: '4',
+    id: '24_4',
     src: full24_4,
     thumbnail: thumb24_4,
     caption: 'The Rabbit: In This Moment | 35x24 in | 2024',
@@ -202,7 +246,7 @@ const ARTIST_IMAGES = [
     id: '1',
     src: full23_1,
     thumbnail: thumb23_1,
-    caption: ' Aquarius | 24x24 in | acrylic, oil on canvas | 2022',
+    caption: 'Aquarius | 24x24 in | acrylic, oil on canvas | 2022',
     sold: false
   },
   {
