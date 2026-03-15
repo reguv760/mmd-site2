@@ -191,7 +191,7 @@ const ARTIST_IMAGES = [
     id: '26_2',
     src: full26_2,
     thumbnail: thumb26_2,
-    caption: `I'm just Titling Bananas | 20x20 in | acrylic, oil, glitter, resin, on canvas | 2026`, 
+    caption: `I’m just Titling Bananas | 20x20 in | acrylic, oil, glitter, resin, on canvas | 2026`, 
     //backticks used to properly read apostrophe within js text
     sold: false
   },
@@ -206,7 +206,7 @@ const ARTIST_IMAGES = [
     id: '26_4',
     src: full26_4,
     thumbnail: thumb26_4,
-    caption: `You're Fired | 12x12 in | acrylic, oil, resin, glitter, canvas | 2026`,
+    caption: `You’re Fired | 12x12 in | acrylic, oil, resin, glitter, canvas | 2026`,
     //backticks used to properly read apostrophe within js text
     sold: false
   },
@@ -260,7 +260,7 @@ const ARTIST_IMAGES = [
     id: '3',
     src: full23_3,
     thumbnail: thumb23_3,
-    caption: 'Britney’s Weight | 48x72 in | acrylic, oil on canvas | 2022',
+    caption: `Britney’s Weight | 48x72 in | acrylic, oil on canvas | 2022`,
     sold: false
   },
   {
@@ -564,7 +564,7 @@ const ARTIST_IMAGES = [
     src: full28,
     thumbnail: thumb28,
     caption:
-      'Cecil’s Demise | 60x48 in | Acrylic, 3-dimentional paint and resin on wood',
+      `Cecil’s Demise | 60x48 in | Acrylic, 3-dimentional paint and resin on wood`,
     sold: false
   },
   {
@@ -578,7 +578,7 @@ const ARTIST_IMAGES = [
     id: '46',
     src: full30,
     thumbnail: thumb30,
-    caption: 'Cinderella’s Division | 48x36 in |Acrylic on canvas',
+    caption: `Cinderella’s Division | 48x36 in |Acrylic on canvas`,
     sold: false
   },
   {
@@ -599,7 +599,7 @@ const ARTIST_IMAGES = [
     id: '49',
     src: full33,
     thumbnail: thumb33,
-    caption: 'I’m Coming | 20 x 16 in | Acrylic, 3-dimensional paint and resin on canvas',
+    caption: `I’m Coming | 20 x 16 in | Acrylic, 3-dimensional paint and resin on canvas`,
     sold: false
   },
   { id: '50', src: full34, thumbnail: thumb34, caption: '', sold: false },
