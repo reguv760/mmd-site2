@@ -3,7 +3,8 @@ import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
 //import Img from "gatsby-image";
-import BooksImg from './../images/books/spaceLove/spaceLove-hero.jpg';
+import SFLCCover from './../images/books/spaceLove/SLFC-finalCover.jpg';
+import SFLCBook from './../images/books/spaceLove/SLFC-finalBook.jpg';
 import Layout from './../components/layout.js';
 
 //Lightbox needs the following:::
@@ -11,7 +12,7 @@ import Gallery from './../components/Gallery';
 
 //////////* import thumbnails + images */
 //thumbnails
-import bookThumb_1 from './../images/books/spaceLove/thumb/cover-thumb.jpg';
+import bookThumb_1 from './../images/books/spaceLove/thumb/dedicationCover-thumb.jpg';
 import bookThumb_2 from './../images/books/spaceLove/thumb/constellations-thumb.jpg';
 import bookThumb_3 from './../images/books/spaceLove/thumb/pg2-thumb.jpg';
 import bookThumb_4 from './../images/books/spaceLove/thumb/pg5-thumb.jpg';
@@ -24,7 +25,7 @@ import bookThumb_10 from './../images/books/spaceLove/thumb/pg17-thumb.jpg';
 import bookThumb_11 from './../images/books/spaceLove/thumb/pg19-thumb.jpg';
 
 //full images:::
-import spaceLove1 from './../images/books/spaceLove/cover.jpg';
+import spaceLove1 from './../images/books/spaceLove/dedicationCover.jpg';
 import spaceLove2 from './../images/books/spaceLove/constellations-overview.jpg';
 import spaceLove3 from './../images/books/spaceLove/SLFCspread-1.jpg';
 import spaceLove4 from './../images/books/spaceLove/SLFCspread-2.jpg';
@@ -36,7 +37,8 @@ import spaceLove9 from './../images/books/spaceLove/SLFCspread-7.jpg';
 import spaceLove10 from './../images/books/spaceLove/SLFCspread-8.jpg';
 import spaceLove11 from './../images/books/spaceLove/SLFCspread-9.jpg';
 
-
+const RandomImageArray = [SFLCCover, SFLCBook];
+let RandomNum;
 
 const SLFirechild_IMAGES = [    
   //give unique ID and ref src + thumbnail
@@ -54,6 +56,15 @@ const SLFirechild_IMAGES = [
 ];
 
 export default class BooksPage extends React.Component {
+  state = {
+    currentImage: ''
+  };
+
+  componentDidMount() {
+    RandomNum = Math.floor(Math.random() * RandomImageArray.length);
+    this.state.currentImage = RandomImageArray[RandomNum];
+  }
+
 
   render() {
     const { title } = this.props.data.site.siteMetadata;
@@ -65,7 +76,7 @@ export default class BooksPage extends React.Component {
         <div className="pageContainer booksPage">
           <div className="blackBorder" />
           <div className="pageContainer left">
-             <img src={BooksImg} alt="Books" />
+             <img src={ this.state.currentImage } alt="Books" />
           </div>
 
           <div className="pageContainer right">

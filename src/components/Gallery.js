@@ -3,13 +3,20 @@ import PropTypes from 'prop-types';
 import Lightbox from 'react-images';
 
 class Gallery extends React.Component {
+  
+  state = {
+      lightboxIsOpen: false,
+      currentImage: 0
+  };
+
+  //define Gallery functionality
   constructor() {
     super();
 
-    this.state = {
-      lightboxIsOpen: false,
-      currentImage: 0
-    };
+    // this.state = {
+    //   lightboxIsOpen: false,
+    //   currentImage: 0
+    // };
 
     this.closeLightbox = this.closeLightbox.bind(this);
     this.gotoNext = this.gotoNext.bind(this);
@@ -82,7 +89,6 @@ class Gallery extends React.Component {
     /* {  this is the main output of Gallery.js!  } */
     return <ul className="galleryContainer"> {gallery} </ul>;
   }
-
   
   componentDidMount() {
     this.state.currentImage = 0;
