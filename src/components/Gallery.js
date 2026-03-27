@@ -83,6 +83,11 @@ class Gallery extends React.Component {
     return <ul className="galleryContainer"> {gallery} </ul>;
   }
 
+  
+  componentDidMount() {
+    this.state.currentImage = 0;
+  }
+
   //this is the output of this class:::
   render() {
     return (
