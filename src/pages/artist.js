@@ -170,23 +170,58 @@ import thumb26_1 from './../images/artist/2026/thumbs/AmericanTraditional-thumb.
 import thumb26_2 from './../images/artist/2026/thumbs/TiltBanana-thumb.jpg';
 import thumb26_3 from './../images/artist/2026/thumbs/TyrannyRebellion-thumb.jpg';
 import thumb26_4 from './../images/artist/2026/thumbs/YoureFired-thumb.jpg';
+import thumb26_5 from './../images/artist/2026/thumbs/FireHorse-thumb.jpg';
+import thumb26_6 from './../images/artist/2026/thumbs/Pheonix-thumb.jpg';
+import thumb26_7 from './../images/artist/2026/thumbs/WPeacePlan-thumb.jpg';
 ////////////////////////////////////////////////////////////
 import full26_1 from './../images/artist/2026/AmericanTraditional.jpg';
 import full26_2 from './../images/artist/2026/TiltBanana.jpg';
 import full26_3 from './../images/artist/2026/TyrannyRebellion.jpg';
 import full26_4 from './../images/artist/2026/YoureFired.jpg';
+import full26_5 from './../images/artist/2026/FireHorse.jpg';
+import full26_6 from './../images/artist/2026/Pheonix.jpg';
+import full26_7 from './../images/artist/2026/WPeacePlan.jpg';
 
 //Youtube :::: Coding with Jesse:::
 
 const ARTIST_IMAGES = [
-  //2026
-    {
-    id: '26_1',
-    src: full26_1,
-    thumbnail: thumb26_1,
-    caption: 'American Traditional | 18x24 in | acrylic, oil, glitter, resin, canvas | 2026',
+  //2026 
+  {
+    id: '26_7',
+    src: full26_7,
+    thumbnail: thumb26_7,
+    caption: `The Western Peace Plan | 18x24 in | acrylic, oil, resin, glitter, canvas | 2026`,
     sold: false
-  },
+  },  
+  {
+    id: '26_6',
+    src: full26_6,
+    thumbnail: thumb26_6,
+    caption: `The Pheonix | 12x12 in | acrylic, oil, resin, glitter, canvas | 2026`,
+    sold: false
+  },  
+  {
+    id: '26_5',
+    src: full26_5,
+    thumbnail: thumb26_5,
+    caption: `Fire Horse | 12x12 in | acrylic and oil on canvas | 2026`,
+    sold: false
+  },  
+  {
+    id: '26_4',
+    src: full26_4,
+    thumbnail: thumb26_4,
+    caption: `You’re Fired | 12x12 in | acrylic, oil, resin, glitter, canvas | 2026`,
+    //backticks used to properly read apostrophe within js text
+    sold: false
+  }, 
+  {
+    id: '26_3',
+    src: full26_3,
+    thumbnail: thumb26_3,
+    caption: 'Tyranny and Rebellion | 12x12 in | acrylic, glitter, oil, resin | 2026',
+    sold: false
+  },  
   {
     id: '26_2',
     src: full26_2,
@@ -196,18 +231,10 @@ const ARTIST_IMAGES = [
     sold: false
   },
   {
-    id: '26_3',
-    src: full26_3,
-    thumbnail: thumb26_3,
-    caption: 'Tyranny and Rebellion | 12x12 in | acrylic, glitter, oil, resin | 2026',
-    sold: false
-  },
-  {
-    id: '26_4',
-    src: full26_4,
-    thumbnail: thumb26_4,
-    caption: `You’re Fired | 12x12 in | acrylic, oil, resin, glitter, canvas | 2026`,
-    //backticks used to properly read apostrophe within js text
+    id: '26_1',
+    src: full26_1,
+    thumbnail: thumb26_1,
+    caption: 'American Traditional | 18x24 in | acrylic, oil, glitter, resin, canvas | 2026',
     sold: false
   },
 

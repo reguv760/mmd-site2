@@ -12,12 +12,7 @@ class Gallery extends React.Component {
   //define Gallery functionality
   constructor() {
     super();
-
-    // this.state = {
-    //   lightboxIsOpen: false,
-    //   currentImage: 0
-    // };
-
+    
     this.closeLightbox = this.closeLightbox.bind(this);
     this.gotoNext = this.gotoNext.bind(this);
     this.gotoPrevious = this.gotoPrevious.bind(this);
@@ -90,9 +85,9 @@ class Gallery extends React.Component {
     return <ul className="galleryContainer"> {gallery} </ul>;
   }
   
-  componentDidMount() {
-    this.state.currentImage = 0;
-  }
+  // componentDidMount() {
+  //   this.state.currentImage = 0;
+  // }
 
   //this is the output of this class:::
   render() {

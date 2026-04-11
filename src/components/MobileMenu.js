@@ -2,7 +2,7 @@ import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'gatsby';
 
-import ResumePDF from '../downloads/melanydierks-resume2024.pdf';
+import ResumePDF from '../downloads/melanydierks-resume2026.pdf';
 import CoverPDF from '../downloads/melanydierks-CV.pdf';
 import StatementPDF from '../downloads/melanydierks-ArtistStatement.pdf';
 
