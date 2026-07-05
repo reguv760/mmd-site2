@@ -156,7 +156,7 @@ const PUBLICART_26 = [
     id: '3', 
     src: MURALS2026_4, 
     thumbnail: MURALS26_thumb4,
-    caption: `Dog Sandworm | private residence | Long Beach, CA | 10/2024`
+    caption: `Dog Sandworm | private residence, Long Beach, CA | 10/2024`
   },
   { 
     id: '4', 
@@ -182,17 +182,72 @@ const PUBLICART_26 = [
     thumbnail: MURALS26_thumb8,
     caption: `private residence, Lakewood, CA | 2022`
   },
-];
-
-
-const PUBLICART_23 = [
-  { id: '0', 
+  { 
+    id: '8', 
+    src: BBLegends,
+    thumbnail: BBLegendsThumb,
+    caption: `Kaptain Fish | 2022`
+  },
+  { 
+    id: '9',
+    src: Ruth,
+    thumbnail: RuthThumb,  
+    caption: `` },
+  { 
+    id: '10', 
+    src: Dragon, 
+    thumbnail: DragonThumb,  
+    caption: `Quetzalcoatl | 3rd Street Market Tacos & Beer - 4600 3rd street, CA 90022 | 2020` 
+  },
+  { 
+    id: '11', 
+    src: paFull03, 
+    thumbnail: paThumb03,    
+    caption: `private residence, Lakewood, CA | 04/2019` 
+  },
+  { 
+    id: '12', 
+    src: paFull02, 
+    thumbnail: paThumb02,  
+    caption: `private residence, Lakewood, CA | 04/2019`
+  },
+  { 
+    id: '13', 
+    src: paFull01, 
+    thumbnail: paThumb01,
+    caption: `Pier 76 fish grill - Cerritos, CA | 04/2019`
+  },
+   { 
+    id: '14', 
+    src: MURALS2025_1, 
+    thumbnail: MURALS25_thumb1,
+    caption: `Kobe + Freddy Freeman | private residence, Los Angeles, CA | 04/2025`
+  },
+  { 
+    id: '15', 
+    src: MURALS2025_2, 
+    thumbnail: MURALS25_thumb2,
+    caption: `starry portrait | private residence, Long Beach, CA | 02/2025`
+  },
+  { 
+    id: '16', 
+    src: MURALS2025_3, 
+    thumbnail: MURALS25_thumb3,
+    caption: `youth and birds (memorial) | private residence, Lakewood, CA | 05/2025` 
+  },
+  { 
+    id: '17', 
+    src: MURALS2025_4, 
+    thumbnail: MURALS25_thumb4,  
+    caption: `Rodney Dangerfield portrait | 4481 35th St, San Diego, CA | 05/2025`
+  },
+  { id: '18', 
     src: Full1_23, 
     thumbnail: Thumb1_23,
     caption: `Roland Sands Designs | 2022` 
   },
   { 
-    id: '1',
+    id: '19',
     src: Full2_23, 
     thumbnail: Thumb2_23,
     caption: `private residence, Glendale, CA | 2023` 
@@ -200,43 +255,58 @@ const PUBLICART_23 = [
 ];
 
 
-const PUBLICART_IMAGES = [
-  { 
-    id: '0', 
-    src: BBLegends,
-    thumbnail: BBLegendsThumb,
-    caption: `Kaptain Fish | 2022`
-  },
-  { 
-    id: '1',
-    src: Ruth,
-    thumbnail: RuthThumb,  
-    caption: `` },
-  { 
-    id: '2', 
-    src: Dragon, 
-    thumbnail: DragonThumb,  
-    caption: `Quetzalcoatl | 3rd Street Market Tacos & Beer - 4600 3rd street, CA 90022 | 2020` 
-  },
-  { 
-    id: '3', 
-    src: paFull03, 
-    thumbnail: paThumb03,    
-    caption: `private residence Lakewood, CA | 04/2019` 
-  },
-  { 
-    id: '4', 
-    src: paFull02, 
-    thumbnail: paThumb02,  
-    caption: `private residence Lakewood, CA | 04/2019`
-  },
-  { 
-    id: '5', 
-    src: paFull01, 
-    thumbnail: paThumb01,
-    caption: `Pier 76 fish grill - Cerritos, CA | 04/2019`
-  }
-];
+// const PUBLICART_23 = [
+//   { id: '0', 
+//     src: Full1_23, 
+//     thumbnail: Thumb1_23,
+//     caption: `Roland Sands Designs | 2022` 
+//   },
+//   { 
+//     id: '1',
+//     src: Full2_23, 
+//     thumbnail: Thumb2_23,
+//     caption: `private residence, Glendale, CA | 2023` 
+//   },
+// ];
+
+
+// const PUBLICART_IMAGES = [
+//   { 
+//     id: '0', 
+//     src: BBLegends,
+//     thumbnail: BBLegendsThumb,
+//     caption: `Kaptain Fish | 2022`
+//   },
+//   { 
+//     id: '1',
+//     src: Ruth,
+//     thumbnail: RuthThumb,  
+//     caption: `` },
+//   { 
+//     id: '2', 
+//     src: Dragon, 
+//     thumbnail: DragonThumb,  
+//     caption: `Quetzalcoatl | 3rd Street Market Tacos & Beer - 4600 3rd street, CA 90022 | 2020` 
+//   },
+//   { 
+//     id: '3', 
+//     src: paFull03, 
+//     thumbnail: paThumb03,    
+//     caption: `private residence Lakewood, CA | 04/2019` 
+//   },
+//   { 
+//     id: '4', 
+//     src: paFull02, 
+//     thumbnail: paThumb02,  
+//     caption: `private residence Lakewood, CA | 04/2019`
+//   },
+//   { 
+//     id: '5', 
+//     src: paFull01, 
+//     thumbnail: paThumb01,
+//     caption: `Pier 76 fish grill - Cerritos, CA | 04/2019`
+//   }
+// ];
 
 const OCTOPUS_IMAGES = [
   { 
@@ -407,31 +477,31 @@ const EUPHOROS_IMAGES = [
   },
 ];
 
-const MURALS_25 = [
-  { 
-    id: '0', 
-    src: MURALS2025_1, 
-    thumbnail: MURALS25_thumb1,
-    caption: `Kobe + Freddy Freeman | private residence, Los Angeles, CA | 04/2025`
-  },
-  { 
-    id: '1', 
-    src: MURALS2025_2, 
-    thumbnail: MURALS25_thumb2,
-    caption: `starry portrait | private residence, Long Beach, CA | 02/2025`
-  },
-  { 
-    id: '2', 
-    src: MURALS2025_3, 
-    thumbnail: MURALS25_thumb3,
-    caption: `youth and birds (memorial) | private residence, Lakewood, CA | 05/2025` 
-  },
-  { 
-    id: '3', 
-    src: MURALS2025_4, 
-    thumbnail: MURALS25_thumb4,  
-    caption: `Rodney Dangerfield portrait | 4481 35th St, San Diego, CA | 05/2025` },
-];
+// const MURALS_25 = [
+//   { 
+//     id: '0', 
+//     src: MURALS2025_1, 
+//     thumbnail: MURALS25_thumb1,
+//     caption: `Kobe + Freddy Freeman | private residence, Los Angeles, CA | 04/2025`
+//   },
+//   { 
+//     id: '1', 
+//     src: MURALS2025_2, 
+//     thumbnail: MURALS25_thumb2,
+//     caption: `starry portrait | private residence, Long Beach, CA | 02/2025`
+//   },
+//   { 
+//     id: '2', 
+//     src: MURALS2025_3, 
+//     thumbnail: MURALS25_thumb3,
+//     caption: `youth and birds (memorial) | private residence, Lakewood, CA | 05/2025` 
+//   },
+//   { 
+//     id: '3', 
+//     src: MURALS2025_4, 
+//     thumbnail: MURALS25_thumb4,  
+//     caption: `Rodney Dangerfield portrait | 4481 35th St, San Diego, CA | 05/2025` },
+// ];
 
 export default class PublicArtPage extends React.Component {
 
@@ -459,7 +529,7 @@ export default class PublicArtPage extends React.Component {
               }))}
             />
 
-            <Gallery
+            {/* <Gallery
               images={MURALS_25.map(({ id, src, thumbnail, caption }) => ({
                 id,
                 src,
@@ -467,7 +537,7 @@ export default class PublicArtPage extends React.Component {
                 caption
               }))}
             />
-
+            
             <Gallery
               images={PUBLICART_IMAGES.map(({ id, src, thumbnail, caption }) => ({
                 id,
@@ -475,7 +545,7 @@ export default class PublicArtPage extends React.Component {
                 thumbnail,
                 caption
               }))}
-            />
+            /> */}
 
             <Gallery
               images={KOBENUT_IMAGES.map(({ id, src, thumbnail, caption }) => ({
@@ -513,14 +583,14 @@ export default class PublicArtPage extends React.Component {
               }))}
             />       
 
-            <Gallery
+            {/* <Gallery
               images={PUBLICART_23.map(({ id, src, thumbnail, caption }) => ({
                 id,
                 src,
                 thumbnail,
                 caption
               }))}
-            />
+            /> */}
 
             <Gallery
               images={MERMAID_IMAGES.map(({ id, src, thumbnail, caption }) => ({
