@@ -166,6 +166,8 @@ import full24_3 from './../images/artist/2024/Mydusa.jpg';
 import full24_4 from './../images/artist/2024/TheRabbit.jpg';
 
 //2026
+
+import thumb26_0 from './../images/artist/2026/thumbs/TripleThreat-thumb.jpg';
 import thumb26_1 from './../images/artist/2026/thumbs/AmericanTraditional-thumb.jpg';
 import thumb26_2 from './../images/artist/2026/thumbs/TiltBanana-thumb.jpg';
 import thumb26_3 from './../images/artist/2026/thumbs/TyrannyRebellion-thumb.jpg';
@@ -174,6 +176,7 @@ import thumb26_5 from './../images/artist/2026/thumbs/FireHorse-thumb.jpg';
 import thumb26_6 from './../images/artist/2026/thumbs/Pheonix-thumb.jpg';
 import thumb26_7 from './../images/artist/2026/thumbs/WPeacePlan-thumb.jpg';
 ////////////////////////////////////////////////////////////
+import full26_0 from './../images/artist/2026/TripleThreat.jpg';
 import full26_1 from './../images/artist/2026/AmericanTraditional.jpg';
 import full26_2 from './../images/artist/2026/TiltBanana.jpg';
 import full26_3 from './../images/artist/2026/TyrannyRebellion.jpg';
@@ -185,7 +188,14 @@ import full26_7 from './../images/artist/2026/WPeacePlan.jpg';
 //Youtube :::: Coding with Jesse:::
 
 const ARTIST_IMAGES = [
-  //2026 
+  //2026   
+  {
+    id: '26_0',
+    src: full26_0,
+    thumbnail: thumb26_0,
+    caption: `The Western Peace Plan | 30x34 in | acrylic, oil, canvas | 2026`,
+    sold: false
+  },  
   {
     id: '26_7',
     src: full26_7,

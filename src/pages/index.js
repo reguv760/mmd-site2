@@ -5,14 +5,14 @@ import ConsumedImg from '../images/consumedHero.jpg';
 import ChainHero from '../images/theChain-hero.jpg';
 import HomeImg from '../images/home-hero2.jpg';
 import FoxImg from '../images/foxPortal.jpg';
-//import MermaidImg from '../images/mermaid.jpg';
+import TigerImg from '../images/TripleThreat-Hero.jpg';
 import MydusaImg from '../images/Mydusa-hero.jpg';
 import CareBareStareIMG from '../images/artist-hero25.jpg';
 import TiltBananaIMG from '../images/TiltBanana.jpg';
 
 import Layout from '../components/layout';
 
-const RandomImageArray = [ConsumedImg, ChainHero, HomeImg, FoxImg, MydusaImg, CareBareStareIMG, TiltBananaIMG];
+const RandomImageArray = [TigerImg, ConsumedImg, ChainHero, HomeImg, FoxImg, MydusaImg, CareBareStareIMG, TiltBananaIMG];
 let RandomNum;
 
 class Index extends React.Component {
