@@ -1,3 +1,14 @@
+/* used by MainHero Image */
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1; /* Fade up to full visibility */
+  }
+}
+
+
 /* main container used by main index.js */
 .container {
   margin: 0 auto;
@@ -34,6 +45,10 @@
       border: 0.1rem solid $fadedDarkGrey;
       background-clip: border-box;
       border-radius: 0.5rem;
+
+      opacity: 0;   
+      /* Apply the animation: name | duration | timing | delay | fill-mode */
+      animation: fadeInImage 0.25s ease-out 0.25s forwards;
     }
   }
 

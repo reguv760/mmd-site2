@@ -19,9 +19,9 @@ import { MainHeroImages } from '../data/MainHeroImages'
 class Index extends React.Component {
   state = {
     //fallback in case image doesn't load
-    currentImage: MainHeroImages.images[0] 
+    //currentImage: MainHeroImages.images[0] 
 
-    //currentImage: null
+    currentImage: null
   };
 
   componentDidMount() {

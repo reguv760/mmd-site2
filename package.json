@@ -68,10 +68,12 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ship": "gatsby build && node deploy.js"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.8.1",
+    "dotenv": "^17.4.2",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.2.0",
@@ -79,6 +81,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.13.0",
+    "ftp-deploy": "^2.4.7",
     "lint-staged": "^8.1.6",
     "prettier": "^1.17.1",
     "pretty-quick": "^1.10.0"
