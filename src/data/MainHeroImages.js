@@ -1,44 +1,46 @@
-// import ConsumedImg from '../images/consumedHero.jpg';
-// import ChainHero from '../images/theChain-hero.jpg';
-// import HomeImg from '../images/home-hero2.jpg';
-// import FoxImg from '../images/foxPortal.jpg';
-// import MydusaImg from '../images/Mydusa-hero.jpg';
-// import CareBareStareIMG from '../images/artist-hero25.jpg';
-// import TiltBananaIMG from '../images/TiltBanana.jpg';
+import ConsumedImg from '../images/consumedHero.jpg';
+import ChainHero from '../images/theChain-hero.jpg';
+import HomeImg from '../images/home-hero2.jpg';
+import FoxImg from '../images/foxPortal.jpg';
+import MydusaImg from '../images/Mydusa-hero.jpg';
+import CareBareStareIMG from '../images/artist-hero25.jpg';
+import TiltBananaIMG from '../images/TiltBanana.jpg';
+import TripleThreatIMG from '../images/TripleThreat-Hero.jpg'
 
 export const MainHeroImages = {
   images: 
     [
         {
             name: "Consumed Hero",
-            imagePath: "../images/consumedHero.jpg"
+            imagePath: ConsumedImg
         },
         {
             name: "The Chain",
-            imagePath: "../images/theChain-hero.jpg"
-        },    {
+            imagePath: ChainHero
+        },   
+        {
             name: "Home Image",
-            imagePath: "../images/home-hero2.jpg"
+            imagePath: HomeImg
         },   
         {
             name: "Fox Portal",
-            imagePath: "../images/foxPortal.jpg"
+            imagePath: FoxImg
         },    
         {
             name: "Mydusa",
-            imagePath: "../images/Mydusa-hero.jpg"
+            imagePath: MydusaImg
         },    
         {
             name: "Care Bare Stare",
-            imagePath: "../images/artist-hero25.jpg"
+            imagePath: CareBareStareIMG
         },   
         {
             name: "Tilt Banana",
-            imagePath: "../images/TiltBanana.jpg"
+            imagePath: TiltBananaIMG
         },
         {
             name: "Tiger",
-            imagePath: "../images/TiltBanana.jpg"
+            imagePath: TripleThreatIMG
         }
     ]
 }

@@ -23,8 +23,12 @@
     width: 50%;
     min-height: 12rem;
     margin: 2rem 0;
+    aspect-ratio: 1/1;
+    overflow: hidden;
 
     & img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       margin: 0;
       border: 0.1rem solid $fadedDarkGrey;
