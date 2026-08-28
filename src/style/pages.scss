@@ -36,6 +36,8 @@
     margin: 2rem 0;
     aspect-ratio: 1/1;
     overflow: hidden;
+    border-radius: 1rem;
+    filter:drop-shadow(0.1rem 0.1rem 0.1rem $charcoal);  
 
     & img {
       width: 100%;
@@ -48,7 +50,7 @@
 
       opacity: 0;   
       /* Apply the animation: name | duration | timing | delay | fill-mode */
-      animation: fadeInImage 0.25s ease-out 0.25s forwards;
+      animation: fadeInImage 0.3s ease-out 0.2s forwards;
     }
   }
 
