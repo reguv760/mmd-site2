@@ -6,7 +6,8 @@ yarn-error.log
 # Build directory
 /public
 /2022_update
-.env*
+.env.production
+.env.development
 .DS_Store
 gh_token.txt
 mmd-site2-*.zip
