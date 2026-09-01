@@ -137,6 +137,14 @@
           @-moz-document url-prefix() {
             margin-top: 0.3rem; /* Gently pushes the M down ONLY on Firefox */
           }
+
+          @media (max-width: $maxMobileScreenWidth) {
+            float: none;
+            font-size: 3rem;       /* Slightly smaller for smaller phone displays */
+            line-height: inherit;   /* Falls back to the paragraph's line-height */
+            margin: 0 2px 0 0;      /* Clears out your negative offsets */
+            display: inline-block;  /* Eliminates mobile float alignment bugs */
+          }
         }
         
         & p {
@@ -188,9 +196,16 @@
           float: left;
           font-size: 6rem;
           font-weight:300;
-          line-height: 6rem;
+          line-height: 4.5rem;
           margin-left: -0.5rem;
-          padding-top: 0.4rem;
+          margin-right: 0.6rem;
+          padding-top: 0rem;
+          
+          margin-top: -0.1rem;
+
+          @-moz-document url-prefix() {
+            margin-top: 0.4rem;      /* Softly lowers the S ONLY on Firefox */
+          }
         }
 
         & p.indent {
