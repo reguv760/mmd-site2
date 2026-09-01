@@ -139,7 +139,7 @@
           }
 
           @media (max-width: $maxMobileScreenWidth) {
-            float: none;
+            //float: none;
             font-size: 3rem;       /* Slightly smaller for smaller phone displays */
             line-height: inherit;   /* Falls back to the paragraph's line-height */
             margin: 0 2px 0 0;      /* Clears out your negative offsets */
