@@ -123,11 +123,20 @@
 
         & p:first-child:first-letter {
           float: left;
+          //-webkit-initial-letter: 3; /* For Safari and Chrome */
+          //initial-letter: 3;         /* Native layout calculation */
+
           font-size: 5rem;
           font-weight:300;
-          line-height: 6rem;
+          line-height: 4rem;
           margin-left: -0.5rem;
-          padding-top: 0.5rem;
+          margin-right: 0.5rem;
+          padding-top: 0;
+          margin-top:0;
+
+          @-moz-document url-prefix() {
+            margin-top: 0.3rem; /* Gently pushes the M down ONLY on Firefox */
+          }
         }
         
         & p {

@@ -193,10 +193,10 @@ class MobileMenu extends React.Component {
           <li className="merch">
             <a
               className="menu-item"
-              href="http://Md-art-8101.myshopify.com"
+              href="https://www.lulu.com/shop/melany-meza-dierks/space-love-fire-child/hardcover/product-dygpvq4.html"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="My Wet Paint Shopify Store"
+              aria-label="Space Love Fire Child Book"
             >
               Merch
             </a>
